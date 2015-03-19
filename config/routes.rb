@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :companies
 
   get "/employees/", to: 'employees#index', as: 'employee'
+  get "/employee_email_managers/", to: 'employee_email_managers#index', as 'employee_email_manager'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
