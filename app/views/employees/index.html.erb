@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Company Quotes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td>Ad Type</td>
+        <td>Number of Click Throughs</td>
+        <td>Target Demographics</td>
+        <td>Subtotal</td>
+      </tr>
+    <% @quotes.each do |quote| %>
+
+      <tr>
+        <td><%= quote.adtype %></td>
+        <td><%= quote.views %></td>
+        <td><%= quote.demographics %></td>
+        <td><%= quote.subtotal %></td>
+        <td><%= link_to 'Remove', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Setup/Contract Fee:</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Total:<td>
+      <td></td>
+  </tbody>
+</table>
