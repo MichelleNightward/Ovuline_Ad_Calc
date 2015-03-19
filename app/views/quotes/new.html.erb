@@ -31,5 +31,8 @@
 </table>
 
 <br>
-
-<%= link_to 'Submit Quote', new_quote_path %>
+<% if @quotes.count.zero? %>
+  <%= flash[:notice] = 'Your quote is empty, please add an item' %>
+<% else %>
+  <%= link_to 'Submit Quote', quotes_path %>
+<% end %>

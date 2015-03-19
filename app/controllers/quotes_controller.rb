@@ -2,7 +2,11 @@ class QuotesController < ApplicationController
   before_action :set_quote, only: [:show, :edit, :update, :destroy]
 
   def index
-    redirect_to new_quote_path
+    @quotes = Quote.all
+    if Quote.count.zero?
+      flash[:notice] = 'Your quote is empty, please add an item'
+      redirect_to new_quote_path
+    end
   end
 
   def show

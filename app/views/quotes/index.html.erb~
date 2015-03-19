@@ -10,6 +10,7 @@
   </thead>
 
   <tbody>
+    <%= render 'form' %>
     <% @quotes.each do |quote| %>
       <tr>
         <td><%= link_to 'Show', quote %></td>
