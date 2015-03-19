@@ -1,0 +1,22 @@
+<%= form_for @email, url: employee_email_manager_path do |f| %>
+  <% if @email.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@email.errors.count, "error") %> prohibited this email from being saved:</h2>
+
+      <ul>
+      <% @email.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<p>Name
+  <%= f.text_field :name %> </p>
+  <!-- Input for :views needs to be contingent on :adtype or a number field -->
+    <p>Email
+  <%= f.email_field :email %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
