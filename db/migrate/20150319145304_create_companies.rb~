@@ -1,5 +1,5 @@
 class CreateCompanies < ActiveRecord::Migration
-  has_many :quotes, dependent: :destroy
+has_many :quotes, dependent: :destroy
   def change
     create_table :companies do |t|
       t.string :name
