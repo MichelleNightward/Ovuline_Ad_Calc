@@ -5,4 +5,5 @@ class EmployeesController < ApplicationController
     @quotes = Quote.all
     @quote = Quote.new
   end
+
 end
