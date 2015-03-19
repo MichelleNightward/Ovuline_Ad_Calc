@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Quotes</h1>
+<h1>Your Quote</h1>
 
 <table>
   <thead>
@@ -10,14 +10,12 @@
   </thead>
 
   <tbody>
-    <%= render 'form' %>
     <% @quotes.each do |quote| %>
       <tr>
-        <td><%= link_to 'Show', quote %></td>
-        <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
-        <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Remove', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+    <%= render 'form' %>
   </tbody>
 </table>
 

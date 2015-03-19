@@ -42,7 +42,7 @@ class QuotesController < ApplicationController
   def destroy
     @quote.destroy
     respond_to do |format|
-      format.html { redirect_to new_quote_path, notice: 'Line-item was successfully removed.' }
+      format.html { redirect_to new_quote_path, notice: 'Quote was successfully destroyed.' }
     end
   end
 

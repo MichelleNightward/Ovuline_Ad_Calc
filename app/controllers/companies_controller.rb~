@@ -1,8 +1,9 @@
 class CompaniesController < ApplicationController
- # before_action :set_company, only: [:show, :edit, :update, :destroy]
+  before_action :set_company, only: [:show, :edit, :update, :destroy]
 
   def index
-    @companies = Company.all
+    #THIS IS ACTING A NEW CONTROLLER WOULD, CREATING COMPANY ENTRY IN DATABASE
+    @company = Company.new
   end
 
   def show
@@ -10,7 +11,7 @@ class CompaniesController < ApplicationController
   end
 
   def new
-    @company = Company.new
+    @companies = Company.all
   end
 
   def edit
@@ -21,7 +22,7 @@ class CompaniesController < ApplicationController
     @company = Company.new(company_params)
     if @company.save
       flash[:notice] = 'Your company information has been added'
-      redirect_to @company
+      redirect_to quotes_url
     else
       render action: 'new'
      end
@@ -53,6 +54,6 @@ class CompaniesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def company_params
-      params[:company].permit(:id, :address, :company, :name, :phone)
+      params[:company].permit(:id, :email, :company, :name, :phone)
     end
 end

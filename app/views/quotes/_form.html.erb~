@@ -1,15 +1,4 @@
-<%= form_for(@quote) do |f| %>
-  <% if @quote.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@quote.errors.count, "error") %> prohibited this quote from being saved:</h2>
 
-      <ul>
-      <% @quote.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
   <%= f.select :adtype, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
   <%= f.select :views, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
   <%= f.select :demographics, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
@@ -17,4 +6,4 @@
   <div class="actions">
     <%= f.submit %>
   </div>
-<% end %>
+

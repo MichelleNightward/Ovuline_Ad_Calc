@@ -1,8 +1,9 @@
 class CompaniesController < ApplicationController
- # before_action :set_company, only: [:show, :edit, :update, :destroy]
+  before_action :set_company, only: [:show, :edit, :update, :destroy]
 
   def index
-    @companies = Company.all
+    #THIS IS ACTING A NEW CONTROLLER WOULD, CREATING COMPANY ENTRY IN DATABASE
+    @company = Company.new
   end
 
   def show
@@ -10,7 +11,7 @@ class CompaniesController < ApplicationController
   end
 
   def new
-    @company = Company.new
+    @companies = Company.all
   end
 
   def edit
@@ -21,7 +22,7 @@ class CompaniesController < ApplicationController
     @company = Company.new(company_params)
     if @company.save
       flash[:notice] = 'Your company information has been added'
-      redirect_to @company
+      redirect_to new_quote_path
     else
       render action: 'new'
      end
