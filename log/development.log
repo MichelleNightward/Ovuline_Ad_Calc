@@ -888,7 +888,7 @@ ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
 
-	bin/rake db:migrate RAILS_ENV=development
+    bin/rake db:migrate RAILS_ENV=development
 
 ):
   activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
@@ -1193,7 +1193,7 @@ ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
 
-	bin/rake db:migrate RAILS_ENV=development
+    bin/rake db:migrate RAILS_ENV=development
 
 ):
   activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'

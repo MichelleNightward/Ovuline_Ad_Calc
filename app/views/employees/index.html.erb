@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Your Quote</h1>
+<h1>Company Quotes</h1>
 
 <table>
   <thead>
@@ -14,6 +14,7 @@
         <td>Ad Type</td>
         <td>Number of Click Throughs</td>
         <td>Target Demographics</td>
+        <td>Subtotal</td>
       </tr>
     <% @quotes.each do |quote| %>
 
@@ -25,14 +26,19 @@
         <td><%= link_to 'Remove', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
-    <%= render 'form' %>
 
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Setup/Contract Fee:</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Total:<td>
+      <td></td>
   </tbody>
 </table>
 
-<br>
-<% if @quotes.count.zero? %>
-  <%= flash[:notice] = 'Your quote is empty, please add an item' %>
-<% else %>
-  <%= link_to 'Submit Quote', quotes_path %>
-<% end %>
+<%= link_to "Employee Email Notification Manager", employee_email_manager_path %>

@@ -23,6 +23,7 @@ class CompaniesController < ApplicationController
       flash[:notice] = 'Your company information has been added'
       session[:current_company_id] = @company.id
       redirect_to new_quote_path
+      send_simple_message
     else
       render action: 'new'
      end
@@ -44,6 +45,15 @@ class CompaniesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to companies_url, notice: 'Company was successfully destroyed.' }
     end
+  end
+
+  def send_simple_message
+    RestClient.post "https://api:key-5f4ada711a8a86a1292bcfe23aa9d0aa"\
+    "@api.mailgun.net/v3/sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org/messages",
+    :from => "Excited User <mailgun@sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org>",
+    :to => "gordon.motsinger@gmail.com",
+    :subject => "Hello",
+    :text => "Testing some Mailgun awesomness!"
   end
 
   private
