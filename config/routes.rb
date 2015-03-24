@@ -2,9 +2,12 @@ Rails.application.routes.draw do
   resources :quotes
 
   resources :companies
+  resources :employee_emails
 
   get "/employees/", to: 'employees#index', as: 'employee'
   get "/employee_email_managers/", to: 'employee_email_managers#index', as: 'employee_email_manager'
+  post "/employee_email_managers", to: 'employee_email_managers#create'
+  delete "/employee_email_managers/", to: 'employee_email_managers#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
