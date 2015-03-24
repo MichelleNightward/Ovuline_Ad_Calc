@@ -5,6 +5,7 @@ class CreateQuotes < ActiveRecord::Migration
       t.string :views
       t.string :demographics
       t.string :subtotal
+      t.string :companyID
 
       t.timestamps null: false
     end

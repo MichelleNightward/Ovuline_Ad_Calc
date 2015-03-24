@@ -10,10 +10,10 @@
       </ul>
     </div>
   <% end %>
-  <p>Name: <%= f.text_field :name %>
-  <p>Company: <%= f.text_field :company %>
-  <p>Email Address: <%= f.text_field :email %>
-  <p>Phone: <%= f.text_field :phone %>
+  <p>Name: <%= f.text_field :name, :required => true %>
+  <p>Company: <%= f.text_field :company, :required => true %>
+  <p>Email Address: <%= f.email_field :email, :required => true %>
+  <p>Phone: <%= f.text_field :phone, :required => true %>
 
   <%= f.submit %>
 <% end %>
