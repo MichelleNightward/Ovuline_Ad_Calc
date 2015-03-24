@@ -12,7 +12,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 
-ActiveRecord::Schema.define(version: 20150324153228) do 955cfd248846c470572aa683c5cb211fb184e5ec
+ActiveRecord::Schema.define(version: 20150324153228) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "name"
