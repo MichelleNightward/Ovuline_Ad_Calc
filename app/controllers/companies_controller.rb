@@ -1,6 +1,5 @@
 class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :edit, :update, :destroy]
-
   def index
     #THIS IS ACTING A NEW CONTROLLER WOULD, CREATING COMPANY ENTRY IN DATABASE
     @company = Company.new
@@ -22,6 +21,7 @@ class CompaniesController < ApplicationController
     @company = Company.new(company_params)
     if @company.save
       flash[:notice] = 'Your company information has been added'
+      session[:current_company_id] = @company.id
       redirect_to new_quote_path
     else
       render action: 'new'
@@ -54,6 +54,6 @@ class CompaniesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def company_params
-      params[:company].permit(:id, :email, :company, :name, :phone)
+      params.require(:company).permit(:id, :email, :companyname, :name, :phone)
     end
 end

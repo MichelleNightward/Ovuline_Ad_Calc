@@ -1,5 +1,4 @@
 class CreateQuotes < ActiveRecord::Migration
-  belongs_to :company
   def change
     create_table :quotes do |t|
       t.string :adtype
