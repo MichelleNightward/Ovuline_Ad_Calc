@@ -6,4 +6,11 @@ class EmployeesController < ApplicationController
     @companies = Company.all
   end
 
+  def destroy
+    @company.destroy
+    respond_to do |format|
+      format.html { redirect_to employees_path, notice: 'Company was successfully destroyed.' }
+    end
+  end
+
 end

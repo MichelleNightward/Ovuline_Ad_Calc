@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :employee_email_managers
 
   get "/employees/", to: 'employees#index', as: 'employee'
+
+
  
 
   # get "/employee_email_managers/", to: 'employee_email_managers#index', as: 'employee_email_manager'

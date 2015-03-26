@@ -1,3 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Thanks for your interest, we'll be in touch!</h1>
+<h1>Companies</h1>
+<table>
+        <tr>
+                <td>Ad Type</td>
+                <td>Number of Clicks</td>
+                <td>Target Demographics</td>
+                <td>Subtotal</td>
+        </tr>
+        <% @quotes.each do |quote| %>
+                <tr>
+                        <td><%= quote.adtype %></td>
+                        <td><%= quote.views %></td>
+                        <td><%= quote.demographics %></td>
+                        <td><%= quote.subtotal %></td>
+                        <td><%= link_to "Back",  %></td>
+                        <td><%= link_to "Edit", edit_company_path(company) %></td>
+                        <td><%= link_to "Delete", company, method: :delete %></td>
+                </tr>
+        <% end %>
+</table>
+

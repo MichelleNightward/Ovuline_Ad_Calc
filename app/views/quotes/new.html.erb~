@@ -10,12 +10,22 @@
   </thead>
 
   <tbody>
+      <tr>
+        <td>Ad Type</td>
+        <td>Number of Click Throughs</td>
+        <td>Target Demographics</td>
+      </tr>
     <% @quotes.each do |quote| %>
       <tr>
+        <td><%= quote.adtype %></td>
+        <td><%= quote.views %></td>
+        <td><%= quote.demographics %></td>
+        <td><%= quote.subtotal %></td>
         <td><%= link_to 'Remove', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
     <%= render 'form' %>
+
   </tbody>
 </table>
 
@@ -24,4 +34,4 @@
   <%= flash[:notice] = 'Your quote is empty, please add an item' %>
 <% else %>
   <%= link_to 'Submit Quote', quotes_path %>
-<%= end %>
+<% end %>

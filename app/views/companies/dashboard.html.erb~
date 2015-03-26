@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Companies</h1>
+<table>
+        <tr>
+                <td>Name</td>
+                <td>Company</td>
+                <td>EMail</td>
+                <td>Phone</td>
+        </tr>
+        <% @companies.each do |company| %>
+                <tr>
+                        <td><%= company.name %></td>
+                        <td><%= company.companyname %></td>
+                        <td><%= company.email %></td>
+                        <td><%= company.phone %></td>
+                        <td><%= link_to "Show quote requests", redirect_to show_quote_path %></td>
+                        <td><%= link_to "Edit", edit_company_path(company) %></td>
+                        <td><%= link_to "Delete", company, method: :delete %></td>
+                </tr>
+        <% end %>
+</table>

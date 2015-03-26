@@ -14,6 +14,10 @@ class CompaniesController < ApplicationController
     @companies = Company.all
   end
 
+  def dashboard
+    @companies = Company.all
+  end
+
   def edit
     @company = Company.find(params[:id])
   end
@@ -26,10 +30,9 @@ class CompaniesController < ApplicationController
       redirect_to new_quote_path
       send_simple_message
     else
-      render action: 'new'
+      render action: 'index'
      end
   end
-
 
   def update
     @company = Company.find(params[:id])
@@ -44,7 +47,7 @@ class CompaniesController < ApplicationController
   def destroy
     @company.destroy
     respond_to do |format|
-      format.html { redirect_to companies_url, notice: 'Company was successfully destroyed.' }
+      format.html { redirect_to employees_path, notice: 'Company was successfully destroyed.' }
     end
   end
 
@@ -61,7 +64,7 @@ class CompaniesController < ApplicationController
     @emails = EmployeeEmail.all
     @who_array = []
     @emails.each do |f|
-        @who_array <<f.email
+        @who_array << f.email
     end
     @who=""
     @who_array.each do |f|

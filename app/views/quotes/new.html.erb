@@ -16,7 +16,7 @@
         <td>Target Demographics</td>
       </tr>
     <% @quotes.each do |quote| %>
-
+        <% if quote.companyID == session[:current_company_id] %>
       <tr>
         <td><%= quote.adtype %></td>
         <td><%= quote.views %></td>
@@ -24,6 +24,7 @@
         <td><%= quote.subtotal %></td>
         <td><%= link_to 'Remove', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+        <% end %>
     <% end %>
     <%= render 'form' %>
 

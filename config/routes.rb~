@@ -2,12 +2,26 @@ Rails.application.routes.draw do
   resources :quotes
 
   resources :companies
+  resources :employee_emails
+  resources :employee_email_managers
+
+  get "/employees/", to: 'employees#index', as: 'employee'
+  
+  match "/dashboard" => "companies#dashboard", :via => [:get, :post]
+
+match "companies/:id" => "quotes#show", :via => [:get, :post]
+
+ 
+
+  # get "/employee_email_managers/", to: 'employee_email_managers#index', as: 'employee_email_manager'
+  # post "/employee_email_managers", to: 'employee_email_managers#create'
+  # delete "/employee_email_managers/", to: 'employee_email_managers#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'quotes#index'
+  root 'companies#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
