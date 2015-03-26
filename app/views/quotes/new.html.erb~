@@ -16,7 +16,6 @@
         <td>Target Demographics</td>
       </tr>
     <% @quotes.each do |quote| %>
-      <%= quote = Quote.find(current_company_id) %>
       <tr>
         <td><%= quote.adtype %></td>
         <td><%= quote.views %></td>

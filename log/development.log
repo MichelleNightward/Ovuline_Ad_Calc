@@ -17743,3 +17743,1984 @@ Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for
 
 
 Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:05:48 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 15:14:26 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CompaniesController#index as HTML
+  Rendered companies/_form.html.erb (16.8ms)
+  Rendered companies/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 182ms (Views: 147.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:26 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:26 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:26 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:26 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:26 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:26 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:26 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:26 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:26 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:26 -0400
+
+
+Started POST "/companies" for 127.0.0.1 at 2015-03-26 15:14:37 -0400
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wwlXId2HB6SOPsAvlqp8Mu7Zjfmd4CJHA89uJ55mdq6zi0E++NaxMzLAnwYiZNU6Q47UBO/iPBPqQoCL8ZQJ7Q==", "company"=>{"name"=>"Michelle", "companyname"=>"Stuff", "email"=>"mhrooy@gmail.com", "phone"=>"1234567890"}, "commit"=>"Create Company"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "companies" ("email", "companyname", "name", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "mhrooy@gmail.com"], ["companyname", "Stuff"], ["name", "Michelle"], ["phone", "1234567890"], ["created_at", "2015-03-26 19:14:37.469793"], ["updated_at", "2015-03-26 19:14:37.469793"]]
+  [1m[35m (288.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/quotes/new
+  [1m[36mEmployeeEmail Load (0.3ms)[0m  [1mSELECT "employee_emails".* FROM "employee_emails"[0m
+Completed 302 Found in 1041ms (ActiveRecord: 292.1ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-26 15:14:38 -0400
+Processing by QuotesController#new as HTML
+  [1m[35mQuote Load (0.3ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered quotes/_form.html.erb (8.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "quotes"[0m
+  Rendered quotes/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 139ms (Views: 118.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:38 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:38 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:38 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:38 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:38 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:38 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:38 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:38 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:38 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:38 -0400
+
+
+Started POST "/quotes" for 127.0.0.1 at 2015-03-26 15:14:48 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"quote"=>{"adtype"=>"Native Article", "views"=>"2", "demographics"=>"trying to concieve"}, "commit"=>"Create Quote", "utf8"=>"✓", "authenticity_token"=>"/gGtJx1keJSmYbvVPOqwXHgDzOMISZX23bTawkBr4aiOg7s4ODXOAxqf5PyIJBlU1VSVHnpLi6I0OTRuL5me6w=="}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "quotes" ("adtype", "views", "demographics", "companyID", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["adtype", "Native Article"], ["views", "2"], ["demographics", "trying to concieve"], ["companyID", 4], ["created_at", "2015-03-26 19:14:48.972532"], ["updated_at", "2015-03-26 19:14:48.972532"]]
+  [1m[35m (172.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/quotes/new
+Completed 302 Found in 185ms (ActiveRecord: 174.0ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-26 15:14:49 -0400
+Processing by QuotesController#new as HTML
+  [1m[36mQuote Load (0.8ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered quotes/_form.html.erb (1.8ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "quotes"
+  Rendered quotes/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 74ms (Views: 71.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:49 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:49 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:49 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:49 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:49 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:49 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:49 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:49 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:49 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:49 -0400
+
+
+Started POST "/quotes" for 127.0.0.1 at 2015-03-26 15:14:54 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"quote"=>{"adtype"=>"Native Ad", "views"=>"9", "demographics"=>"trying to concieve"}, "commit"=>"Create Quote", "utf8"=>"✓", "authenticity_token"=>"1klV1VXiMXYB740zpMOaIpCGPy+qEt1xWsUqPPcRSTqmy0PKcLOH4b0R0hoQDTMqPdFm0tgQwyWzSMSQmOM2eQ=="}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "quotes" ("adtype", "views", "demographics", "companyID", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["adtype", "Native Ad"], ["views", "9"], ["demographics", "trying to concieve"], ["companyID", 4], ["created_at", "2015-03-26 19:14:54.450479"], ["updated_at", "2015-03-26 19:14:54.450479"]]
+  [1m[36m (167.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/quotes/new
+Completed 302 Found in 174ms (ActiveRecord: 167.9ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-26 15:14:54 -0400
+Processing by QuotesController#new as HTML
+  [1m[35mQuote Load (0.6ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered quotes/_form.html.erb (2.0ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "quotes"[0m
+  Rendered quotes/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 71ms (Views: 69.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:54 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:54 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:54 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:54 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:54 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:54 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:54 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:54 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:54 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:54 -0400
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-26 15:14:58 -0400
+Processing by EmployeesController#index as HTML
+  [1m[35mCompany Load (0.3ms)[0m  SELECT "companies".* FROM "companies"
+  [1m[36mQuote Load (0.2ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered employees/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 77ms (Views: 74.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:58 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:58 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:58 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:58 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:14:58 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:58 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:58 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:58 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:58 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:14:58 -0400
+
+
+Started POST "/quotes" for 127.0.0.1 at 2015-03-26 15:16:50 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"quote"=>{"adtype"=>"Native Ad", "views"=>"7", "demographics"=>"trying to concieve"}, "commit"=>"Create Quote", "utf8"=>"✓", "authenticity_token"=>"Egy5B83GhszDAhbFqZyJBzENWF/6NWe77OItB9nzPqNijq8Y6JcwW3/8SewdUiAPnFoBoog3ee8Fb8OrtgFB4A=="}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "quotes" ("adtype", "views", "demographics", "companyID", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["adtype", "Native Ad"], ["views", "7"], ["demographics", "trying to concieve"], ["companyID", 4], ["created_at", "2015-03-26 19:16:50.855472"], ["updated_at", "2015-03-26 19:16:50.855472"]]
+  [1m[35m (165.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/quotes/new
+Completed 302 Found in 171ms (ActiveRecord: 166.3ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-26 15:16:51 -0400
+Processing by QuotesController#new as HTML
+  [1m[36mQuote Load (0.3ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered quotes/_form.html.erb (2.3ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "quotes"
+  Rendered quotes/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 80ms (Views: 78.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:16:51 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:16:51 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:16:51 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:16:51 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:16:51 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:16:51 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:16:51 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:16:51 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:16:51 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:16:51 -0400
+
+
+Started GET "/quotes" for 127.0.0.1 at 2015-03-26 15:16:53 -0400
+Processing by QuotesController#index as HTML
+  Rendered quotes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-26 15:16:57 -0400
+Processing by EmployeesController#index as HTML
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT "companies".* FROM "companies"[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered employees/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:16:57 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:16:57 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:16:57 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:16:57 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:16:57 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:16:57 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:16:57 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:16:57 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:16:57 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:16:57 -0400
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-26 15:17:07 -0400
+Processing by QuotesController#new as HTML
+  [1m[36mQuote Load (0.3ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered quotes/_form.html.erb (6.6ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "quotes"
+  Rendered quotes/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 84ms (Views: 83.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/quotes/5" for 127.0.0.1 at 2015-03-26 15:17:09 -0400
+Processing by QuotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bfBFD41ig4KzdCH/4ypnl8dgAhRqvvBDeaUlSv/be2MdclMQqDM1FQ+KftZX5M6fajdb6Ri87heQKMvmkCkEIA==", "id"=>"5"}
+  [1m[36mQuote Load (0.6ms)[0m  [1mSELECT  "quotes".* FROM "quotes" WHERE "quotes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "quotes" WHERE "quotes"."id" = ?[0m  [["id", 5]]
+  [1m[35m (177.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/quotes/new
+Completed 302 Found in 198ms (ActiveRecord: 178.2ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-26 15:17:10 -0400
+Processing by QuotesController#new as HTML
+  [1m[36mQuote Load (0.3ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered quotes/_form.html.erb (2.6ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "quotes"
+  Rendered quotes/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 67ms (Views: 65.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:17:10 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:17:10 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:17:10 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:17:10 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:17:10 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:17:10 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:17:10 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:17:10 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:17:10 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:17:10 -0400
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-26 15:17:12 -0400
+Processing by EmployeesController#index as HTML
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT "companies".* FROM "companies"[0m
+  [1m[35mQuote Load (0.5ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered employees/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 73ms (Views: 70.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:17:12 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:17:12 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:17:12 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:17:12 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:17:12 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:17:12 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:17:12 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:17:12 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:17:12 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:17:12 -0400
+
+
+Started DELETE "/companies/2" for 127.0.0.1 at 2015-03-26 15:20:48 -0400
+Processing by CompaniesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eFAn8RGrY27BiTVzjwwL7Mws99SWjkMOMQldrALjK9YI0jHuNPrV+X13alo7wqLkYXuuKeSMXVrYhLMAbRFUlQ==", "id"=>"2"}
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mQuote Load (1.5ms)[0m  [1mSELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?[0m  [[nil, 2]]
+SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?
+  [1m[35m (0.5ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 36ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?):
+  app/controllers/companies_controller.rb:52:in `destroy'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.0ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.8ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (22.3ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (46.7ms)
+  [1m[36m (172.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (166.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCompanies (20150319145304)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "companies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "companyname" varchar, "email" varchar, "phone" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150319145304"]]
+  [1m[35m (372.9ms)[0m  commit transaction
+Migrating to CreateQuotes (20150319145415)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "quotes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "adtype" varchar, "views" varchar, "demographics" varchar, "subtotal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150319145415"]]
+  [1m[35m (181.5ms)[0m  commit transaction
+Migrating to CreateEmployeeEmails (20150319202754)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "employee_emails" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150319202754"]]
+  [1m[35m (160.6ms)[0m  commit transaction
+Migrating to AddCompanyIdColumnToQuotes (20150324153228)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "quotes" ADD "companyID" integer
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150324153228"]]
+  [1m[35m (161.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-26 15:21:51 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EmployeesController#index as HTML
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies"
+  Rendered employees/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 160ms (Views: 127.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:21:51 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:21:51 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:21:51 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:21:51 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:21:51 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:21:51 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:21:51 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:21:51 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:21:51 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:21:51 -0400
+
+
+Started GET "/employee_email_managers" for 127.0.0.1 at 2015-03-26 15:21:54 -0400
+Processing by EmployeeEmailManagersController#index as HTML
+  [1m[36mEmployeeEmail Load (0.2ms)[0m  [1mSELECT "employee_emails".* FROM "employee_emails"[0m
+  Rendered employee_email_managers/_form.html.erb (25.7ms)
+  Rendered employee_email_managers/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 165ms (Views: 155.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/employee_email_managers" for 127.0.0.1 at 2015-03-26 15:21:59 -0400
+Processing by EmployeeEmailManagersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wXHE23Hy/hMs/8DrQDritku2NA+txhh+nlarxBuvIE+x89LEVKNIhJABn8L09Eu+5uFt8t/EBip320VodF1fDA==", "employee_email"=>{"name"=>"Michelle Rooy", "email"=>"mhrooy@gmail.com"}, "commit"=>"Create Employee email"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "employee_emails" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Michelle Rooy"], ["email", "mhrooy@gmail.com"], ["created_at", "2015-03-26 19:21:59.276339"], ["updated_at", "2015-03-26 19:21:59.276339"]]
+  [1m[35m (271.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/employee_email_managers
+Completed 302 Found in 283ms (ActiveRecord: 272.4ms)
+
+
+Started GET "/employee_email_managers" for 127.0.0.1 at 2015-03-26 15:21:59 -0400
+Processing by EmployeeEmailManagersController#index as HTML
+  [1m[36mEmployeeEmail Load (0.3ms)[0m  [1mSELECT "employee_emails".* FROM "employee_emails"[0m
+  Rendered employee_email_managers/_form.html.erb (2.1ms)
+  Rendered employee_email_managers/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 70ms (Views: 68.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:21:59 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:21:59 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:21:59 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:21:59 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:21:59 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:21:59 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:21:59 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:21:59 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:21:59 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:21:59 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 15:22:03 -0400
+Processing by CompaniesController#index as HTML
+  Rendered companies/_form.html.erb (4.3ms)
+  Rendered companies/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 80ms (Views: 74.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:22:03 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:22:03 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:22:03 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:22:03 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:22:03 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:22:03 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:22:03 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:22:03 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:22:03 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:22:03 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 15:23:04 -0400
+Processing by CompaniesController#index as HTML
+  Rendered companies/_form.html.erb (2.1ms)
+  Rendered companies/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 80ms (Views: 69.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:23:05 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:23:05 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:05 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:05 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:23:05 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:23:05 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:05 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:05 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:05 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:05 -0400
+
+
+Started POST "/companies" for 127.0.0.1 at 2015-03-26 15:23:53 -0400
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jhgSnAkUkur/Gm5JDm9gHZb+ornZ/iYmWvfkVSadsMb+mgSDLEUkfUPkMWC6ockVO6n7RKv8OHKzegr5SW/PhQ==", "company"=>{"name"=>"Michelle", "companyname"=>"Stuff", "email"=>"Stuff@stuff", "phone"=>"1"}, "commit"=>"Create Company"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCompany Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "companies" WHERE "companies"."companyname" = 'Stuff' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "companies" ("email", "companyname", "name", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "Stuff@stuff"], ["companyname", "Stuff"], ["name", "Michelle"], ["phone", "1"], ["created_at", "2015-03-26 19:23:53.351349"], ["updated_at", "2015-03-26 19:23:53.351349"]]
+  [1m[36m (236.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/quotes/new
+  [1m[35mEmployeeEmail Load (0.3ms)[0m  SELECT "employee_emails".* FROM "employee_emails"
+Completed 302 Found in 464ms (ActiveRecord: 237.3ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-26 15:23:53 -0400
+Processing by QuotesController#new as HTML
+  [1m[36mQuote Load (0.2ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered quotes/_form.html.erb (5.1ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "quotes"
+  Rendered quotes/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 100ms (Views: 87.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:23:54 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:23:54 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:23:54 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:23:54 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:54 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:54 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:54 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:54 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:54 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 15:23:58 -0400
+Processing by CompaniesController#index as HTML
+  Rendered companies/_form.html.erb (2.1ms)
+  Rendered companies/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 82ms (Views: 81.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:23:58 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:23:58 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:23:58 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:58 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:58 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:23:58 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:58 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:59 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:59 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:23:59 -0400
+
+
+Started POST "/companies" for 127.0.0.1 at 2015-03-26 15:24:12 -0400
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XV6jMsolCHtel1yPLobJrTRJ/JU6S8LUTt3+XHkjcHAt3LUt73S+7OJpA6aaSGClmR6laEhJ3ICnUBDwFtEPMw==", "company"=>{"name"=>"Michelle", "companyname"=>"Stuff", "email"=>"Stuff@stuff", "phone"=>"1234567890"}, "commit"=>"Create Company"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mCompany Exists (0.2ms)[0m  SELECT  1 AS one FROM "companies" WHERE "companies"."companyname" = 'Stuff' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered companies/new.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:     <% @companies.each do |company| %>
+    14:       <tr>
+    15:         <td><%= link_to 'Show', company %></td>
+    16:         <td><%= link_to 'Edit', edit_company_path(company) %></td>
+  app/views/companies/new.html.erb:13:in `_app_views_companies_new_html_erb__170681532__629131538'
+  app/controllers/companies_controller.rb:33:in `create'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (23.2ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (48.6ms)
+
+
+Started POST "/companies" for 127.0.0.1 at 2015-03-26 15:27:37 -0400
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XV6jMsolCHtel1yPLobJrTRJ/JU6S8LUTt3+XHkjcHAt3LUt73S+7OJpA6aaSGClmR6laEhJ3ICnUBDwFtEPMw==", "company"=>{"name"=>"Michelle", "companyname"=>"Stuff", "email"=>"Stuff@stuff", "phone"=>"1234567890"}, "commit"=>"Create Company"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCompany Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "companies" WHERE "companies"."companyname" = 'Stuff' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered companies/_form.html.erb (2.3ms)
+  Rendered companies/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 102ms (Views: 81.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:27:37 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:27:37 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:27:37 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:27:37 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:27:37 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:27:37 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:27:37 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:27:37 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:27:37 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:27:37 -0400
+
+
+Started POST "/companies" for 127.0.0.1 at 2015-03-26 15:27:56 -0400
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JEkMj/hwlcA+SqsbTiwmeeIohk7wbDbeMKTGLH+D55NUyxqQ3SEjV4K09DL64o9xT3/fs4JuKIrZKSiAEHGY0A==", "company"=>{"name"=>"Michelle", "companyname"=>"Stuff1", "email"=>"Stuff@stuff", "phone"=>"1234567890"}, "commit"=>"Create Company"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCompany Exists (0.6ms)[0m  SELECT  1 AS one FROM "companies" WHERE "companies"."companyname" = 'Stuff1' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "companies" ("email", "companyname", "name", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "Stuff@stuff"], ["companyname", "Stuff1"], ["name", "Michelle"], ["phone", "1234567890"], ["created_at", "2015-03-26 19:27:56.514889"], ["updated_at", "2015-03-26 19:27:56.514889"]]
+  [1m[35m (304.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/quotes/new
+  [1m[36mEmployeeEmail Load (0.5ms)[0m  [1mSELECT "employee_emails".* FROM "employee_emails"[0m
+Completed 302 Found in 619ms (ActiveRecord: 306.8ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-26 15:27:57 -0400
+Processing by QuotesController#new as HTML
+  [1m[35mQuote Load (0.3ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered quotes/_form.html.erb (3.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "quotes"[0m
+  Rendered quotes/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 85ms (Views: 76.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:27:57 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:27:57 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:27:57 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:27:57 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:27:57 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:27:57 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:27:57 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:27:57 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:27:57 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:27:57 -0400
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-26 15:31:34 -0400
+Processing by EmployeesController#index as HTML
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies"
+  [1m[36mQuote Load (0.7ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered employees/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 87ms (Views: 85.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:31:34 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:31:34 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:31:34 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:31:34 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:31:34 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:31:34 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:31:34 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:31:34 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:31:34 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:31:34 -0400
+
+
+Started GET "/companies/1/edit" for 127.0.0.1 at 2015-03-26 15:31:39 -0400
+Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCompany Load (0.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered companies/_form.html.erb (3.2ms)
+  Rendered companies/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 76ms (Views: 69.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/companies/1" for 127.0.0.1 at 2015-03-26 15:31:43 -0400
+
+ActionController::RoutingError (No route matches [POST] "/companies/1"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.2ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (48.9ms)
+
+
+Started DELETE "/companies/1" for 127.0.0.1 at 2015-03-26 15:31:47 -0400
+Processing by CompaniesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"S4z4J5LmgFFMHxSE6o9AsYY0dB2b2aTQhD147LMZ0wQ7Du44t7c2xvDhS61eQem5K2Mt4OnbuoRtsJZA3OusRw==", "id"=>"1"}
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuote Load (0.9ms)[0m  SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?  [[nil, 1]]
+SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 32ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?):
+  app/controllers/companies_controller.rb:52:in `destroy'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.8ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (29.0ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (57.9ms)
+
+
+Started DELETE "/companies/1" for 127.0.0.1 at 2015-03-26 15:32:43 -0400
+Processing by CompaniesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"S4z4J5LmgFFMHxSE6o9AsYY0dB2b2aTQhD147LMZ0wQ7Du44t7c2xvDhS61eQem5K2Mt4OnbuoRtsJZA3OusRw==", "id"=>"1"}
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuote Load (1.1ms)[0m  SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?  [[nil, 1]]
+SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 21ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?):
+  app/controllers/companies_controller.rb:52:in `destroy'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.0ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (22.8ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (48.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-26 15:32:49 -0400
+Processing by EmployeesController#index as HTML
+  [1m[35mCompany Load (0.3ms)[0m  SELECT "companies".* FROM "companies"
+  [1m[36mQuote Load (0.2ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered employees/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 77ms (Views: 75.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:32:49 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:32:49 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:32:49 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:32:49 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:32:49 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:32:49 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:32:49 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:32:49 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:32:49 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:32:49 -0400
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-26 15:34:15 -0400
+Processing by EmployeesController#index as HTML
+  [1m[35mCompany Load (0.3ms)[0m  SELECT "companies".* FROM "companies"
+  [1m[36mQuote Load (0.2ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered employees/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 74ms (Views: 71.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:34:15 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:34:15 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:34:15 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:34:15 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:34:15 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:34:15 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:34:15 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:34:15 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:34:15 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:34:15 -0400
+
+
+Started POST "/companies/1" for 127.0.0.1 at 2015-03-26 15:34:17 -0400
+
+ActionController::RoutingError (No route matches [POST] "/companies/1"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.2ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (49.4ms)
+
+
+Started POST "/companies/1" for 127.0.0.1 at 2015-03-26 15:34:56 -0400
+
+ActionController::RoutingError (No route matches [POST] "/companies/1"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (51.1ms)
+
+
+Started POST "/companies/1" for 127.0.0.1 at 2015-03-26 15:37:29 -0400
+
+ActionController::RoutingError (No route matches [POST] "/companies/1"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (22.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (47.3ms)
+
+
+Started POST "/companies/1" for 127.0.0.1 at 2015-03-26 15:38:25 -0400
+
+ActionController::RoutingError (No route matches [POST] "/companies/1"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.8ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.8ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (23.8ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (48.3ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-26 15:40:48 -0400
+Processing by EmployeesController#index as HTML
+  [1m[35mCompany Load (0.5ms)[0m  SELECT "companies".* FROM "companies"
+  [1m[36mQuote Load (0.3ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered employees/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 94ms (Views: 83.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:40:48 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:40:48 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:40:48 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:40:48 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:40:48 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:40:48 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:40:48 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:40:48 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:40:48 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:40:48 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 15:41:06 -0400
+Processing by CompaniesController#index as HTML
+  Rendered companies/_form.html.erb (2.0ms)
+  Rendered companies/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 82ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:07 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:07 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:07 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:07 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:07 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:07 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:07 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:07 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:07 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:07 -0400
+
+
+Started POST "/companies" for 127.0.0.1 at 2015-03-26 15:41:25 -0400
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B8SblGBwaFc8FvMpSqAYaYFTAMoKRW21aDQEiYMGlMt3Ro2LRSHewIDorAD+brFhLARZN3hHc+GBueol7PTriA==", "company"=>{"name"=>"Michelle", "companyname"=>"Stuff2", "email"=>"Stuff@stuff", "phone"=>"1234567890"}, "commit"=>"Create Company"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCompany Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "companies" WHERE "companies"."companyname" = 'Stuff2' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "companies" ("email", "companyname", "name", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "Stuff@stuff"], ["companyname", "Stuff2"], ["name", "Michelle"], ["phone", "1234567890"], ["created_at", "2015-03-26 19:41:25.720266"], ["updated_at", "2015-03-26 19:41:25.720266"]]
+  [1m[36m (360.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/quotes/new
+  [1m[35mEmployeeEmail Load (0.3ms)[0m  SELECT "employee_emails".* FROM "employee_emails"
+Completed 302 Found in 658ms (ActiveRecord: 362.4ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-26 15:41:26 -0400
+Processing by QuotesController#new as HTML
+  [1m[36mQuote Load (0.6ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered quotes/_form.html.erb (3.3ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "quotes"
+  Rendered quotes/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 85ms (Views: 78.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:26 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:26 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:26 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:26 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:26 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:26 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:26 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:26 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:26 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:26 -0400
+
+
+Started POST "/quotes" for 127.0.0.1 at 2015-03-26 15:41:28 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"quote"=>{"adtype"=>"Native Ad", "views"=>"", "demographics"=>"trying to concieve"}, "commit"=>"Create Quote", "utf8"=>"✓", "authenticity_token"=>"yYqo4K8YP0D1pNcbVtbefNHHHGbEq14cm+m8FwyVhe+5CL7/ikmJ10laiDLiGHd0fJBFm7apQEhyZFK7Y2f6rA=="}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "quotes" ("adtype", "views", "demographics", "companyID", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["adtype", "Native Ad"], ["views", ""], ["demographics", "trying to concieve"], ["companyID", 3], ["created_at", "2015-03-26 19:41:28.940793"], ["updated_at", "2015-03-26 19:41:28.940793"]]
+  [1m[36m (280.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/quotes/new
+Completed 302 Found in 293ms (ActiveRecord: 280.9ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-26 15:41:29 -0400
+Processing by QuotesController#new as HTML
+  [1m[35mQuote Load (0.3ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered quotes/_form.html.erb (2.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "quotes"[0m
+  Rendered quotes/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 78ms (Views: 76.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:29 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:29 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:29 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:29 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:29 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:29 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:29 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:29 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:29 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:29 -0400
+
+
+Started POST "/quotes" for 127.0.0.1 at 2015-03-26 15:41:32 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"quote"=>{"adtype"=>"Native Ad", "views"=>"8", "demographics"=>"trying to concieve"}, "commit"=>"Create Quote", "utf8"=>"✓", "authenticity_token"=>"baJSbQHO3mH24Z/8iDzV00rplKiaLEXYt8QgARZ9/GAdIERyJJ9o9kofwNU88nzb577NVeguW4xeSc6teY+DIw=="}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "quotes" ("adtype", "views", "demographics", "companyID", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["adtype", "Native Ad"], ["views", "8"], ["demographics", "trying to concieve"], ["companyID", 3], ["created_at", "2015-03-26 19:41:32.312615"], ["updated_at", "2015-03-26 19:41:32.312615"]]
+  [1m[35m (218.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/quotes/new
+Completed 302 Found in 230ms (ActiveRecord: 218.8ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-26 15:41:32 -0400
+Processing by QuotesController#new as HTML
+  [1m[36mQuote Load (0.3ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered quotes/_form.html.erb (1.9ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "quotes"
+  Rendered quotes/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 93ms (Views: 90.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:32 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:32 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:32 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:32 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:32 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:32 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:32 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:32 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:32 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:32 -0400
+
+
+Started POST "/quotes" for 127.0.0.1 at 2015-03-26 15:41:35 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"quote"=>{"adtype"=>"Native Ad", "views"=>"90", "demographics"=>"trying to concieve"}, "commit"=>"Create Quote", "utf8"=>"✓", "authenticity_token"=>"rRbBXBeSn/kpFQUOW+TEsNdDe5Fio423NsWF5KzxFiXdlNdDMsMpbpXrWifvKm24ehQibBChk+PfSGtIwwNpZg=="}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "quotes" ("adtype", "views", "demographics", "companyID", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["adtype", "Native Ad"], ["views", "90"], ["demographics", "trying to concieve"], ["companyID", 3], ["created_at", "2015-03-26 19:41:35.290892"], ["updated_at", "2015-03-26 19:41:35.290892"]]
+  [1m[36m (142.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/quotes/new
+Completed 302 Found in 152ms (ActiveRecord: 143.8ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-26 15:41:35 -0400
+Processing by QuotesController#new as HTML
+  [1m[35mQuote Load (0.3ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered quotes/_form.html.erb (2.8ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "quotes"[0m
+  Rendered quotes/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 80ms (Views: 78.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:35 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:35 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:35 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:35 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:35 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:35 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:35 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:35 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:35 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:35 -0400
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-26 15:41:40 -0400
+Processing by EmployeesController#index as HTML
+  [1m[35mCompany Load (0.4ms)[0m  SELECT "companies".* FROM "companies"
+  [1m[36mQuote Load (1.8ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered employees/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 86ms (Views: 82.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:40 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:40 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:40 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:40 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:40 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:40 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:40 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:40 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:40 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:40 -0400
+
+
+Started DELETE "/quotes/1" for 127.0.0.1 at 2015-03-26 15:41:44 -0400
+Processing by QuotesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SufA7ox5xb+MLWOutvAHUnBecSyRRbSyPrYcy8FLef46ZdbxqShzKDDTPIcCPq5a3Qko0eNHqubXO/JnrrkGvQ==", "id"=>"1"}
+  [1m[35mQuote Load (0.3ms)[0m  SELECT  "quotes".* FROM "quotes" WHERE "quotes"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "quotes" WHERE "quotes"."id" = ?  [["id", 1]]
+  [1m[36m (164.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/quotes/new
+Completed 302 Found in 169ms (ActiveRecord: 165.0ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-26 15:41:44 -0400
+Processing by QuotesController#new as HTML
+  [1m[35mQuote Load (0.2ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered quotes/_form.html.erb (1.9ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "quotes"[0m
+  Rendered quotes/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 87ms (Views: 85.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:44 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:44 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:44 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:44 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:44 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:41:44 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:44 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:44 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:44 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:41:44 -0400
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-26 15:42:07 -0400
+Processing by EmployeesController#index as HTML
+  [1m[35mCompany Load (0.3ms)[0m  SELECT "companies".* FROM "companies"
+  [1m[36mQuote Load (0.2ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered employees/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 87ms (Views: 85.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:42:07 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 15:42:07 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 15:42:07 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 15:42:07 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 15:42:07 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 15:42:07 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:42:07 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 15:42:07 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 15:42:07 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 15:42:07 -0400
+
+
+Started DELETE "/companies/3" for 127.0.0.1 at 2015-03-26 15:42:14 -0400
+Processing by CompaniesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pFAFa6OxPnvYqhEmz2J/gnE1LzChc2WTCrl0/6oExsbU0hN0huCI7GRUTg97rNaK3GJ2zdNxe8fjNJpTxfa5hQ==", "id"=>"3"}
+  [1m[35mCompany Load (0.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuote Load (1.7ms)[0m  SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?  [[nil, 3]]
+SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 20ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?):
+  app/controllers/companies_controller.rb:52:in `destroy'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (30.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (61.1ms)
+
+
+Started DELETE "/companies/2" for 127.0.0.1 at 2015-03-26 15:44:57 -0400
+Processing by CompaniesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pFAFa6OxPnvYqhEmz2J/gnE1LzChc2WTCrl0/6oExsbU0hN0huCI7GRUTg97rNaK3GJ2zdNxe8fjNJpTxfa5hQ==", "id"=>"2"}
+  [1m[35mCompany Load (0.4ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuote Load (1.6ms)[0m  SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?  [[nil, 2]]
+SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 35ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?):
+  app/controllers/companies_controller.rb:48:in `destroy'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.0ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (23.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (51.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-26 16:12:42 -0400
+Processing by EmployeesController#index as HTML
+  [1m[35mCompany Load (0.9ms)[0m  SELECT "companies".* FROM "companies"
+  [1m[36mQuote Load (0.4ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered employees/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 106ms (Views: 103.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 16:12:42 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 16:12:42 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 16:12:42 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 16:12:42 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 16:12:42 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 16:12:42 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 16:12:42 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 16:12:42 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 16:12:42 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 16:12:42 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-26 16:13:27 -0400
+Processing by CompaniesController#index as HTML
+  Rendered companies/_form.html.erb (3.4ms)
+  Rendered companies/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 125ms (Views: 123.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 16:13:28 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 16:13:28 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 16:13:28 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 16:13:28 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 16:13:28 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 16:13:28 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 16:13:28 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 16:13:28 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 16:13:28 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 16:13:28 -0400
+
+
+Started POST "/companies" for 127.0.0.1 at 2015-03-26 16:13:37 -0400
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/HvEBtVlkymnEstMyZqTmNDfuXIpSBMjLPEZ/pRsnJ2M+dIZ8DQlvhvslGV9VDqQfYjgj1tKDXfFfPdS+57j3g==", "company"=>{"name"=>"Michelle", "companyname"=>"Stuff", "email"=>"Stuff@stuff", "phone"=>"1234567890"}, "commit"=>"Create Company"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCompany Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "companies" WHERE "companies"."companyname" = 'Stuff' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered companies/_form.html.erb (2.3ms)
+  Rendered companies/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 78ms (Views: 68.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 16:13:37 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 16:13:37 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 16:13:37 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 16:13:37 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 16:13:37 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 16:13:37 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 16:13:37 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 16:13:37 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 16:13:37 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 16:13:37 -0400
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-26 16:17:57 -0400
+Processing by EmployeesController#index as HTML
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies"[0m
+  [1m[35mQuote Load (0.2ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered employees/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 86ms (Views: 84.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 16:17:57 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 16:17:57 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 16:17:57 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 16:17:57 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 16:17:57 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 16:17:57 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 16:17:57 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 16:17:57 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 16:17:57 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 16:17:57 -0400
+
+
+Started DELETE "/companies/3" for 127.0.0.1 at 2015-03-26 16:18:05 -0400
+Processing by CompaniesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LofVQl8tm8qrLXyIbxbFYXTGYWcys7g1n5/BTuast6JeBcNdenwtXRfTI6Hb2Gxp2ZE4mkCxpmF2Ei/iiV7I4Q==", "id"=>"3"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mQuote Load (1.2ms)[0m  [1mSELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?[0m  [[nil, 3]]
+SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 15ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?):
+  app/controllers/companies_controller.rb:48:in `destroy'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.3ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (34.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (63.2ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-26 16:24:09 -0400
+Processing by EmployeesController#index as HTML
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies"[0m
+  [1m[35mQuote Load (0.3ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered employees/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 76ms (Views: 74.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 16:24:09 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-26 16:24:09 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-26 16:24:09 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-26 16:24:09 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-26 16:24:09 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-26 16:24:09 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-26 16:24:09 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 16:24:09 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-26 16:24:09 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-26 16:24:09 -0400
+
+
+Started DELETE "/companies/1" for 127.0.0.1 at 2015-03-26 16:24:11 -0400
+Processing by CompaniesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"12sxrEzWM7fQrgihJakaJhYuWD7o5CUE7sq34hfdcfSn6SezaYeFIGxQV4iRZ7Muu3kBw5rmO1AHR1lOeC8Otw==", "id"=>"1"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mQuote Load (1.8ms)[0m  [1mSELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?[0m  [[nil, 1]]
+SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?
+  [1m[35m (5.7ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 16ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?):
+  app/controllers/companies_controller.rb:48:in `destroy'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.0ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (26.0ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (54.4ms)
+
+
+Started DELETE "/companies/1" for 127.0.0.1 at 2015-03-26 16:30:36 -0400
+Processing by CompaniesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"12sxrEzWM7fQrgihJakaJhYuWD7o5CUE7sq34hfdcfSn6SezaYeFIGxQV4iRZ7Muu3kBw5rmO1AHR1lOeC8Otw==", "id"=>"1"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mQuote Load (1.3ms)[0m  [1mSELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?[0m  [[nil, 1]]
+SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 9ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: quotes.company_id: SELECT "quotes".* FROM "quotes" WHERE "quotes"."company_id" = ?):
+  app/controllers/companies_controller.rb:48:in `destroy'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (51.7ms)
