@@ -1,5 +1,6 @@
 #method has NOT BEEN TESTED after writting all the if/else statements
 
+
 def calculate_click_price
    #These class variables are presented together here for easy alteration in the future
    #The instance variables are plugged into @price_calculator and defult to 1 so they effictively have no change on the math output
@@ -13,6 +14,7 @@ def calculate_click_price
    @@ttc_multi = 1.25
    @@weeks_pregnant_multi = 1.25
    @@days_since_sign_up_multi = 1.25
+   #should the instance variables be initialized up here or in the if/else statements?
    @days_since_signup = 1
    @@fertility_condition_multi = 1.25
    @@cycle_stage_multi = 1.25
@@ -30,6 +32,9 @@ def calculate_click_price
         @location = 1
     end
 
+    #should if/else statements include != nil || 0 || {other input indicating company did not enter info?}
+    #this is probably question for later
+    #changes in case by case basis mean these if/else statements should be custom and ny dynamically generated
     if @quote.age != nil
         @age = @@age_multi
     else
@@ -77,7 +82,6 @@ def calculate_click_price
     else
         @monthly_acivity = 1
     end
-
 
     #Should this remain stored in an instance variable?
    @price_calculator = @@click_base_price*@location*@age*@ttc*@weeks_pregnant*@days_since_signup*@fertility_condition*@cycle_stage*@house_hold_income*@monthly_acivity

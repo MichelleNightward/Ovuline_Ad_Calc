@@ -4,6 +4,8 @@ def calculate_click_price
    #quote = Quote.find[params[:id]]
 
    quote = 'hi'
+   #monkey is used to check that if statements work when they are passed nil
+   monkey = nil
 
    click_base_price = 0.75
    location_multi = 1.25
@@ -29,7 +31,10 @@ def calculate_click_price
         location = location_multi
     end
 
-    
+    if monkey != nil
+        location = location_multi
+    end
+
 
     #Should this remain stored in an instance variable?
    price_calculator = click_base_price*location*age*ttc*weeks_pregnant*days_since_signup*fertility_condition*cycle_stage*house_hold_income*monthly_acivity
