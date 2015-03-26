@@ -13748,3 +13748,185 @@ Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.
 
 
 Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-25 14:50:40 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-25 15:02:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CompaniesController#index as HTML
+  Rendered companies/_form.html.erb (61.9ms)
+  Rendered companies/index.html.erb within layouts/application (97.9ms)
+Completed 200 OK in 638ms (Views: 495.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-25 15:02:45 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-25 15:02:45 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-25 15:02:45 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-25 15:02:45 -0400
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-25 15:02:45 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-25 15:02:45 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-25 15:02:45 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-25 15:02:45 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-25 15:02:45 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-25 15:02:45 -0400
+
+
+Started POST "/companies" for 127.0.0.1 at 2015-03-25 15:03:53 -0400
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mMX9TneXb88D7vAgz3fk8AByCpHE1V/bS9uXPHRKVkVi7FuPvK+soTcjF646LkEfxN8SxLccDtJ1BIrjKRUkTQ==", "company"=>{"name"=>"Gordon", "companyname"=>"Invi", "email"=>"gordon@Monkeys.net", "phone"=>"336.555.5505"}, "commit"=>"Create Company"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (10.3ms)[0m  [1mINSERT INTO "companies" ("email", "companyname", "name", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "gordon@Monkeys.net"], ["companyname", "Invi"], ["name", "Gordon"], ["phone", "336.555.5505"], ["created_at", "2015-03-25 19:03:53.407557"], ["updated_at", "2015-03-25 19:03:53.407557"]]
+  [1m[35m (10.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/quotes/new
+  [1m[36mEmployeeEmail Load (1.7ms)[0m  [1mSELECT "employee_emails".* FROM "employee_emails"[0m
+Completed 302 Found in 492ms (ActiveRecord: 26.1ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-25 15:03:53 -0400
+Processing by QuotesController#new as HTML
+  [1m[35mQuote Load (0.2ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered quotes/_form.html.erb (15.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "quotes"[0m
+  Rendered quotes/new.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 341ms (Views: 254.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-25 15:03:54 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-25 15:03:54 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-25 15:03:54 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-25 15:03:54 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-25 15:03:54 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-25 15:03:54 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-25 15:03:54 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-25 15:03:54 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-25 15:03:54 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-25 15:03:54 -0400
+
+
+Started POST "/quotes" for 127.0.0.1 at 2015-03-25 15:04:46 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"quote"=>{"adtype"=>"Social Ad", "views"=>"7000", "demographics"=>"1st Trimester"}, "commit"=>"Create Quote", "utf8"=>"✓", "authenticity_token"=>"O9Qhi/yN1/AktACcCP2/49FjQEraZm8EN4ZpPmSrXG/B/YdKN7UUnhB55xL9pBoMFc5YH6mvPg0JWXThOfQuZw=="}
+  [1m[35m (9.6ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "quotes" ("adtype", "views", "demographics", "companyID", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["adtype", "Social Ad"], ["views", "7000"], ["demographics", "1st Trimester"], ["companyID", 27], ["created_at", "2015-03-25 19:04:46.561066"], ["updated_at", "2015-03-25 19:04:46.561066"]]
+  [1m[35m (44.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/quotes/new
+Completed 302 Found in 61ms (ActiveRecord: 54.5ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-25 15:04:46 -0400
+Processing by QuotesController#new as HTML
+  [1m[36mQuote Load (4.5ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered quotes/_form.html.erb (1.7ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "quotes"
+  Rendered quotes/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 211ms (Views: 204.7ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-25 15:04:46 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-25 15:04:46 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-25 15:04:46 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-25 15:04:46 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-25 15:04:46 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-25 15:04:47 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-25 15:04:47 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-25 15:04:47 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-25 15:04:47 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-25 15:04:47 -0400
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-25 15:05:00 -0400
+Processing by EmployeesController#index as HTML
+  [1m[36mQuote Load (0.3ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered employees/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 266ms (Views: 264.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-25 15:05:01 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-25 15:05:01 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-25 15:05:01 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-03-25 15:05:01 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-25 15:05:01 -0400
+
+
+Started GET "/assets/application-ff7f1f2f26725703a7a3ce0f0a722dd8.css?body=1" for 127.0.0.1 at 2015-03-25 15:05:01 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-25 15:05:01 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-25 15:05:01 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-25 15:05:01 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-03-25 15:05:01 -0400
+
+
+Started GET "/employee_email_managers" for 127.0.0.1 at 2015-03-25 15:05:10 -0400
+Processing by EmployeeEmailManagersController#index as HTML
+  [1m[35mEmployeeEmail Load (0.2ms)[0m  SELECT "employee_emails".* FROM "employee_emails"
+  Rendered employee_email_managers/_form.html.erb (7.0ms)
+  Rendered employee_email_managers/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 201ms (Views: 192.9ms | ActiveRecord: 0.2ms)
