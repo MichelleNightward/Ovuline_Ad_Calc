@@ -1,5 +1,6 @@
 class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :edit, :update, :destroy]
+  
   def index
     #THIS IS ACTING A NEW CONTROLLER WOULD, CREATING COMPANY ENTRY IN DATABASE
     @company = Company.new
@@ -10,6 +11,10 @@ class CompaniesController < ApplicationController
   end
 
   def new
+    @companies = Company.all
+  end
+
+  def dashboard
     @companies = Company.all
   end
 
@@ -29,6 +34,9 @@ class CompaniesController < ApplicationController
      end
   end
 
+  def showQuote
+    redirect_to quotes_path
+  end
 
   def update
     @company = Company.find(params[:id])
@@ -43,18 +51,35 @@ class CompaniesController < ApplicationController
   def destroy
     @company.destroy
     respond_to do |format|
-      format.html { redirect_to companies_url, notice: 'Company was successfully destroyed.' }
+      format.html { redirect_to dashboard_path, notice: 'Company was successfully destroyed.' }
     end
   end
 
   def send_simple_message
     RestClient.post "https://api:key-5f4ada711a8a86a1292bcfe23aa9d0aa"\
-    "@api.mailgun.net/v3/sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org/messages",
+    "@api.mailgun.net/v2/sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org/messages",
     :from => "Excited User <mailgun@sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org>",
-    :to => "gordon.motsinger@gmail.com",
-    :subject => "Hello",
-    :text => "Testing some Mailgun awesomness!"
+    :to => send_who_us,
+    :subject => "Ovuline Notification Test",
+    :text => "This is the Ovuline Notification System test message! #{@company.companyname} registered!"
   end
+    
+  def send_who_us
+    @emails = EmployeeEmail.all
+    @who_array = []
+    @emails.each do |f|
+        @who_array <<f.email
+    end
+    @who=""
+    @who_array.each do |f|
+        @who << "#{f}"
+        #need to break this down to test it piece by piece
+        if f != @who_array[-1]
+            @who << ", "
+        end
+    end
+    return @who
+end
 
   private
     # Use callbacks to share common setup or constraints between actions.

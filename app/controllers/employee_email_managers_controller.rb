@@ -6,12 +6,16 @@ class EmployeeEmailManagersController < ApplicationController
     @email = EmployeeEmail.new
   end
 
+  # def show
+  #   @email = EmployeeEmail.find(params[:id])
+  # end
+
   def create
     @email = EmployeeEmail.new(email_params)
 
     if @email.save
       flash[:notice] = 'Your email information has been added'
-      redirect_to employee_email_manager_path
+      redirect_to employee_email_managers_path
     else
       render action: 'new'
      end
@@ -19,10 +23,10 @@ class EmployeeEmailManagersController < ApplicationController
 
   def destroy
     @email = EmployeeEmail.find(params[:id])
-    @email.destroy
-    respond_to do |format|
-      format.html { redirect_to employee_email_manager_path, notice: 'Line-item was successfully removed.' }
+    if @email.present?
+      @email.destroy
     end
+    redirect_to employee_email_managers_path
   end
 
   private

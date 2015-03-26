@@ -7,7 +7,7 @@ class QuotesController < ApplicationController
   end
 
   def show
-    @quote = Quote.find(params[:id])
+    @quotes = Quote.find(params[:companyID])
   end
 
   def new
@@ -21,7 +21,7 @@ class QuotesController < ApplicationController
 
   def create
     @quote = Quote.new(quote_params)
-    @quote.companyID = session[:current_company_id]
+    @quote.companyID = current_company_id
     if @quote.save
       flash[:notice] = 'Your quote information has been added'
       redirect_to new_quote_path
@@ -55,6 +55,6 @@ class QuotesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def quote_params
-      params[:quote].permit(:id, :adtype, :views, :demographics, :subtotal)
+      params[:quote].permit(:id, :adtype, :views, :demographics, :subtotal, :companyID)
     end
 end
