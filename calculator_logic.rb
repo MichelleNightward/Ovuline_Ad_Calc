@@ -1,4 +1,5 @@
 #method has NOT BEEN TESTED after writting all the if/else statements
+#NEED to change .methods to match Quote table Column names 
 
 
 def calculate_click_price
