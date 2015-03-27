@@ -38,7 +38,7 @@ class CompaniesController < ApplicationController
     @company = Company.find(params[:id])
     if @company.update_attributes(company_params)
       flash[:notice] = 'Your company was updated'
-      redirect_to @company
+      redirect_to employee_path
     else
       render action: 'new'
     end
@@ -47,7 +47,7 @@ class CompaniesController < ApplicationController
   def destroy
     @company.destroy
     respond_to do |format|
-      format.html { redirect_to employees_path, notice: 'Company was successfully destroyed.' }
+      format.html { redirect_to employee_path, notice: 'Company was successfully destroyed.' }
     end
   end
 

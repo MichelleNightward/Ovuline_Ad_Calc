@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20150324153228) do
     t.string   "subtotal"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
-    t.integer  "companyID"
+    t.integer  "company_id"
   end
 
 end
