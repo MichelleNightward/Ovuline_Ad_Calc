@@ -35,7 +35,7 @@ class QuotesController < ApplicationController
     @quote = Quote.find(params[:id])
     if @quote.update_attributes(quote_params)
       flash[:notice] = 'Your quote was updated'
-      redirect_to new_quote_path
+      redirect_to quote_path
       send_notification
     else
       render action: 'new'
