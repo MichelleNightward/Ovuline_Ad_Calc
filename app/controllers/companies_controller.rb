@@ -52,12 +52,17 @@ class CompaniesController < ApplicationController
   end
 
   def send_simple_message
-    RestClient.post "https://api:key-5f4ada711a8a86a1292bcfe23aa9d0aa"\
-    "@api.mailgun.net/v2/sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org/messages",
-    :from => "Excited User <mailgun@sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org>",
-    :to => send_who_us,
-    :subject => "Ovuline Notification Test",
-    :text => "This is the Ovuline Notification System test message! #{@company.companyname} registered!"
+      @emails = EmployeeEmail.all
+      if @emails == []
+        return
+      else
+      RestClient.post "https://api:key-5f4ada711a8a86a1292bcfe23aa9d0aa"\
+      "@api.mailgun.net/v2/sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org/messages",
+      :from => "Excited User <mailgun@sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org>",
+      :to => send_who_us,
+      :subject => "Ovuline Notification Test",
+      :text => "This is the Ovuline Notification System test message! #{@company.companyname} registered!"
+      end
   end
     
   def send_who_us
@@ -75,6 +80,7 @@ class CompaniesController < ApplicationController
         end
     end
     return @who
+
 end
 
   private
@@ -83,6 +89,7 @@ end
       @company = Company.find(params[:id])
     end
 
+    # Remember to update if/when company table has more columns added
     # Never trust parameters from the scary internet, only allow the white list through.
     def company_params
       params.require(:company).permit(:id, :email, :companyname, :name, :phone)
