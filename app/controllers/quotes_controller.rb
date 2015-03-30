@@ -25,7 +25,7 @@ class QuotesController < ApplicationController
     if @quote.save
       flash[:notice] = 'Your quote information has been added'
       redirect_to new_quote_path
-
+      send_notification
     else
       render action: 'new'
      end
@@ -36,6 +36,7 @@ class QuotesController < ApplicationController
     if @quote.update_attributes(quote_params)
       flash[:notice] = 'Your quote was updated'
       redirect_to new_quote_path
+      send_notification
     else
       render action: 'new'
     end
@@ -48,7 +49,7 @@ class QuotesController < ApplicationController
     end
   end
   #Need to consider moving this method to a seperate helper method location and giving it a message for :text based on where the request comes from (e.g. Companies Controller or Quotes Controller). Keeping here for the time being because this is possibly the only use for notifications
-  def send_simple_message
+  def send_notification
       @emails = EmployeeEmail.all
       if @emails == []
         return
@@ -59,7 +60,8 @@ class QuotesController < ApplicationController
       :from => "Excited User <mailgun@sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org>",
       :to => send_who_us,
       :subject => "Ovuline Notification Test",
-      :text => "This is the Ovuline Notification System test message! #{@company.companyname} has submitted information to the Quotes Table! Is that former sentence incomplete or otherwise incorrect? Oh no! A bug!"
+      #ack! I need to find a way to get @company info into this next line
+      :text => "This is the Ovuline Notification System test message! A company (need to make this more specific) has submitted information to the Quotes Table! Is that former sentence incomplete or otherwise incorrect? Oh no! A bug!"
       end
   end
     
