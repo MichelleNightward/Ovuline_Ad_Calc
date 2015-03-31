@@ -12,6 +12,11 @@
       </ul>
     </div>
   <% end %>
+<center>
+<h2>Campaign Name</h2>
+<p><%= f.text_field :campaign_name %>
+</center>
+
 <h2>What is your target audience</h2>
   <p>Age <%= f.text_field :age %></p>
   <p>Trying to Concieve: <%= f.number_field :ttc %></p>
@@ -21,8 +26,14 @@
   <p>Cycle Stage:<%= f.select :cycle_stage, [[],["Something", "Something"]] %> </p>
   <p>Household Income: <%= f.number_field :house_hold_income %> </p>
   <p>30-Day Activity: <%= f.select :monthly_acivity, [['Low', "Low"], ['Medium'], ['High', 'High']] %> </p>
+<center>
+<h2>Budget</h2>
+  <p>Monthly Advertizing Budget <%= f.number_field :budget %></p>
+  <p>Begining of Campaign: <%= f.text_field :begin_date %> End of Campaign <%= f.text_field :end_date %></p>
+</center>
 
-<p>Type of Ad you want</p>
+<h2> Prefered Ad Type</h2>
+  <p>Type of Ad you want</p>
   <%= f.select :adtype, [['Native Ad', "Native Ad"], ['Native Article', "Native Article"], ['Social Ad', 'Social Ad'], ['Ovia Exclusives', 'Ovia Exclusives']] %> </p>
   <!-- Input for :views needs to be contingent on :adtype or a number field -->
     <p>Number of Views/Clicks
