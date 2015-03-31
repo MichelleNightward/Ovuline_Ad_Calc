@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150324153228) do
+ActiveRecord::Schema.define(version: 20150331172434) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "name"
@@ -34,9 +34,18 @@ ActiveRecord::Schema.define(version: 20150324153228) do
     t.string   "views"
     t.string   "demographics"
     t.string   "subtotal"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
     t.integer  "companyID"
+    t.string   "location"
+    t.string   "ttc"
+    t.string   "age"
+    t.string   "weeks_pregnant"
+    t.string   "days_since_signup"
+    t.string   "fertility_condition"
+    t.string   "cycle_stage"
+    t.string   "house_hold_income"
+    t.string   "monthly_acivity"
   end
 
 end
