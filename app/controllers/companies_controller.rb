@@ -8,6 +8,7 @@ class CompaniesController < ApplicationController
 
   def show
     @company = Company.find(params[:id])
+    @quotes = Quote.all
   end
 
   def new

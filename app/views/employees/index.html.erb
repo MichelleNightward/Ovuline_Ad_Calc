@@ -16,6 +16,7 @@
                         <td><%= company.email %></td>
                         <td><%= company.phone %></td>
                         <td><%= link_to "Edit", edit_company_path(company) %></td>
+                        <td><%= link_to "Show", company %></td>
                         <td><%= link_to "Delete", company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
                 </tr>
                 <tr>
@@ -24,18 +25,6 @@
                         <td>Target Demographics</td>
                         <td>Subtotal</td>
                 </tr>
-                <% @quotes.each do |quote| %>
-                        <% if quote.company_id == company.id %>
-                        <tr>
-                                <td><%= quote.adtype %></td>
-                                <td><%= quote.views %></td>
-                                <td><%= quote.demographics %></td>
-                                <td><%= quote.subtotal %></td>
-                                <td><%= link_to "Edit", edit_quote_path(quote) %></td>
-                                <td><%= link_to 'Remove', quote, method: :delete %></td>
-                        </tr>
-                        <% end %>
-                <% end %>
         <% end %>
     <tr>
       <td></td>

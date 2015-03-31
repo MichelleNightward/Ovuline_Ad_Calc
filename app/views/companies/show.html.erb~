@@ -17,7 +17,7 @@
                         <td><%= quote.subtotal %></td>
                         <td><%= link_to "Back", companies_path %></td>
                         <td><%= link_to "Edit", edit_quote_path(quote) %></td>
-                        <td><%= link_to 'Remove', quote, method: :delete %></td>
+                        <td><%= link_to "Delete", company, method: :delete %></td>
                 </tr>
                 <% end %>
         <% end %>
