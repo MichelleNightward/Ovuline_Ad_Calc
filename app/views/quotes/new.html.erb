@@ -16,7 +16,7 @@
         <td>Target Demographics</td>
       </tr>
     <% @quotes.each do |quote| %>
-        <% if quote.companyID == session[:current_company_id] %>
+        <% if quote.company_id == session[:current_company_id] %>
       <tr>
         <td><%= quote.adtype %></td>
         <td><%= quote.views %></td>

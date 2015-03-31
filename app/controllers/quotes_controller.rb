@@ -7,7 +7,7 @@ class QuotesController < ApplicationController
   end
 
   def show
-    @quotes = Quote.find(params[:companyID])
+    @quotes = Quote.find(params[:company_id])
   end
 
   def new
@@ -21,7 +21,7 @@ class QuotesController < ApplicationController
 
   def create
     @quote = Quote.new(quote_params)
-    @quote.companyID = session[:current_company_id]
+    @quote.company_id = session[:current_company_id]
     if @quote.save
       flash[:notice] = 'Your quote information has been added'
       redirect_to new_quote_path
@@ -35,8 +35,12 @@ class QuotesController < ApplicationController
     @quote = Quote.find(params[:id])
     if @quote.update_attributes(quote_params)
       flash[:notice] = 'Your quote was updated'
+<<<<<<< HEAD
       redirect_to quotes_path
       send_notification
+=======
+      redirect_to employee_path
+>>>>>>> master
     else
       render action: 'new'
     end
@@ -45,7 +49,7 @@ class QuotesController < ApplicationController
   def destroy
     @quote.destroy
     respond_to do |format|
-      format.html { redirect_to new_quote_path, notice: 'Line-item was successfully removed.' }
+      format.html { redirect_to employee_path, notice: 'Line-item was successfully removed.' }
     end
   end
   #Need to consider moving this method to a seperate helper method location and giving it a message for :text based on where the request comes from (e.g. Companies Controller or Quotes Controller). Keeping here for the time being because this is possibly the only use for notifications
@@ -92,6 +96,6 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def quote_params
-      params[:quote].permit(:id, :adtype, :views, :demographics, :subtotal, :companyID)
+      params[:quote].permit(:id, :adtype, :views, :demographics, :subtotal, :company_id)
     end
 end
