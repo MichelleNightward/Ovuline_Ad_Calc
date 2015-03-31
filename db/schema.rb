@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150331172434) do
+ActiveRecord::Schema.define(version: 20150331180617) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "name"
@@ -46,6 +46,9 @@ ActiveRecord::Schema.define(version: 20150331172434) do
     t.string   "cycle_stage"
     t.string   "house_hold_income"
     t.string   "monthly_acivity"
+    t.string   "budget"
+    t.string   "begin_date"
+    t.string   "end_date"
   end
 
 end

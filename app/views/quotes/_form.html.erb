@@ -18,7 +18,7 @@
   <p>Weeks Pregnant: <%= f.number_field :weeks_pregnant %></p>
   <p>Days since signup: <%= f.number_field :days_since_signup %></p>
   <p>Special fertility conditions <%= f.select :fertility_condition, [["Not A Woman", "Not A Woman"]] %> </p>
-  <p>Cycle Stage:<%= f.select :cycle_stage, [["Something", "Something"]] %> </p>
+  <p>Cycle Stage:<%= f.select :cycle_stage, [[],["Something", "Something"]] %> </p>
   <p>Household Income: <%= f.number_field :house_hold_income %> </p>
   <p>30-Day Activity: <%= f.select :monthly_acivity, [['Low', "Low"], ['Medium'], ['High', 'High']] %> </p>
 
