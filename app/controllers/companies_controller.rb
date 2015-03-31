@@ -28,7 +28,6 @@ class CompaniesController < ApplicationController
       flash[:notice] = 'Your company information has been added'
       session[:current_company_id] = @company.id
       redirect_to new_quote_path
-      #send_simple_message
     else
       render action: 'index'
      end
@@ -51,38 +50,6 @@ class CompaniesController < ApplicationController
     end
   end
 
-#   def send_simple_message
-#       @emails = EmployeeEmail.all
-#       if @emails == []
-#         return
-#       else
-#       RestClient.post "https://api:key-5f4ada711a8a86a1292bcfe23aa9d0aa"\
-#       "@api.mailgun.net/v2/sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org/messages",
-#       :from => "Excited User <mailgun@sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org>",
-#       :to => send_who_us,
-#       :subject => "Ovuline Notification Test",
-#       :text => "This is the Ovuline Notification System test message! #{@company.companyname} registered!"
-#       end
-#   end
-    
-#   def send_who_us
-#     @emails = EmployeeEmail.all
-#     @who_array = []
-#     @emails.each do |f|
-#         @who_array << f.email
-#     end
-#     @who=""
-#     @who_array.each do |f|
-#         @who << "#{f}"
-#         #need to break this down to test it piece by piece
-#         if f != @who_array[-1]
-#             @who << ", "
-#         end
-#     end
-#     #this method finishes with this return instead of an end, could cause trouble if @who is ever incorrect
-#     return @who
-
-# end
 
   private
     # Use callbacks to share common setup or constraints between actions.
