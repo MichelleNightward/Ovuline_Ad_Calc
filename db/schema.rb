@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150331185922) do
+ActiveRecord::Schema.define(version: 20150331190916) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "name"
@@ -50,6 +50,10 @@ ActiveRecord::Schema.define(version: 20150331185922) do
     t.string   "begin_date"
     t.string   "end_date"
     t.string   "campaign_name"
+    t.boolean  "ovuline_exclusive"
+    t.boolean  "native_ad"
+    t.boolean  "native_article"
+    t.boolean  "social_ad"
   end
 
 end
