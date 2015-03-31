@@ -3990,3 +3990,69 @@ Migrating to AddAdTypeColumnsToQutoes (20150331190916)
   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150331190916"]]
   [1m[35m (21.1ms)[0m  commit transaction
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 18:06:39 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CompaniesController#index as HTML
+  Rendered companies/_form.html.erb (49.2ms)
+  Rendered companies/index.html.erb within layouts/application (79.3ms)
+Completed 200 OK in 533ms (Views: 460.5ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/companies" for 127.0.0.1 at 2015-03-31 18:07:10 -0400
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gyLtOTXQ68fjzA219b3dphLwdAJYu5XDHZ8ESH2waV3xO3xyCIoqJUH5KPWmtJSVIiEaON2dZK9ttL2vmvO0vQ==", "company"=>{"name"=>"Gordon", "companyname"=>"Mehron Inc.", "email"=>"Mehron@fake.net", "phone"=>"555.666.9999"}, "commit"=>"Create Company"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mCompany Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "companies" WHERE "companies"."companyname" = 'Mehron Inc.' LIMIT 1[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "companies" ("email", "companyname", "name", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "Mehron@fake.net"], ["companyname", "Mehron Inc."], ["name", "Gordon"], ["phone", "555.666.9999"], ["created_at", "2015-03-31 22:07:10.151136"], ["updated_at", "2015-03-31 22:07:10.151136"]]
+  [1m[36m (17.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/quotes/new
+Completed 302 Found in 107ms (ActiveRecord: 23.5ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-31 18:07:10 -0400
+Processing by QuotesController#new as HTML
+  Rendered quotes/_form.html.erb (11.0ms)
+  [1m[35mQuote Load (0.5ms)[0m  SELECT "quotes".* FROM "quotes"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "quotes"[0m
+  Rendered quotes/new.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 308ms (Views: 225.9ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/quotes" for 127.0.0.1 at 2015-03-31 18:09:08 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WFcu6eHHPKQbVXbQCX/VWsLPYFuYII762MWj2uijluEqTr+i3J39RrlgU5Badpxp8h4OYR0Gf5ao7ho9D+BLAQ==", "quote"=>{"campaign_name"=>"", "age"=>"50", "ttc"=>"9", "weeks_pregnant"=>"0", "days_since_signup"=>"", "fertility_condition"=>"Not A Woman", "cycle_stage"=>"Something", "house_hold_income"=>"50000", "monthly_acivity"=>"Low", "budget"=>"", "begin_date"=>"", "end_date"=>"", "adtype"=>"Native Ad", "views"=>"8000", "demographics"=>"trying to concieve"}, "commit"=>"Create Quote"}
+Unpermitted parameters: campaign_name, age, ttc, weeks_pregnant, days_since_signup, fertility_condition, cycle_stage, house_hold_income, monthly_acivity, budget, begin_date, end_date
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "quotes" ("adtype", "views", "demographics", "companyID", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["adtype", "Native Ad"], ["views", "8000"], ["demographics", "trying to concieve"], ["companyID", 13], ["created_at", "2015-03-31 22:09:08.670033"], ["updated_at", "2015-03-31 22:09:08.670033"]]
+  [1m[35m (21.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/quotes/new
+  [1m[36mEmployeeEmail Load (1.7ms)[0m  [1mSELECT "employee_emails".* FROM "employee_emails"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "employee_emails".* FROM "employee_emails"
+Completed 302 Found in 245ms (ActiveRecord: 26.3ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-03-31 18:09:08 -0400
+Processing by QuotesController#new as HTML
+  Rendered quotes/_form.html.erb (10.2ms)
+  [1m[36mQuote Load (1.0ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "quotes"
+  Rendered quotes/new.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 218ms (Views: 215.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2015-03-31 18:09:38 -0400
+Processing by EmployeesController#index as HTML
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT "companies".* FROM "companies"[0m
+  [1m[35mQuote Load (2.1ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered employees/index.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 307ms (Views: 303.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/employee_email_managers" for 127.0.0.1 at 2015-03-31 18:10:15 -0400
+Processing by EmployeeEmailManagersController#index as HTML
+  [1m[36mEmployeeEmail Load (0.2ms)[0m  [1mSELECT "employee_emails".* FROM "employee_emails"[0m
+  Rendered employee_email_managers/_form.html.erb (3.3ms)
+  Rendered employee_email_managers/index.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 204ms (Views: 202.3ms | ActiveRecord: 0.2ms)
