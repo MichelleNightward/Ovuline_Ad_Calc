@@ -35,8 +35,12 @@ class QuotesController < ApplicationController
     @quote = Quote.find(params[:id])
     if @quote.update_attributes(quote_params)
       flash[:notice] = 'Your quote was updated'
-      redirect_to employee_path
+<<<<<<< HEAD
+      redirect_to quotes_path
       send_notification
+=======
+      redirect_to employee_path
+>>>>>>> master
     else
       render action: 'new'
     end
