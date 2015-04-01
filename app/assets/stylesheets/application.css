@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+
+.section_lime_green{
+    height: 100%;
+    width: 100%;
+    background: #32CD32;
+}
+
+.sectionb{
+    height: 100%;
+    width: 100%;
+    background: #DEDFDF;
+}
+
+.sectionc{
+    height: 100%;
+    width: 100%;
+    background: #444A4D;
+}
+
+.sectiond{
+    height: 100%;
+    width: 100%;
+    background: #575C5F
+}
+
+.sectione{
+    height: 100%;
+    width: 100%;
+    background: #929494
+}
+
+.sectionf{
+    height: 100%;
+    width: 100%;
+    background: #797D7F
+}

@@ -26,11 +26,13 @@
   <p>Cycle Stage:<%= f.select :cycle_stage, [[],["Something", "Something"]] %> </p>
   <p>Household Income: <%= f.number_field :house_hold_income %> </p>
   <p>30-Day Activity: <%= f.select :monthly_acivity, [['Low', "Low"], ['Medium'], ['High', 'High']] %> </p>
-<center>
-<h2>Budget</h2>
-  <p>Monthly Advertizing Budget <%= f.number_field :budget %></p>
-  <p>Begining of Campaign: <%= f.text_field :begin_date %> End of Campaign <%= f.text_field :end_date %></p>
-</center>
+<div class = 'section_lime_green'>
+  <center>
+    <h2>Budget</h2>
+      <p>Monthly Advertizing Budget <%= f.number_field :budget %></p>
+      <p>Begining of Campaign: <%= f.text_field :begin_date %> End of Campaign <%= f.text_field :end_date %></p>
+  </center>
+</div>
 
 <h2> Prefered Ad Type</h2>
   <p>Type of Ad you want</p>
