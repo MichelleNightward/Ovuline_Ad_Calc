@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Your Quote</h1>
-
-<table>
+    <%= render 'form' %>
+<!-- <table>
   <thead>
     <tr>
       <th colspan="3"></th>
@@ -26,14 +26,14 @@
       </tr>
         <% end %>
     <% end %>
-    <%= render 'form' %>
+
 
   </tbody>
-</table>
+</table> -->
 
-<br>
+<!-- <br>
 <% if @quotes.count.zero? %>
   <%= flash[:notice] = 'Your quote is empty, please add an item' %>
 <% else %>
   <%= link_to 'Submit Quote', quotes_path %>
-<% end %>
+<% end %> -->
