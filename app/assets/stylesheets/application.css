@@ -20,22 +20,22 @@
     background: #32CD32;
 }
 
-.sectionb{
+.section_pink{
     height: 100%;
     width: 100%;
-    background: #DEDFDF;
+    background: #FF47A3;
 }
 
-.sectionc{
+.section_pale_orange{
     height: 100%;
     width: 100%;
-    background: #444A4D;
+    background: #FF8330;
 }
 
-.sectiond{
+.section_light_blue{
     height: 100%;
     width: 100%;
-    background: #575C5F
+    background: #00CCFF
 }
 
 .sectione{
