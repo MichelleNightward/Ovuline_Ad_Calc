@@ -33,14 +33,10 @@
     background: #FF8330;
 }
 
-.section_light_blue{
+.navigation_bar{     margin: -15px;     background: #B5B5B5 }
 
-    background: #00CCFF
-}
-
-.sectione{
-
-    background: #929494
+.in_bar_position{
+    margin: 20px;
 }
 
 .vcenter {
@@ -55,8 +51,19 @@
     display: table;
     width: 100%;
 }
+
 .inner-v {
     display: table-cell;
     width: 100%
     vertical-align: middle;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
 }
