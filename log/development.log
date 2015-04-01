@@ -25550,3 +25550,83 @@ ActionView::Template::Error (undefined method `company_id' for #<Quote:0x0000000
   Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
   Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (4.8ms)
   Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (143.9ms)
+
+
+Started POST "/companies" for 127.0.0.1 at 2015-04-01 12:06:12 -0400
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FBEF5AjIQawpDys0GNREleSjtU3HBOQLfcugNkPEWuR6bGMmfn0l7n/v6kkxQEeOLKXyZOVTjhT0ySIgaV8SHA==", "company"=>{"name"=>"Gordon", "companyname"=>"Nick's Mix-a-Lot", "email"=>"reanda@jimyjimy.net", "phone"=>"879.879.8790"}, "commit"=>"Create Company"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "companies" ("email", "companyname", "name", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "reanda@jimyjimy.net"], ["companyname", "Nick's Mix-a-Lot"], ["name", "Gordon"], ["phone", "879.879.8790"], ["created_at", "2015-04-01 16:06:12.725002"], ["updated_at", "2015-04-01 16:06:12.725002"]]
+  [1m[35m (121.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/quotes/new
+Completed 302 Found in 134ms (ActiveRecord: 122.7ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-04-01 12:06:12 -0400
+Processing by QuotesController#new as HTML
+  Rendered quotes/_form.html.erb (12.5ms)
+  [1m[36mQuote Load (0.3ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered quotes/new.html.erb within layouts/application (18.6ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `company_id' for #<Quote:0x00000004faa470>):
+    16:         <td>Target Demographics</td>
+    17:       </tr>
+    18:     <% @quotes.each do |quote| %>
+    19:         <% if quote.company_id == session[:current_company_id] %>
+    20:       <tr>
+    21:         <td><%= quote.adtype %></td>
+    22:         <td><%= quote.views %></td>
+  app/views/quotes/new.html.erb:19:in `block in _app_views_quotes_new_html_erb__3889725598297501952_38979100'
+  app/views/quotes/new.html.erb:18:in `_app_views_quotes_new_html_erb__3889725598297501952_38979100'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (26.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (38.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (80.8ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-04-01 12:13:23 -0400
+Processing by QuotesController#new as HTML
+  Rendered quotes/_form.html.erb (11.8ms)
+  Rendered quotes/new.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 348ms (Views: 347.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-01 12:13:23 -0400
+
+
+Started GET "/assets/scaffolds-3add9c3d9b6e308fcd493fb1e557e71b.css?body=1" for 127.0.0.1 at 2015-04-01 12:13:23 -0400
+
+
+Started GET "/assets/application-d8454b3a0c7661597a07bb035ad44e65.css?body=1" for 127.0.0.1 at 2015-04-01 12:13:23 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-01 12:13:23 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-01 12:13:23 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-01 12:13:23 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-01 12:13:24 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-01 12:13:24 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-01 12:13:24 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-01 12:13:24 -0400
