@@ -26,7 +26,9 @@
     <div class='section_general inner-v'>
 
       <center>
-      <h2>What is your target audience</h2>
+        <h2>What is your target audience</h2>
+      </center>
+      <div class = 'section_pink_padding'>
         <p>Age <%= f.text_field :age %></p>
         <p>Trying to Concieve: <%= f.number_field :ttc %></p>
         <p>Weeks Pregnant: <%= f.number_field :weeks_pregnant %></p>
@@ -34,27 +36,29 @@
         <p>Special fertility conditions <%= f.select :fertility_condition, [["Not A Woman", "Not A Woman"]] %> </p>
         <p>Cycle Stage:<%= f.select :cycle_stage, [[],["Something", "Something"]] %> </p>
         <p>Household Income: <%= f.number_field :house_hold_income %> </p>
-        <p>30-Day Activity: <%= f.select :monthly_acivity, [['Low', "Low"], ['Medium'], ['High', 'High']] %> </p>
-      </center>
+        <p>30-Day App Activity: <%= f.select :monthly_acivity, [['Low', "Low"], ['Medium'], ['High', 'High']] %> </p>
+        </div>
       </div>
     </div>
   </div>
 
 <div class = 'section_teal'>
-<div class = 'section_general'>
+  <div class = 'section_general'>
   <center>
     <h2>Budget</h2>
-      <p>Monthly Advertizing Budget <%= f.number_field :budget %></p>
-      <p>Begining of Campaign: <%= f.text_field :begin_date %> End of Campaign <%= f.text_field :end_date %></p>
   </center>
-</div>
+    <div class = 'section_teal_padding'>
+      <p>Monthly Advertizing Budget <%= f.number_field :budget %></p>
+      <p>Begining of Campaign <%= f.text_field :begin_date %> </p> <p>End of Campaign <%= f.text_field :end_date %></p>
+    </div>
+  </div>
 </div>
 
 <div class = 'section_light_blue'>
 <div class = 'section_general'>
   <center>
-    <h2> Prefered Ad Type</h2>
-      <p>Which ad types interest your company?</p>
+    <h2> Prefered Ad Types</h2>
+
 
       <p>Social Ad <%= check_box_tag(:social_ad) %> Ovia Exclusives <%= check_box_tag(:ovuline_exclusive) %></p>
       <p>Native Ad <%= check_box_tag(:native_ad) %> Native Article <%= check_box_tag(:native_article)%></p>
