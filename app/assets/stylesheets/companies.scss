@@ -1,10 +1,30 @@
 // Place all the styles related to the companies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.section_general{
-    padding: 8%;
+
+.everything{
+    font-family: 'Oswald', sans-serif;
+}
+
+.top_logo{     
+    /*margin-top: -20px;
+    margin-bottom: 0px;*/
+    height: 60px;    
+    background: #FFFFFF 
+}
+
+.top_logo_padding{     
+    display: block;
+    margin-left: auto;
+    margin-right: auto;     
+}
+
+.navigation_bar{     
+    /*margin-top: -20px;*/
+    /*margin-bottom: 0px;*/
     margin-right: -20px;
-    margin-left: -20px; 
+    margin-left: -20px;     
+    background: #B5B5B5 
 }
 
 footer img{
@@ -27,6 +47,7 @@ footer img{
 .section_green{
     margin-right: -20px;
     margin-left: -20px;
+    margin-top: -20px;
     background: -webkit-linear-gradient(#78AB46, white); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#78AB46, white); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#78AB46, white); /* For Firefox 3.6 to 15 */
@@ -34,13 +55,11 @@ footer img{
     /*background: #50BE9C;*/
 }
 
-.section_green_padding{
+.section_padding{
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    /*padding-top: -100;
-    padding-left: 35%;*/
 }
 
 .section_teal_padding{
@@ -48,46 +67,6 @@ footer img{
     padding-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    /*padding-left: 35%;*/
-}
-
-.section_pink{
-    margin-right: -20px;
-    margin-left: -20px;
-    background: #FF47A3;
-}
-
-.section_pink_padding{
-    padding-left: 37%;
-
-}
-
-.section_pale_orange{
-
-    background: -webkit-linear-gradient(#FAA918, white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#FAA918, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#FAA918, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#FAA918, white); /* Standard syntax */
-    margin-right: -20px;
-    margin-left: -20px
-/*    background: #FF8330;*/
-}
-
-.top_logo{     
-    /*margin-top: -20px;
-    margin-bottom: 0px;*/
-    height: 60px;
-    margin-right: -20px;
-    margin-left: 0px;     
-    background: #FFFFFF 
-}
-
-.navigation_bar{     
-    margin-top: -20px;
-    /*margin-bottom: 0px;*/
-    margin-right: -20px;
-    margin-left: -20px;     
-    background: #B5B5B5 
 }
 
 .vcenter {
@@ -111,7 +90,7 @@ footer img{
   line-height: 40px;
   height: 40px;
   width: 200px;
-  border-bottom: 1px solid #888;
+  /*border-bottom: 1px solid #888;*/
 
 }
  
