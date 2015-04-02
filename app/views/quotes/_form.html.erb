@@ -60,8 +60,8 @@
     <h2> Prefered Ad Types</h2>
 
 
-      <p>Social Ad <%= check_box_tag(:social_ad) %> Ovia Exclusives <%= check_box_tag(:ovuline_exclusive) %></p>
-      <p>Native Ad <%= check_box_tag(:native_ad) %> Native Article <%= check_box_tag(:native_article)%></p>
+      <p>Social Ad <%= f.check_box(:social_ad) %> Ovia Exclusives <%= check_box_tag(:ovuline_exclusive) %></p>
+      <p>Native Ad <%= f.check_box(:native_ad) %> Native Article <%= check_box_tag(:native_article)%></p>
 
      <p>What is you goal in number of impressions / click throughs </p>
       <%= f.number_field :views %> </p>
