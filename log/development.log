@@ -44285,3 +44285,650 @@ ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: quotes.co
   Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
   Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
   Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (53.0ms)
+
+
+Started GET "/companies/1" for 127.0.0.1 at 2015-04-02 14:16:10 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCompany Load (0.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mQuote Load (0.4ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered companies/show.html.erb within layouts/application (27.2ms)
+Completed 500 Internal Server Error in 88ms
+
+ActionView::Template::Error (undefined method `company_id' for #<Quote:0xb0dc860>):
+     9:                 <td>Subtotal</td>
+    10:         </tr>
+    11:         <% @quotes.each do |quote| %>
+    12:                 <% if quote.company_id == @company.id %>
+    13:                 <tr>
+    14:                         <td><%= quote.adtype %></td>
+    15:                         <td><%= quote.views %></td>
+  app/views/companies/show.html.erb:12:in `block in _app_views_companies_show_html_erb___605519824_93485270'
+  app/views/companies/show.html.erb:11:in `_app_views_companies_show_html_erb___605519824_93485270'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.3ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.9ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (23.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (64.4ms)
+
+
+Started GET "/companies/1/edit" for 127.0.0.1 at 2015-04-02 14:16:17 -0400
+Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered companies/_form.html.erb (14.4ms)
+  Rendered companies/edit.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 130ms (Views: 120.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:16:17 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:16:17 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:16:17 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:16:17 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:16:17 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:16:17 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:16:17 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:16:17 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-02 14:16:47 -0400
+Processing by CompaniesController#index as HTML
+  Rendered companies/_form.html.erb (1.2ms)
+  Rendered companies/index.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 98ms (Views: 97.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:16:47 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:16:47 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:16:47 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:16:47 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:16:47 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:16:47 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:16:47 -0400
+
+
+Started GET "/app.css" for 127.0.0.1 at 2015-04-02 14:16:47 -0400
+
+ActionController::RoutingError (No route matches [GET] "/app.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.1ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (45.8ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (76.3ms)
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:16:47 -0400
+
+
+Started GET "/companies/1/edit" for 127.0.0.1 at 2015-04-02 14:17:00 -0400
+Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered companies/_form.html.erb (1.4ms)
+  Rendered companies/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 73ms (Views: 68.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:17:00 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:17:00 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:17:00 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:17:00 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:17:00 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:17:00 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:17:00 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:17:00 -0400
+
+
+Started GET "/companies/1/edit" for 127.0.0.1 at 2015-04-02 14:17:03 -0400
+Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered companies/_form.html.erb (1.1ms)
+  Rendered companies/edit.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 104ms (Views: 99.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:17:03 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:17:03 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:17:03 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:17:03 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:17:03 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:17:03 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:17:03 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:17:03 -0400
+
+
+Started GET "/companies/1/edit" for 127.0.0.1 at 2015-04-02 14:20:12 -0400
+Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered companies/_form.html.erb (1.4ms)
+  Rendered companies/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 90ms (Views: 88.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/companies-d95022b58d9315169b320f97213fd311.css?body=1" for 127.0.0.1 at 2015-04-02 14:20:13 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:20:13 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:20:13 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:20:13 -0400
+
+
+Started GET "/assets/application-9ab1b8d8392cc64980a3f7c303b1d2b3.css?body=1" for 127.0.0.1 at 2015-04-02 14:20:13 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:20:13 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:20:13 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:20:13 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:20:13 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:20:13 -0400
+
+
+Started GET "/companies/1/edit" for 127.0.0.1 at 2015-04-02 14:20:29 -0400
+Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered companies/_form.html.erb (2.1ms)
+  Rendered companies/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 156ms (Views: 154.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/companies-4c2b82dcf07c0d209596cc5161c50f83.css?body=1" for 127.0.0.1 at 2015-04-02 14:20:29 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:20:29 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:20:29 -0400
+
+
+Started GET "/assets/application-2fea7debd40eba15a5664fc194009f82.css?body=1" for 127.0.0.1 at 2015-04-02 14:20:29 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:20:29 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:20:29 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:20:29 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:20:29 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:20:29 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:20:29 -0400
+
+
+Started GET "/companies/1/edit" for 127.0.0.1 at 2015-04-02 14:21:26 -0400
+Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered companies/_form.html.erb (5.1ms)
+  Rendered companies/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 160ms (Views: 156.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:21:26 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:21:26 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:21:26 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:21:26 -0400
+
+
+Started GET "/assets/application-5a039c2ce5039b4bc557a7f2e26db27f.css?body=1" for 127.0.0.1 at 2015-04-02 14:21:26 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:21:26 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:21:26 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:21:26 -0400
+
+
+Started GET "/assets/companies-4e2d9f9e74cd2393509d43208d937c27.css?body=1" for 127.0.0.1 at 2015-04-02 14:21:26 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:21:26 -0400
+
+
+Started GET "/companies/1/edit" for 127.0.0.1 at 2015-04-02 14:21:48 -0400
+Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered companies/_form.html.erb (2.2ms)
+  Rendered companies/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 171ms (Views: 169.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/companies-796a03b81ec1752258d8515dd10aad5b.css?body=1" for 127.0.0.1 at 2015-04-02 14:21:49 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:21:49 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:21:49 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:21:49 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:21:49 -0400
+
+
+Started GET "/assets/application-85d8d93f08a3da57fb983de3769cb34b.css?body=1" for 127.0.0.1 at 2015-04-02 14:21:49 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:21:49 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:21:49 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:21:49 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:21:49 -0400
+
+
+Started GET "/companies/1/edit" for 127.0.0.1 at 2015-04-02 14:22:16 -0400
+Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered companies/_form.html.erb (4.3ms)
+  Rendered companies/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 140ms (Views: 135.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/companies-3c36282bfb01ac920d5ac4a41cb4a9cb.css?body=1" for 127.0.0.1 at 2015-04-02 14:22:16 -0400
+
+
+Started GET "/assets/application-0cdf565289b2eb22818ebd8f519d3ae8.css?body=1" for 127.0.0.1 at 2015-04-02 14:22:16 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:22:16 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:22:16 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:22:17 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:22:17 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:22:17 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:22:17 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:22:17 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:22:17 -0400
+
+
+Started GET "/companies/1/edit" for 127.0.0.1 at 2015-04-02 14:22:35 -0400
+Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered companies/_form.html.erb (1.9ms)
+  Rendered companies/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 156ms (Views: 153.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/companies-0ed4e06355590b316e2d77e78cd6826d.css?body=1" for 127.0.0.1 at 2015-04-02 14:22:35 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:22:35 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:22:35 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:22:35 -0400
+
+
+Started GET "/assets/application-b0e77cc367d87b6ad44cc0bcd16a5330.css?body=1" for 127.0.0.1 at 2015-04-02 14:22:35 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:22:35 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:22:35 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:22:35 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:22:35 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:22:35 -0400
+
+
+Started GET "/companies/1/edit" for 127.0.0.1 at 2015-04-02 14:22:59 -0400
+Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered companies/_form.html.erb (1.5ms)
+  Rendered companies/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 144ms (Views: 141.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/companies-435f9ac6c8c7dcb5838c84ab999e9f66.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:00 -0400
+
+
+Started GET "/assets/application-f9ee9d12862336a198d6d17a1ce85f03.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:00 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:00 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:00 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:00 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:00 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:00 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:00 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:00 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:00 -0400
+
+
+Started GET "/companies/1/edit" for 127.0.0.1 at 2015-04-02 14:23:12 -0400
+Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered companies/_form.html.erb (1.5ms)
+  Rendered companies/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 252ms (Views: 249.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/companies-45dad52437d8ec0ad80d0fc7acb44ee6.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:13 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:13 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:13 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:13 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:13 -0400
+
+
+Started GET "/assets/application-544b6b6bcf9e8637b28bfdd003a6bb49.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:13 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:13 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:13 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:13 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:13 -0400
+
+
+Started GET "/companies/1/edit" for 127.0.0.1 at 2015-04-02 14:23:30 -0400
+Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered companies/_form.html.erb (2.1ms)
+  Rendered companies/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 162ms (Views: 157.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/companies-0ed4e06355590b316e2d77e78cd6826d.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:30 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:30 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:30 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:30 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:31 -0400
+
+
+Started GET "/assets/application-b0e77cc367d87b6ad44cc0bcd16a5330.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:31 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:31 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:31 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:31 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:31 -0400
+
+
+Started GET "/companies/1/edit" for 127.0.0.1 at 2015-04-02 14:23:56 -0400
+Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered companies/_form.html.erb (5.6ms)
+  Rendered companies/edit.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 150ms (Views: 146.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/companies-d12455f2c03fd6614565dd51726b4128.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:56 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:56 -0400
+
+
+Started GET "/assets/application-7056746a83f1f9a262eb697914f18eb6.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:56 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:56 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:56 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:23:56 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:56 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:56 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:56 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:23:56 -0400
+
+
+Started GET "/quotes/1/edit" for 127.0.0.1 at 2015-04-02 14:24:15 -0400
+Processing by QuotesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuote Load (0.4ms)[0m  [1mSELECT  "quotes".* FROM "quotes" WHERE "quotes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "quotes".* FROM "quotes" WHERE "quotes"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered quotes/_form.html.erb (20.9ms)
+  Rendered quotes/edit.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 106ms (Views: 102.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:24:15 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:24:15 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:24:15 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:24:15 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:24:15 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:24:15 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:24:15 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:24:15 -0400
