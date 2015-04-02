@@ -54,18 +54,16 @@
 <div class = 'section_general'>
   <center>
     <h2> Prefered Ad Type</h2>
-      <p>Type of Ad you want</p>
-<!--   <%= radio_button_tag(:ovuline_exclusive, "Ovuline Exclusives") %> -->
-      <%= f.select :adtype, [['Native Ad', "Native Ad"], ['Native Article', "Native Article"], ['Social Ad', 'Social Ad'], ['Ovia Exclusives', 'Ovia Exclusives']] %> </p>
- 
-     <p>Number of Views/Clicks
+      <p>Which ad types interest your company?</p>
+
+      <p>Social Ad <%= check_box_tag(:social_ad) %> Ovia Exclusives <%= check_box_tag(:ovuline_exclusive) %></p>
+      <p>Native Ad <%= check_box_tag(:native_ad) %> Native Article <%= check_box_tag(:native_article)%></p>
+
+     <p>What is you goal in number of impressions / click throughs </p>
       <%= f.number_field :views %> </p>
-     <p>Demographics to Target
-      <%= f.select :demographics, [['trying to concieve','trying to concieve'],['1st Trimester','1st Trimester'],['2nd Trimester','2nd Trimester']] %> </p>
-<!--  <td> <%= f.select :subtotal, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %> </td> -->
-      <div class="actions">
-        <%= f.submit %>
-      </div>
+     
+        <%= f.submit 'Submit Info', :class => 'button' %>
+
   </center>
   </div>
 </div>
