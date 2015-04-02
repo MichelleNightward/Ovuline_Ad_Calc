@@ -7,7 +7,7 @@
 
 <p id="notice"><%= notice %></p>
 
-<h1><%= @company.companyname %></h1> Contactname: <%= @company.name %> #: <%= @company.phone %>
+<h1><%= @company.companyname %></h1> Contact Name: <%= @company.name %> #: <%= @company.phone %>
 <table>
         <tr>
                 <td>Campagin Name</td>
@@ -38,7 +38,7 @@
                         <td><%= quote.social_ad %></td>
 
 
-<!--                         <td><%= quote.adtype %></td> -->
+                        <td><%= quote.adtype %></td>
                         <td><%= quote.views %></td>
 
                         <td><%= link_to 'Remove', quote, method: :delete %></td>
