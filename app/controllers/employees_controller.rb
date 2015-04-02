@@ -6,4 +6,8 @@ class EmployeesController < ApplicationController
     @companies = Company.all
   end
 
+  def show
+    @quote = Quote.find[params[:id]]
+  end
+
 end
