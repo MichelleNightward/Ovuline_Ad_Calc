@@ -1,12 +1,20 @@
+<div class = 'navigation_bar_dashboard'> 
+    <ul>
+        <a href='/employees'><li>ALL QUOTES</li></a>
+        <a href='/employee_email_managers'><li>NOTIFICATION MANAGER</li></a>
+    </ul>
+</div>
+
 <p id="notice"><%= notice %></p>
 
+<div class = 'dashboard_table'>
 <h1>Company Quotes</h1>
 
 <table>
         <tr>
                 <td>Name</td>
                 <td>Company</td>
-                <td>EMail</td>
+                <td>Email</td>
                 <td>Phone</td>
         </tr>
         <% @companies.each do |company| %>
@@ -15,24 +23,13 @@
                         <td><%= company.companyname %></td>
                         <td><%= company.email %></td>
                         <td><%= company.phone %></td>
-                        <td><%= link_to "Edit", edit_company_path(company) %></td>
+<!--                         <td><%= link_to "Edit", edit_company_path(company) %></td> -->
                         <td><%= link_to "Show", company %></td>
                         <td><%= link_to "Delete", company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
                 </tr>
-                <tr>
-                        <td>Ad Type</td>
-                        <td>Number of Click Throughs</td>
-                        <td>Target Demographics</td>
-                        <td>Subtotal</td>
-                </tr>
+
         <% end %>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>Setup/Contract Fee:</td>
-      <td>250</td>
-    </tr>
+
 </table>
+</div>
 
-
-<%= link_to "Employee Email Notification Manager", employee_email_managers_path %>

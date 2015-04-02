@@ -944,16 +944,6 @@ Processing by QuotesController#new as HTML
 Completed 200 OK in 345ms (Views: 316.9ms | ActiveRecord: 1.6ms)
 
 
-<<<<<<< HEAD
-Started GET "/employee_email_managers" for 127.0.0.1 at 2015-03-26 17:15:35 -0400
-Processing by EmployeeEmailManagersController#index as HTML
-  [1m[36mEmployeeEmail Load (0.2ms)[0m  [1mSELECT "employee_emails".* FROM "employee_emails"[0m
-  Rendered employee_email_managers/_form.html.erb (2.3ms)
-  Rendered employee_email_managers/index.html.erb within layouts/application (44.6ms)
-Completed 200 OK in 279ms (Views: 269.4ms | ActiveRecord: 2.4ms)
-<<<<<<< HEAD
-
-
 Started GET "/" for 127.0.0.1 at 2015-03-30 09:02:28 -0400
   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by CompaniesController#index as HTML
@@ -25432,13 +25422,10 @@ Processing by CompaniesController#show as HTML
   [1m[35mQuote Load (0.2ms)[0m  SELECT "quotes".* FROM "quotes"
   Rendered companies/show.html.erb within layouts/application (1.8ms)
 Completed 200 OK in 69ms (Views: 66.5ms | ActiveRecord: 0.4ms)
->>>>>>> 7df574c8f2ce6205b4c29bc2c7746ebbda651cff
+
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
->>>>>>> master
 
-
-<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2015-04-01 12:03:29 -0400
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by CompaniesController#index as HTML
@@ -28213,7 +28200,7 @@ ActionController::RoutingError (No route matches [GET] "/ovuline/images/phoneima
   rack (1.6.0) lib/rack/lock.rb:17:in `call'
   rack (1.6.0) lib/rack/content_length.rb:15:in `call'
   rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
-<<<<<<< HEAD
+
   /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -28323,7 +28310,7 @@ ActionController::RoutingError (No route matches [GET] "/images/images/footerimg
   rack (1.6.0) lib/rack/lock.rb:17:in `call'
   rack (1.6.0) lib/rack/content_length.rb:15:in `call'
   rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
-<<<<<<< HEAD
+
   /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -28514,7 +28501,7 @@ ActionController::RoutingError (No route matches [GET] "/ovuline/images/ovulinea
   rack (1.6.0) lib/rack/lock.rb:17:in `call'
   rack (1.6.0) lib/rack/content_length.rb:15:in `call'
   rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
-<<<<<<< HEAD
+
   /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -35700,6 +35687,173 @@ Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 
 >>>>>>> master
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to FixColumnName (20150402153550)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TEMPORARY TABLE "aquotes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "adtype" varchar, "views" varchar, "demographics" varchar, "subtotal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "company_id" integer, "location" varchar, "ttc" varchar, "age" varchar, "weeks_pregnant" varchar, "days_since_signup" varchar, "fertility_condition" varchar, "cycle_stage" varchar, "house_hold_income" varchar, "monthly_acivity" varchar, "budget" varchar, "begin_date" varchar, "end_date" varchar, "campaign_name" varchar, "ovuline_exclusive" boolean, "native_ad" boolean, "native_article" boolean, "social_ad" boolean) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "quotes"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "aquotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (1, 'Native Article', '8000', '1st Trimester', NULL, '2015-03-30 13:03:24.570160', '2015-03-30 13:03:24.570160', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aquotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (2, 'Native Ad', '8000', '2nd Trimester', NULL, '2015-03-30 13:04:27.307112', '2015-03-30 13:04:27.307112', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aquotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (3, 'Native Ad', '5000', 'trying to concieve', NULL, '2015-03-30 13:07:14.116597', '2015-03-30 13:07:14.116597', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aquotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (4, 'Native Ad', '5000', 'trying to concieve', NULL, '2015-03-30 13:09:08.941864', '2015-03-30 13:09:08.941864', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aquotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (5, 'Native Ad', '', 'trying to concieve', NULL, '2015-03-30 13:16:02.700043', '2015-03-30 13:16:02.700043', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aquotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (6, 'Native Ad', '5000', 'trying to concieve', NULL, '2015-03-30 13:16:29.268130', '2015-03-30 13:16:29.268130', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "aquotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (7, 'Native Ad', '', 'trying to concieve', NULL, '2015-03-30 13:16:51.358000', '2015-03-30 13:16:51.358000', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "aquotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (8, 'Native Ad', '2000', 'trying to concieve', NULL, '2015-03-30 13:18:35.973738', '2015-03-30 13:18:35.973738', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aquotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (9, 'Native Article', '75', '1st Trimester', NULL, '2015-03-31 17:37:36.761100', '2015-03-31 17:37:36.761100', 11, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "aquotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (10, 'Native Ad', '8000', 'trying to concieve', NULL, '2015-03-31 22:09:08.670033', '2015-03-31 22:09:08.670033', 13, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (4.9ms)[0m  [1mDROP TABLE "quotes"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "quotes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "adtype" varchar, "views" varchar, "demographics" varchar, "subtotal" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "company_id" integer, "location" varchar, "ttc" varchar, "age" varchar, "weeks_pregnant" varchar, "days_since_signup" varchar, "fertility_condition" varchar, "cycle_stage" varchar, "house_hold_income" varchar, "monthly_acivity" varchar, "budget" varchar, "begin_date" varchar, "end_date" varchar, "campaign_name" varchar, "ovuline_exclusive" boolean, "native_ad" boolean, "native_article" boolean, "social_ad" boolean) 
+  [1m[36m (4.2ms)[0m  [1mSELECT * FROM "aquotes"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "quotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (1, 'Native Article', '8000', '1st Trimester', NULL, '2015-03-30 13:03:24.570160', '2015-03-30 13:03:24.570160', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "quotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (2, 'Native Ad', '8000', '2nd Trimester', NULL, '2015-03-30 13:04:27.307112', '2015-03-30 13:04:27.307112', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "quotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (3, 'Native Ad', '5000', 'trying to concieve', NULL, '2015-03-30 13:07:14.116597', '2015-03-30 13:07:14.116597', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "quotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (4, 'Native Ad', '5000', 'trying to concieve', NULL, '2015-03-30 13:09:08.941864', '2015-03-30 13:09:08.941864', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "quotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (5, 'Native Ad', '', 'trying to concieve', NULL, '2015-03-30 13:16:02.700043', '2015-03-30 13:16:02.700043', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "quotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (6, 'Native Ad', '5000', 'trying to concieve', NULL, '2015-03-30 13:16:29.268130', '2015-03-30 13:16:29.268130', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "quotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (7, 'Native Ad', '', 'trying to concieve', NULL, '2015-03-30 13:16:51.358000', '2015-03-30 13:16:51.358000', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "quotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (8, 'Native Ad', '2000', 'trying to concieve', NULL, '2015-03-30 13:18:35.973738', '2015-03-30 13:18:35.973738', 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "quotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (9, 'Native Article', '75', '1st Trimester', NULL, '2015-03-31 17:37:36.761100', '2015-03-31 17:37:36.761100', 11, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "quotes" ("id","adtype","views","demographics","subtotal","created_at","updated_at","company_id","location","ttc","age","weeks_pregnant","days_since_signup","fertility_condition","cycle_stage","house_hold_income","monthly_acivity","budget","begin_date","end_date","campaign_name","ovuline_exclusive","native_ad","native_article","social_ad") VALUES (10, 'Native Ad', '8000', 'trying to concieve', NULL, '2015-03-31 22:09:08.670033', '2015-03-31 22:09:08.670033', 13, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (3.7ms)[0m  DROP TABLE "aquotes"
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150402153550"]]
+  [1m[35m (33.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/companies/16" for 127.0.0.1 at 2015-04-02 14:57:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mCompany Load (0.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "16"]]
+  [1m[35mQuote Load (0.4ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered companies/show.html.erb within layouts/application (118.6ms)
+Completed 200 OK in 695ms (Views: 568.6ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:57:57 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:57:57 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:57:57 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:57:57 -0400
+
+
+Started GET "/assets/application-248e1543977e7c56340080ab94b6758b.css?body=1" for 127.0.0.1 at 2015-04-02 14:57:57 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:57:57 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:57:57 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:57:58 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:57:58 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:57:58 -0400
+
+
+Started POST "/quotes" for 127.0.0.1 at 2015-04-02 14:59:07 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9ytpdvC/SQOYuehraStriz91S93yojQAOL4P572jtAcgrD7SEnaOtNnIw8RvbAs7T05CN40iyV3RKNHojYpLxg==", "quote"=>{"campaign_name"=>"Campaign", "age"=>"89", "ttc"=>"4", "weeks_pregnant"=>"4", "days_since_signup"=>"4", "fertility_condition"=>"Not A Woman", "cycle_stage"=>"Something", "house_hold_income"=>"4", "monthly_acivity"=>"Medium", "budget"=>"5", "begin_date"=>"5", "end_date"=>"5", "adtype"=>"5", "social_ad"=>"1", "native_ad"=>"1", "views"=>"1"}, "ovuline_exclusive"=>"1", "native_article"=>"1", "commit"=>"Submit Info"}
+Unpermitted parameters: campaign_name, age, ttc, weeks_pregnant, days_since_signup, fertility_condition, cycle_stage, house_hold_income, monthly_acivity, budget, begin_date, end_date, social_ad, native_ad
+  [1m[36m (32.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (32.0ms)[0m  INSERT INTO "quotes" ("adtype", "views", "company_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["adtype", "5"], ["views", "1"], ["company_id", 16], ["created_at", "2015-04-02 18:59:08.346463"], ["updated_at", "2015-04-02 18:59:08.346463"]]
+  [1m[36m (385.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/quotes/new
+  [1m[35mEmployeeEmail Load (12.6ms)[0m  SELECT "employee_emails".* FROM "employee_emails"
+  [1m[36mCACHE (0.3ms)[0m  [1mSELECT "employee_emails".* FROM "employee_emails"[0m
+Completed 302 Found in 3417ms (ActiveRecord: 523.6ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-04-02 14:59:12 -0400
+Processing by QuotesController#new as HTML
+  Rendered quotes/_form.html.erb (1290.2ms)
+  Rendered quotes/new.html.erb within layouts/application (1597.7ms)
+Completed 200 OK in 4693ms (Views: 4566.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:59:17 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:59:17 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:59:17 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:59:17 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:59:17 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:59:17 -0400
+
+
+Started GET "/assets/application-248e1543977e7c56340080ab94b6758b.css?body=1" for 127.0.0.1 at 2015-04-02 14:59:17 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:59:17 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:59:17 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:59:17 -0400
+
+
+Started GET "/companies/16" for 127.0.0.1 at 2015-04-02 14:59:26 -0400
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mCompany Load (0.6ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "16"]]
+  [1m[35mQuote Load (0.6ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered companies/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 356ms (Views: 347.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/companies-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:59:26 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-02 14:59:26 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-02 14:59:26 -0400
+
+
+Started GET "/assets/application-248e1543977e7c56340080ab94b6758b.css?body=1" for 127.0.0.1 at 2015-04-02 14:59:26 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-02 14:59:26 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-02 14:59:26 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-02 14:59:26 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:59:26 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 14:59:26 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:59:26 -0400
+=======
 
 
 Started GET "/companies" for 127.0.0.1 at 2015-04-02 10:00:00 -0400
@@ -44934,6 +45088,7 @@ Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.
 Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-02 14:24:15 -0400
 
 
+
 Started GET "/" for 127.0.0.1 at 2015-04-02 15:07:59 -0400
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by CompaniesController#index as HTML
@@ -45080,3 +45235,6 @@ NoMethodError (undefined method `company_id=' for #<Quote:0x9bab770>):
   Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
   Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
   Rendered /home/michelle/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (94.3ms)
+=======
+>>>>>>> master
+>>>>>>> 5525731294d1c0eb402f9f3d72a503aa00e9929f
