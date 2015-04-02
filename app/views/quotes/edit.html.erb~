@@ -3,4 +3,4 @@
 <%= render 'form' %>
 
 <%= link_to 'Show', @quote %> |
-<%= link_to 'Back', employee_path %>
+<%= link_to 'Back', employees_path %>

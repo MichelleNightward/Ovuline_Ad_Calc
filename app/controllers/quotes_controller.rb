@@ -24,8 +24,8 @@ class QuotesController < ApplicationController
     @quote.company_id = session[:current_company_id]
     if @quote.save
       flash[:notice] = 'Your quote information has been added'
-      redirect_to new_quote_path
       send_notification
+      redirect_to quotes_path
     else
       render action: 'new'
      end
@@ -35,8 +35,8 @@ class QuotesController < ApplicationController
     @quote = Quote.find(params[:id])
     if @quote.update_attributes(quote_params)
       flash[:notice] = 'Your quote was updated'
-      redirect_to employee_path
       send_notification
+      redirect_to employee_path
     else
       render action: 'new'
     end
