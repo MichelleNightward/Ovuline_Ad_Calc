@@ -26,7 +26,7 @@
     background: -o-linear-gradient(#50BE9C, white); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#50BE9C, white); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#50BE9C, white); /* Standard syntax */
-    /*background: #50BE9C;*/
+
 }
 
 .section_teal_padding{
@@ -147,21 +147,7 @@
   cursor: default;
 }
 
-/*@media screen and (min-width: 600px) {
-  .navigation_bar li {
-    width: 120px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
 
-  }
- 
-  /* Option 1 - Display Inline */
-  .navigation_bar li {
-    display: inline-block;
-    margin-right: -4px;
-  }*/
 
   .btn_info {
   -webkit-border-radius: 28;
