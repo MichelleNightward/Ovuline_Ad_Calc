@@ -1,0 +1,42 @@
+.section_general{
+    padding: 8%;
+    margin-right: -20px;
+    margin-left: -20px; 
+}
+
+.section_teal{
+    margin-right: -20px;
+    margin-left: -20px;
+    background: -webkit-linear-gradient(#50BE9C, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#50BE9C, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#50BE9C, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#50BE9C, white); /* Standard syntax */
+    /*background: #50BE9C;*/
+}
+
+.section_teal_padding{
+    padding-left: 33%;
+    padding-right: 33%
+}
+
+.section_pink{
+    margin-right: -20px;
+    margin-left: -20px;
+    background: #FF47A3;
+}
+
+.section_pink_padding{
+    padding-left: 37%;
+
+}
+
+.section_pale_orange{
+
+    background: -webkit-linear-gradient(#FAA918, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FAA918, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FAA918, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FAA918, white); /* Standard syntax */
+    margin-right: -20px;
+    margin-left: -20px
+/*    background: #FF8330;*/
+}
