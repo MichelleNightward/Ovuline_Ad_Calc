@@ -25,7 +25,7 @@ class QuotesController < ApplicationController
     if @quote.save
       flash[:notice] = 'Your quote information has been added'
       send_notification
-      redirect_to quotes_path
+      redirect_to thankyou_path
     else
       render action: 'new'
      end
@@ -48,6 +48,10 @@ class QuotesController < ApplicationController
       format.html { redirect_to employee_path, notice: 'Line-item was successfully removed.' }
     end
   end
+
+  def thankyou
+  end
+
   #Need to consider moving this method to a seperate helper method location and giving it a message for :text based on where the request comes from (e.g. Companies Controller or Quotes Controller). Keeping here for the time being because this is possibly the only use for notifications
   def send_notification
       @emails = EmployeeEmail.all
@@ -81,6 +85,7 @@ class QuotesController < ApplicationController
     end
     #this method finishes with this return instead of an end, could cause trouble if @who is ever incorrect
     return @who
+
 
 end
 
