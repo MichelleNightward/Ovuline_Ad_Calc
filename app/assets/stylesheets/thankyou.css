@@ -1,0 +1,42 @@
+.thankyou {
+}
+
+.thankyou h1{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 4em;
+    font-weight: normal;
+    line-height: 1.3em
+    margin: auto;
+    background: #FECD53;
+    position: relative;
+    max-width: 45em;
+    padding: 12em 8em 10em 8em;
+    text-align: left;
+    color:white;
+}
+    
+.thankyou h1 {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.text p {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.71429em;
+    color:white;
+    line-height: 1.3em;
+    margin: auto;
+    max-width: 45em;
+    padding: 12em 8em 10em 8em;
+    text-align: center;
+    background: #50BE9C
+}
+.thankyou p { 
+    display: block
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
