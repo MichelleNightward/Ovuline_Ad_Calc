@@ -10,7 +10,7 @@
     background: #FECD53;
     position: relative;
     max-width: 45em;
-    padding: 12em 8em 10em 8em;
+/*    padding: 12em 8em 10em 8em;*/
     text-align: left;
     color:white;
 }
@@ -22,6 +22,14 @@
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
+
+.emphasized{
+    color: black;
+    font-size: 2em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
 .text p {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 1.71429em;
