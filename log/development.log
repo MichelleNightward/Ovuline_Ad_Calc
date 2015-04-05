@@ -47502,3 +47502,34 @@ Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 
 
 
 Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-02 17:12:01 -0400
+  [1m[36m (55.0ms)[0m  [1mCREATE TABLE "companies" ("id" serial primary key, "name" character varying, "companyname" character varying, "email" character varying, "phone" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (41.6ms)[0m  CREATE TABLE "employee_emails" ("id" serial primary key, "name" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (51.3ms)[0m  [1mCREATE TABLE "quotes" ("id" serial primary key, "adtype" character varying, "views" character varying, "demographics" character varying, "subtotal" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "company_id" integer, "location" character varying, "ttc" character varying, "age" character varying, "weeks_pregnant" character varying, "days_since_signup" character varying, "fertility_condition" character varying, "cycle_stage" character varying, "house_hold_income" character varying, "monthly_acivity" character varying, "budget" character varying, "begin_date" character varying, "end_date" character varying, "campaign_name" character varying, "ovuline_exclusive" boolean, "native_ad" boolean, "native_article" boolean, "social_ad" boolean) [0m
+  [1m[35m (20.6ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (17.7ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (1.6ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (15.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150402153550')[0m
+  [1m[35m (3.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150331190916')
+  [1m[36m (11.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150331172434')[0m
+  [1m[35m (2.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150319145415')
+  [1m[36m (3.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150319202754')[0m
+  [1m[35m (3.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150331180617')
+  [1m[36m (2.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150319145304')[0m
+  [1m[35m (8.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150331185922')
+  [1m[36m (2.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150324153228')[0m
+  [1m[35m (44.3ms)[0m  CREATE TABLE "companies" ("id" serial primary key, "name" character varying, "companyname" character varying, "email" character varying, "phone" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (32.0ms)[0m  [1mCREATE TABLE "employee_emails" ("id" serial primary key, "name" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (26.9ms)[0m  CREATE TABLE "quotes" ("id" serial primary key, "adtype" character varying, "views" character varying, "demographics" character varying, "subtotal" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "company_id" integer, "location" character varying, "ttc" character varying, "age" character varying, "weeks_pregnant" character varying, "days_since_signup" character varying, "fertility_condition" character varying, "cycle_stage" character varying, "house_hold_income" character varying, "monthly_acivity" character varying, "budget" character varying, "begin_date" character varying, "end_date" character varying, "campaign_name" character varying, "ovuline_exclusive" boolean, "native_ad" boolean, "native_article" boolean, "social_ad" boolean) 
+  [1m[36m (27.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (57.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (1.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (2.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150402153550')
+  [1m[36m (3.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150331190916')[0m
+  [1m[35m (2.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150331172434')
+  [1m[36m (3.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150319145415')[0m
+  [1m[35m (2.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150319202754')
+  [1m[36m (2.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150331180617')[0m
+  [1m[35m (2.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150319145304')
+  [1m[36m (2.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150331185922')[0m
+  [1m[35m (2.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150324153228')
+  [1m[36mActiveRecord::SchemaMigration Load (3.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
