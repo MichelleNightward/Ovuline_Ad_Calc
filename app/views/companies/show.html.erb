@@ -56,14 +56,10 @@
 
 
                         <td><%= quote.campaign_name %></td>
-
-
-
-
                         <td><%= link_to 'Remove', quote, method: :delete %></td>
                 </tr>
                 <% end %>
         <% end %>
 </table>
 <%= link_to 'Edit', edit_company_path(@company) %> |
-<%= link_to 'Back', companies_path %>
+<%= link_to 'Back', employee_path %>
