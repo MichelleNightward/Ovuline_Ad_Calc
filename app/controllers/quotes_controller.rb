@@ -97,6 +97,6 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def quote_params
-      params[:quote].permit(:id, :adtype, :views, :demographics, :subtotal, :company_id)
+      params[:quote].permit(:id, :adtype, :views, :demographics, :subtotal, :company_id, :location, :ttc, :age, :weeks_pregnant, :days_since_signup, :fertility_condition, :cycle_stage, :house_hold_income, :monthly_acivity, :budget, :begin_date, :end_date, :campaign_name, :ovuline_exclusive, :native_ad, :native_article, :social_ad)
     end
 end

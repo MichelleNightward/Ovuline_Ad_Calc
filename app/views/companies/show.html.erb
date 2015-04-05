@@ -7,18 +7,42 @@
 
 <p id="notice"><%= notice %></p>
 
-<h1><%= @company.companyname %></h1> Contact Name: <%= @company.name %> #: <%= @company.phone %>
+<div class = "teal"><tr><h1><%= @company.companyname %></h1> Contact Name: <%= @company.name %> #: <%= @company.phone %></div>
 <table>
-        <tr>
-                <td>Campagin Name</td>
+        
+                <td>Product</td>
                 <td>Number of Clicks</td>
-                <td>Target Demographics</td>
-                <td>Subtotal</td>
+                <td>Platform</td>
+                <td>Goal</td>
+                <td>Budget</td>
+                <td>Campaign Beginning</td>
+                <td>Campaign Ending</td>
+                <td>Ovuline Exclusive?</td>
+                <td>Native Ad</td>
+                <td>Native Article</td>
+                <td>Social Ad</td>
+                <td>Location</td>
+                <td>TTC</td>
+                <td>weeks pregnant</td>
         </tr>
         <% @quotes.each do |quote| %>
                 <% if quote.company_id == @company.id %>
                 <tr>
-                        <td><%= quote.location %></td>
+                        <td>Product Name<td>
+                        <td>Preg, Convieve, Both </td>
+                        <td> iOS Andriod Both </td>
+                        <td>Sales, Brand Awareness, Both</td>
+                        <td> </td>
+
+                        <td><%= quote.budget %></td>
+                        <td><%= quote.begin_date %></td>
+                        <td><%= quote.begin_date %></td>
+
+                        <td><%= quote.ovuline_exclusive %></td>
+                        <td><%= quote.native_ad %></td>
+                        <td><%= quote.native_article %></td>
+                        <td><%= quote.social_ad %></td>
+
                         <td><%= quote.location %></td>
                         <td><%= quote.ttc %></td>
                         <td><%= quote.age %></td>
@@ -28,19 +52,10 @@
                         <td><%= quote.cycle_stage %></td>
                         <td><%= quote.house_hold_income %></td>
                         <td><%= quote.monthly_acivity %></td>
-                        <td><%= quote.budget %></td>
-                        <td><%= quote.begin_date %></td>
-                        <td><%= quote.begin_date %></td>
+
+
+
                         <td><%= quote.campaign_name %></td>
-                        <td><%= quote.ovuline_exclusive %></td>
-                        <td><%= quote.native_ad %></td>
-                        <td><%= quote.native_article %></td>
-                        <td><%= quote.social_ad %></td>
-
-
-                        <td><%= quote.adtype %></td>
-                        <td><%= quote.views %></td>
-                        <td><%= link_to "Edit", edit_quote_path(quote) %></td>
                         <td><%= link_to 'Remove', quote, method: :delete %></td>
                 </tr>
                 <% end %>
