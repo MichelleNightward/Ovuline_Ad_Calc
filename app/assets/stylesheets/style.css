@@ -1,0 +1,210 @@
+.pageinfo body {
+  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #fff;
+}
+.pageinfo h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5em;
+  color: #fff;
+  padding-top: 50px;
+}
+.pageinfo h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.5em;
+  color: #fff;
+  padding-top: 50px;
+  margin-left: 50px;
+}
+.pageinfo p {
+  text-align: left;
+  margin-left: 50px;
+}
+.wrapper {
+  position: relative;
+}
+                      /* HOW IT WORKS */
+#howItWorks #top {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  top: 0px;
+  left: 0px;
+  background: -webkit-linear-gradient(#faa918, #fff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#faa918, #fff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#faa918, #fff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#faa918, #fff); /* Standard syntax (must be last) */  
+  text-align: center;
+}
+#top img {
+  float: right;
+}
+#howItWorks #bottom {
+  height: 500px;
+  position: relative;
+  top: 250px;
+  background-color: #faa918;
+  text-align: center;
+}
+#howItWorks .flex-container {
+  padding: 0;
+  margin: 125px 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+#howItWorks .flex-item {
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: center;
+}
+#howItWorks #phone {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+}
+                  
+                      /* SERVICES */
+#services #top {
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  top: 0px;
+  left: 0px;
+  background: -webkit-linear-gradient(#50be9c, #fff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#50be9c, #fff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#50be9c, #fff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#50be9c, #fff); /* Standard syntax (must be last) */  
+  text-align: center;
+}
+#top img {
+  float: right;
+}
+#services #bottom {
+  height: 700px;
+  position: relative;
+  top: 250px;
+  background-color: #50be9c;
+  text-align: center;
+}
+#services #bottom .text {
+  padding: 50px 0 0 150px;
+  width: 70%;
+}
+#services #phone {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+}
+
+                     /* AUDIENCE */
+#audience #top {
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  top: 0px;
+  left: 0px;
+  background: -webkit-linear-gradient(#6d6e70, #fff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#6d6e70, #fff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#6d6e70, #fff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#6d6e70, #fff); /* Standard syntax (must be last) */  
+  text-align: center;
+}
+#top img {
+  float: right;
+  height: 300px;
+}
+#audience #bottom {
+  height: 650px;
+  position: relative;
+  top: 250px;
+  background-color: #6d6e70;
+  text-align: center;
+}
+#audience #bottom .image {
+  padding: 50px;
+}
+#audience #phone {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+}
+
+                      /* DESIGN */
+#design #top {
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  top: 0px;
+  left: 0px;
+  background: -webkit-linear-gradient(#6ecde5, #fff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#6ecde5, #fff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#6ecde5, #fff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#6ecde5, #fff); /* Standard syntax (must be last) */  
+  text-align: center;
+}
+#top img {
+  float: right;
+  margin-top: 70px;
+}
+#design #bottom {
+  height: 1100px;
+  position: relative;
+  top: 250px;
+  background-color: #6ecde5;
+  text-align: center;
+}
+#design .flex-container {
+  padding: 0;
+  margin: 125px 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+#design .flex-item {
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: center;
+}
+#design #phone {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+}
