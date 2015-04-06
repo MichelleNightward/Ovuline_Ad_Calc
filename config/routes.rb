@@ -9,7 +9,6 @@ Rails.application.routes.draw do
 
   get 'thankyou', to: 'quotes#thankyou', as: 'thankyou'
 
-
  
 
   # get "/employee_email_managers/", to: 'employee_email_managers#index', as: 'employee_email_manager'

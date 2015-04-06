@@ -6,10 +6,7 @@ Rails.application.routes.draw do
   resources :employee_email_managers
 
   get "/employees/", to: 'employees#index', as: 'employee'
-  
-  match "/dashboard" => "companies#dashboard", :via => [:get, :post]
 
-match "companies/:id" => "quotes#show", :via => [:get, :post]
 
  
 
