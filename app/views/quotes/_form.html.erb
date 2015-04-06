@@ -12,64 +12,76 @@
       </ul>
     </div>
   <% end %>
- 
+
 <div class='section_pale_orange'>
  <div class = 'section_general'> 
     <center>
-      <h2>Name your Campaign</h2>
-        <p><%= f.text_field :campaign_name %></p>
+      <h2>Choose an app:</h2>
+        <table>
+          <p> <%= f.select :app_type, [['Ovia Fertility', 'Ovia Fertility'],['Ovia Pregnancy', 'Ovia Pregnancy'],['Both', 'Both']] %> </p>
+        </table>
+
+      <h2>Select your platform</h2>
+        <table>
+          <p> <%= f.select :mobile_platform, [['Android', 'Android'],['IOS', 'IOS'],['Both', 'Both']] %> </p>
+        </table>
+
+      <h2>What kind of advertising are you interested in?</h2>
+        <table>
+          <p> <%= f.select :ad_type, [['Sales (Ads)', 'Sales (Ads)'],['Brand Awareness (Articles)', 'Brand Awareness (Articles)'],['Both', 'Both']] %> </p>
+        </table>
+      <table>
+
+      <h2>Product Selector:</h2>
+      <table>
+        <tr>
+          <p>Sales (Native Ad) <%= f.check_box(:native_ad) %></p>
+          <p>Brand Awareness (Article Ad) <%= f.check_box(:social_ad) %></p>
+          <p>Ovia Exclusives <%= check_box_tag(:ovuline_exclusive) %></p>
+          <p>Email Campaign <%= check_box_tag(:email_campaign) %></p>
+        </tr>
+      </table>
 
     </center>
   </div>
 </div>
 
-  <div class='section_pink outer-v'>
-    <div class='section_general inner-v'>
-
-      <center>
-        <h2>What is your target audience</h2>
-      </center>
-      <div class = 'section_pink_padding'>
-        <p>Age <%= f.text_field :age %></p>
-        <p>Trying to Concieve: <%= f.number_field :ttc %></p>
-        <p>Weeks Pregnant: <%= f.number_field :weeks_pregnant %></p>
-        <p>Days since signup: <%= f.number_field :days_since_signup %></p>
-        <p>Special fertility conditions <%= f.select :fertility_condition, [["Not A Woman", "Not A Woman"]] %> </p>
-        <p>Cycle Stage:<%= f.select :cycle_stage, [[],["Something", "Something"]] %> </p>
-        <p>Household Income: <%= f.number_field :house_hold_income %> </p>
-        <p>30-Day App Activity: <%= f.select :monthly_acivity, [['Low', "Low"], ['Medium'], ['High', 'High']] %> </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
 <div class = 'section_teal'>
   <div class = 'section_general'>
+  <div class = 'vcenter'>
   <center>
     <h2>Budget</h2>
   </center>
     <div class = 'section_teal_padding'>
       <p>Monthly Advertizing Budget <%= f.number_field :budget %></p>
       <p>Begining of Campaign <%= f.text_field :begin_date %> </p> <p>End of Campaign <%= f.text_field :end_date %></p>
+      </div>
     </div>
   </div>
 </div>
 
-<div class = 'section_light_blue'>
-<div class = 'section_general'>
-  <center>
-    <h2> Prefered Ad Types</h2>
 
-      <p>Adtype: <%= f.text_field :adtype %>
-      <p>Social Ad <%= f.check_box(:social_ad) %> Ovia Exclusives <%= check_box_tag(:ovuline_exclusive) %></p>
-      <p>Native Ad <%= f.check_box(:native_ad) %> Native Article <%= check_box_tag(:native_article)%></p>
-
-     <p>What is you goal in number of impressions / click throughs </p>
-      <%= f.number_field :views %> </p>
-
-        <%= f.submit 'Submit Info', :class => 'button' %>
-
-  </center>
-  </div>
-</div>
+    <div class = 'section_pink'>
+        <div class = 'section_general'>
+        <center>
+        <h2>Your target audience is...:</h2>
+    
+        <table>
+          <tr>
+            <td> Trying to Concieve: <%= f.check_box :target_ttc %></td>
+            <td> Pregnant: <%= f.check_box :target_preg %></td>
+          </tr>
+          <tr>
+            <td> The Significant Other <%= f.check_box :target_sig_other %> </td>
+            <td> In their first trimester <%= f.check_box :target_1st_trim %></td>
+          </tr>
+          <tr>
+            <td> In their second trimester <%= f.check_box :target_2nd_trim %></td>
+            <td> In their third trimester<%= f.check_box :target_3rd_trim %> </td>
+          </tr>
+        </table>
+          <%= f.submit 'Submit Info', :class => 'button' %>
+        </center>
+        </div>
+      </div>
 <% end %>
