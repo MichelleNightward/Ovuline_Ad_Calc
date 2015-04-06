@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150402153550) do
+ActiveRecord::Schema.define(version: 20150319202754) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "name"
@@ -30,30 +30,25 @@ ActiveRecord::Schema.define(version: 20150402153550) do
   end
 
   create_table "quotes", force: :cascade do |t|
-    t.string   "adtype"
-    t.string   "views"
-    t.string   "demographics"
-    t.string   "subtotal"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.string   "app_type"
+    t.string   "mobile_platform"
+    t.string   "ad_type"
     t.integer  "company_id"
-    t.string   "location"
-    t.string   "ttc"
-    t.string   "age"
-    t.string   "weeks_pregnant"
-    t.string   "days_since_signup"
-    t.string   "fertility_condition"
-    t.string   "cycle_stage"
-    t.string   "house_hold_income"
-    t.string   "monthly_acivity"
     t.string   "budget"
     t.string   "begin_date"
     t.string   "end_date"
-    t.string   "campaign_name"
     t.boolean  "ovuline_exclusive"
     t.boolean  "native_ad"
-    t.boolean  "native_article"
+    t.boolean  "email_campaign"
     t.boolean  "social_ad"
+    t.boolean  "target_ttc"
+    t.boolean  "target_preg"
+    t.boolean  "target_sig_other"
+    t.boolean  "target_1st_trim"
+    t.boolean  "target_2nd_trim"
+    t.boolean  "target_3rd_trim"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
 end

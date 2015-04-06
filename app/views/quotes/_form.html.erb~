@@ -1,9 +1,92 @@
 
-  <%= f.select :adtype, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
-  <%= f.select :views, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
-  <%= f.select :demographics, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
-  <%= f.select :subtotal, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 
+<%= form_for(@quote) do |f| %>
+  <% if @quote.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@quote.errors.count, "error") %> prohibited this quote from being saved:</h2>
+
+      <ul>
+      <% @quote.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class='section_pale_orange'>
+ <div class = 'section_general'> 
+    <center>
+      <h2>What app do you want to advertise on?</h2>
+        <table>
+        <tr>
+          <%= f.radio_button :app_type, [["Ovia Fertility", "Ovia Pregnancy", "Both"]] %>
+        </tr>
+        </table>
+
+      <h2>Select your platform</h2>
+      <table>
+        <tr>
+           <%= f.radio_button :mobile_platform, [["Android", "IOS", "Both"]] %>
+        </tr>
+      </table>
+
+      <h2>What kind of advertising are you interested in?</h2>
+      <table>
+        <tr>
+           <%= f.radio_button :ad_type, [["Sales (ads)", "Brand Awareness (Articles)", "Both"]] %> 
+        </tr>
+      </table>
+
+      <h2>Product Selector:</h2>
+      <table>
+        <tr>
+          <p>Sales (Native Ad) <%= f.check_box(:native_ad) %></p>
+          <p>Brand Awareness (Article Ad) <%= f.check_box(:social_ad) %></p>
+          <p>Ovia Exclusives <%= check_box_tag(:ovuline_exclusive) %></p>
+          <p>Email Campaign <%= check_box_tag(:email_campaign) %></p>
+        </tr>
+      </table>
+
+    </center>
+  </div>
+</div>
+
+<div class = 'section_teal'>
+  <div class = 'section_general'>
+  <div class = 'vcenter'>
+  <center>
+    <h2>Budget</h2>
+  </center>
+    <div class = 'section_teal_padding'>
+      <p>Monthly Advertizing Budget <%= f.number_field :budget %></p>
+      <p>Begining of Campaign <%= f.text_field :begin_date %> </p> <p>End of Campaign <%= f.text_field :end_date %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class = 'section_pink'>
+        <div class = 'section_general'>
+        <center>
+        <h2>Your target audience is...:</h2>
+    
+        <table>
+          <tr>
+            <td> Trying to Concieve: <%= f.check_box :target_ttc %></td>
+            <td> Pregnant: <%= f.check_box :target_preg %></td>
+          </tr>
+          <tr>
+            <td> The Significant Other <%= f.check_box :target_sig_other %> </td>
+            <td> In their first trimester <%= f.check_box :target_1st_trim %></td>
+          </tr>
+          <tr>
+            <td> In their second trimester <%= f.check_box :target_2nd_trim %></td>
+            <td> In their third trimester<%= f.check_box :target_third_trim%> </td>
+          </tr>
+        </table>
+          <%= f.submit 'Submit Info', :class => 'button' %>
+        </center>
+        </div>
+      </div>
+<% end %>
