@@ -12,6 +12,7 @@ class CompaniesController < ApplicationController
   end
 
   def new
+
     @companies = Company.all
   end
 
@@ -24,6 +25,7 @@ class CompaniesController < ApplicationController
   end
 
   def create
+
     @company = Company.new(company_params)
     if @company.save
       flash[:notice] = 'Your company information has been added'
