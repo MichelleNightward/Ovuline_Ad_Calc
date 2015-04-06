@@ -16,26 +16,21 @@
 <div class='section_pale_orange'>
  <div class = 'section_general'> 
     <center>
-      <h2>What app do you want to advertise on?</h2>
+      <h2>Choose an app:</h2>
         <table>
-        <tr>
-          <%= f.radio_button :app_type, [["Ovia Fertility", "Ovia Pregnancy", "Both"]] %>
-        </tr>
+          <p> <%= f.select :app_type, [['Ovia Fertility', 'Ovia Fertility'],['Ovia Pregnancy', 'Ovia Pregnancy'],['Both', 'Both']] %> </p>
         </table>
 
       <h2>Select your platform</h2>
-      <table>
-        <tr>
-           <%= f.radio_button :mobile_platform, [["Android", "IOS", "Both"]] %>
-        </tr>
-      </table>
+        <table>
+          <p> <%= f.select :mobile_platform, [['Android', 'Android'],['IOS', 'IOS'],['Both', 'Both']] %> </p>
+        </table>
 
       <h2>What kind of advertising are you interested in?</h2>
+        <table>
+          <p> <%= f.select :ad_type, [['Sales (Ads)', 'Sales (Ads)'],['Brand Awareness (Articles)', 'Brand Awareness (Articles)'],['Both', 'Both']] %> </p>
+        </table>
       <table>
-        <tr>
-           <%= f.radio_button :ad_type, [["Sales (ads)", "Brand Awareness (Articles)", "Both"]] %> 
-        </tr>
-      </table>
 
       <h2>Product Selector:</h2>
       <table>
