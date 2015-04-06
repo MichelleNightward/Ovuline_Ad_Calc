@@ -7,8 +7,6 @@ Rails.application.routes.draw do
 
   get "/employees/", to: 'employees#index', as: 'employee'
 
-  get 'thankyou', to: 'quotes#thankyou', as: 'thankyou'
-
 
  
 
