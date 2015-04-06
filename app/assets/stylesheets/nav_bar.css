@@ -105,4 +105,8 @@
   .navigation_bar li {
     display: inline-block;
     margin-right: -4px;
-  }*/
+  }
+
+  .dashboard_table{
+    padding: 3%;
+  }
