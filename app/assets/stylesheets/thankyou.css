@@ -4,13 +4,12 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 4em;
     font-weight: normal;
-    line-height: 1.3em
+    line-height: 1.3em;
     margin: auto;
     /*background: #FECD53;*/
     /*position: relative;*/
     max-width: 45em;
-/*    padding: 12em 8em 10em 8em;*/
-    /*text-align: left;*/
+    text-align: left;
     color:white;
     display: block;
     -webkit-margin-before: 1em;
@@ -43,6 +42,7 @@
     text-align: center;
     /*background: #50BE9C*/
 }
+
 /*.thankyou p { 
     display: block
     -webkit-margin-before: 1em;
