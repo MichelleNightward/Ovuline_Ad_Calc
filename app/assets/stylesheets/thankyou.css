@@ -50,3 +50,13 @@
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }*/
+
+.pad{
+    margin-left: 1%;
+    float: left;
+}
+
+.thankyou_float{
+    float: left;
+}
+
