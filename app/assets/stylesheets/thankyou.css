@@ -5,7 +5,7 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 4em;
     font-weight: normal;
-    line-height: 1.3em
+    line-height: 1.3em;
     margin: auto;
     background: #FECD53;
     position: relative;
@@ -42,7 +42,7 @@
     background: #50BE9C
 }
 .thankyou p { 
-    display: block
+    display: block;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
