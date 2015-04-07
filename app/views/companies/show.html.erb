@@ -14,21 +14,21 @@
     <div class = "teal"><tr><h1><%= @company.companyname %></h1> Contact Name: <%= @company.name %> #: <%= @company.phone %></div>
     <table>
             <tr>
-                    <td>Ad Type</td>
-                    <td>Mobile Platform</td>
-                    <td>App Type</td>
-                    <td>Campaign Beginning</td>
-                    <td>Campaign Ending</td>
-                    <td>Native Ad?</td>
-                    <td>Article?</td>
-                    <td>Ovuline Exclusive?</td>
-                    <td>Email Campaign?</td>
-                    <td>Target is TTC</td>
-                    <td>Target is Pregnant</td>
-                    <td>Target is significant other</td>
-                    <td>Target is in first trimester</td>
-                    <td>Target is in second trimester</td>
-                    <td>Target is in third trimester</td>
+                    <th><strong>Ad Type</strong></th>
+                    <th><strong>Mobile Platform</strong></th>
+                    <th>App Type</th>
+                    <th>Campaign Beginning</th>
+                    <th>Campaign Ending</th>
+                    <th>Native Ad?</th>
+                    <th>Article?</th>
+                    <th>Ovuline Exclusive?</th>
+                    <th>Email Campaign?</th>
+                    <th>Target is TTC</th>
+                    <th>Target is Pregnant</th>
+                    <th>Target is significant other</th>
+                    <th>Target is in first trimester</th>
+                    <th>Target is in second trimester</th>
+                    <th>Target is in third trimester</th>
             </tr>
             <% @quotes.each do |quote| %>
                     <% if quote.company_id == @company.id %>

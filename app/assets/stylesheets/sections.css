@@ -68,3 +68,9 @@
 .companies_view_body td:nth-child(even){
     background: white;
 }
+
+.companies_view_body td, th{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
