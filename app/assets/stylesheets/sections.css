@@ -1,13 +1,16 @@
 .section_general{
     padding: 8%;
-    margin-right: -20px;
-    margin-left: -20px; 
+}
+
+.section_general_show_custom{
+    padding: 0.25%;
+    padding-top: 1%;
+    height: 60vh;
 }
 
 .section_general_thankyou_custom{
-    padding: 8%;
-/*    margin-left: -10%
-*/    float: left;
+    padding-left: 8%;
+    float: left;
 }
 
 .teal{
@@ -16,6 +19,12 @@
     background: -moz-linear-gradient(#50BE9C, white); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#50BE9C, white); /* Standard syntax */
     background: #50BE9C;
+    overflow: auto;
+    padding: 1%;
+}
+
+.teal p{
+    color: white;
 }
 
 .section_teal{
@@ -58,3 +67,41 @@
 }
 
 
+.companies_view_body{
+    width: 150%;
+}
+
+.companies_view_body td:nth-child(odd){
+   background: #C8C8C8;
+}
+
+.companies_view_body td:nth-child(even){
+    background: #E0E0E0;
+}
+
+.companies_view_body td, th{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dashboard_table h1{
+    color: black;
+}
+
+
+.dashboard_table td:nth-child(odd){
+   background: #C8C8C8;
+}
+
+.dashboard_table td:nth-child(even){
+    background: #E0E0E0;
+}
+
+.dashboard_table td, th{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.float_it_left{
+    float: left;
+}
