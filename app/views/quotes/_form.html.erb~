@@ -60,16 +60,15 @@
         </label>
 
       <h2>Product Selector:</h2>
-      <section title=".squaredThree">
-        <table>
-          <tr>
-            <p>Sales (Native Ad) <%= f.check_box(:native_ad) %></p>
-            <p>Brand Awareness (Article Ad) <%= f.check_box(:social_ad) %></p>
-            <p>Ovia Exclusives <%= f.check_box(:ovuline_exclusive) %></p>
-            <p>Email Campaign <%= f.check_box(:email_campaign) %></p>
-          </tr>
-        </table>
-      </section>
+      <table>
+        <tr>
+          <p>Sales (Native Ad) <%= f.check_box(:native_ad) %></p>
+          <p>Brand Awareness (Article Ad) <%= f.check_box(:social_ad) %></p>
+          <p>Ovia Exclusives <%= f.check_box(:ovuline_exclusive) %></p>
+          <p>Email Campaign <%= f.check_box(:email_campaign) %></p>
+        </tr>
+      </table>
+
     </center>
    </div>
   </div>
@@ -109,7 +108,8 @@
             <td> In their third trimester<%= f.check_box :target_3rd_trim %> </td>
           </tr>
         </table>
-          <%= f.submit 'Submit Info', :class => 'button' %>
+        <tr></tr>
+        <%= f.submit 'Submit Info', :class => 'button' %>
         </center>
         </div>
       </div>
