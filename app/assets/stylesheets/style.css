@@ -119,6 +119,8 @@
   background: -moz-linear-gradient(#50be9c, #fff); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#50be9c, #fff); /* Standard syntax (must be last) */  
   text-align: center;
+  margin-bottom: -125px;
+
 }
 #top img {
   float: right;
@@ -154,6 +156,8 @@
   background: -moz-linear-gradient(#6d6e70, #fff); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#6d6e70, #fff); /* Standard syntax (must be last) */  
   text-align: center;
+  margin-bottom: -125px;
+
 }
 #top img {
   float: right;
@@ -189,6 +193,8 @@
   background: -moz-linear-gradient(#6ecde5, #fff); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#6ecde5, #fff); /* Standard syntax (must be last) */  
   text-align: center;
+  margin-bottom: -125px;
+
 }
 #top img {
   float: right;
