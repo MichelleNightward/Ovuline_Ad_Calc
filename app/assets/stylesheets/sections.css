@@ -60,3 +60,11 @@
 .companies_view_body{
     width: 150%;
 }
+
+.companies_view_body td:nth-child(odd){
+   background: gray;
+}
+
+.companies_view_body td:nth-child(even){
+    background: white;
+}
