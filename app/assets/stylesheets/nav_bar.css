@@ -1,0 +1,112 @@
+
+.navigation_bar{     
+
+    margin-bottom: 0px;
+    margin-right: -20px;
+    margin-left: -20px;     
+    background: #B5B5B5 
+}
+
+.vcenter {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navigation_bar_dashboard{     
+    margin-top: -10px;
+    margin-bottom: 0px;
+    margin-right: -20px;
+    margin-left: -20px;     
+    background: #B5B5B5 
+}
+
+.navigation_bar_dashboard ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation_bar_dashboard li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  width: 500px;
+  border-bottom: 1px solid #888;
+}
+
+.navigation_bar_dashboard a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  transition: .3s background-color;
+}
+ 
+.navigation_bar_dashboard a:hover {
+  background-color: #005f5f;
+}
+
+.navigation_bar_dashboard a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+.navigation_bar ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.navigation_bar li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  width: 180px;
+  border-bottom: 1px solid #888;
+
+}
+ 
+.navigation_bar a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  transition: .3s background-color;
+}
+ 
+.navigation_bar a:hover {
+  background-color: #005f5f;
+}
+ 
+.navigation_bar a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+/*@media screen and (min-width: 600px) {
+  .navigation_bar li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+
+  }
+ 
+  /* Option 1 - Display Inline */
+  .navigation_bar li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  .dashboard_table{
+    padding: 3%;
+  }

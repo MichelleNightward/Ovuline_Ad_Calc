@@ -1,5 +1,159 @@
-<h1>Advertise with Ovuline!</h1>
-<%= form_for @companies do |f| %>
-<%= render 'form' %>
-<% end %>
-<%= link_to 'Back', companies_path %>
+<!doctype html>
+<html class="no-js" lang="en">
+  <div class= "everything">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ovuline Advertising</title>
+    <link rel="stylesheet" href="app.css" />
+  <!-- <script src="bower_components/modernizr/modernizr.js"></script> --> 
+  </head>
+  <body>
+    <nav>
+      <!-- <img src="ovuline/images/ovulineadvert.jpg" alt="Ovuline Advertising Logo" /> -->
+      <div class = 'top_logo'>
+        <div class = 'section_padding'>
+          <%= image_tag "ovulinelogo.jpg" %>
+        </div>
+      </div>
+        <div class = 'navigation_bar'>
+    
+          <ul>
+
+            <a><li>HOME</li></a>
+            <a><li>HOW IT WORKS</li></a>
+            <a><li>OUR AUDIENCE</li></a>
+            <a><li>SERVICES</li></a>
+            <a><li>DESIGN</li></a>
+            <a><li>SUCCESS STORIES</li></a>
+
+          </ul>
+
+        </div>
+     </nav>
+    <main>
+      <div class="section_green">
+       <div class="section_padding">
+        <h1 class="large-12 columns">Custom Content to Reach your User</h1>
+        <!-- <img class="large-6 columns" src="phoneimage.jpg" alt="Phone Img" /> -->
+        <%= image_tag "phoneimage.jpg" %>
+       </div>
+      </div>
+      <div class="section_teal">
+       <div class="section_teal_padding">
+        <ul class="large-4 columns">
+          <%= render 'form' %>
+        </ul>
+       </div>
+      </div>
+    </main>
+    <footer>
+      <!-- <img class="large-12 columns" src="images/footerimg.jpg" alt="Ovuline Footer" /> -->
+      <%= image_tag "footerimg.jpg" %>
+    </footer>
+  </body>
+  </div>
+</html>
+
+
+<body>
+    <header>
+       <img src="images/ovulineadvert.jpg" alt="Ovuline Advertising Logo" />
+      <nav>
+        <a href="http://www.ovuline.com/">Home</a>
+        <a href="#howItWorks">How It Works</a>
+        <a href="#services">Services</a>
+        <a href="#ourAudience">Our Audience</a>
+        <a href="#howWeDesignForYou">Design</a>
+        <a href="#successStories">Success Stories</a>
+        <a href="url">Log In</a>
+      </nav>
+    </header>
+    <div style="clear:both"></div>
+    <main>
+      <div class="section_teal">
+       <div class="section_teal_padding">
+        <ul class="large-4 columns">
+          <%= render 'form' %>
+        </ul>
+       </div>
+      </div>
+      <div id="howItWorks">
+        <h1>How It Works</h1>
+        <ul>
+          <li>
+            <img src="images/workcircle1.jpg" alt="Work Circle 1" />
+            <p>Create custom content and ad assets</p>
+          </li>
+          <li>
+            <img src="images/workcircle2.jpg" alt="Work Circle 2" />
+            <p>Amplify exposure to assets accross multiple platforms (iOS and Android)</p>
+          </li>
+          <li>
+            <img src="images/workcircle3.jpg" alt="Work Circle 3" />
+            <p>Users engage with your ads</p>
+          </li>
+          <li>
+            <img src="images/workcircle4.jpg" alt="Work Circle 4" />
+            <p>Receive monthly reports on performance</p>
+          </li>
+        </ul>
+      </div>
+
+      <div id="services">
+        <h1>Services</h1>
+        <ul>
+          <li id="social">
+            <img src="images/imageholder.jpg" alt="Image Place Holder">
+            <h2>Social</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu molestie tellus. Vivamus eget fermentum mi. Nullam pharetra vitae ex id lacinia. Ut leo nisl, gravida at vulputate quis, tempus vitae lectus. Quisque elementum vulputate ex eget volutpat. Pellentesque finibus mi nec metus hendrerit, a maximus ipsum iaculis. Nam ipsum dui, malesuada vel massa ut, condimentum varius ante. Quisque non nisi felis. Vivamus interdum, velit ut euismod dignissim, eros ligula imperdiet lorem, id euismod erat ligula sit amet dolor.</p>
+          </li>
+          <li id="oviaExclusives">
+            <img src="images/imageholder.jpg" alt="Image Place Holder">
+            <h2>Ovia Exclusives</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu molestie tellus. Vivamus eget fermentum mi. Nullam pharetra vitae ex id lacinia. Ut leo nisl, gravida at vulputate quis, tempus vitae lectus. Quisque elementum vulputate ex eget volutpat. Pellentesque finibus mi nec metus hendrerit, a maximus ipsum iaculis. Nam ipsum dui, malesuada vel massa ut, condimentum varius ante. Quisque non nisi felis. Vivamus interdum, velit ut euismod dignissim, eros ligula imperdiet lorem, id euismod erat ligula sit amet dolor.</p>
+          </li>
+          <li id="email">
+            <img src="images/imageholder.jpg" alt="Image Place Holder">
+            <h2>Email</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu molestie tellus. Vivamus eget fermentum mi. Nullam pharetra vitae ex id lacinia. Ut leo nisl, gravida at vulputate quis, tempus vitae lectus. Quisque elementum vulputate ex eget volutpat. Pellentesque finibus mi nec metus hendrerit, a maximus ipsum iaculis. Nam ipsum dui, malesuada vel massa ut, condimentum varius ante. Quisque non nisi felis. Vivamus interdum, velit ut euismod dignissim, eros ligula imperdiet lorem, id euismod erat ligula sit amet dolor.</p>
+          </li>
+          <li id="ads">
+            <img src="images/imageholder.jpg" alt="Image Place Holder">
+            <h2>Adds</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu molestie tellus. Vivamus eget fermentum mi. Nullam pharetra vitae ex id lacinia. Ut leo nisl, gravida at vulputate quis, tempus vitae lectus. Quisque elementum vulputate ex eget volutpat. Pellentesque finibus mi nec metus hendrerit, a maximus ipsum iaculis. Nam ipsum dui, malesuada vel massa ut, condimentum varius ante. Quisque non nisi felis. Vivamus interdum, velit ut euismod dignissim, eros ligula imperdiet lorem, id euismod erat ligula sit amet dolor.</p>
+          </li>
+          <li id="articles">
+            <img src="images/imageholder.jpg" alt="Image Place Holder">
+            <h2>Articles</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu molestie tellus. Vivamus eget fermentum mi. Nullam pharetra vitae ex id lacinia. Ut leo nisl, gravida at vulputate quis, tempus vitae lectus. Quisque elementum vulputate ex eget volutpat. Pellentesque finibus mi nec metus hendrerit, a maximus ipsum iaculis. Nam ipsum dui, malesuada vel massa ut, condimentum varius ante. Quisque non nisi felis. Vivamus interdum, velit ut euismod dignissim, eros ligula imperdiet lorem, id euismod erat ligula sit amet dolor.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div id="ourAudience">
+        <h1>Our Audience</h1>
+        <img src="images/infographic.jpg" alt="Infographic Content">
+      </div>
+
+      <div id="howWeDesignForYou">
+        <h1>How We Design For You</h1>
+        <img src="images/optimization.jpg" alt="Optimization Content">
+        <img src="images/addprocess.jpg" alt="Ads Content">
+      </div>
+
+      <div id="successStories">
+        <h1>Success Stories</h1>
+        <img src="images/weleda.jpg" alt="Weleda Success Story">
+        <img src="images/stork.jpg" alt="Stork Success Story">
+        <img src="images/premama.jpg" alt="Premama Success Story">
+      </div>
+
+      <footer>
+         <img src="images/footerimg.jpg" alt="Ovuline Footer" />
+      </footer>
+    </main>
+  </body>
+</html>
+
+

@@ -1,4 +1,58 @@
+<div class = 'navigation_bar_dashboard'> 
+    <ul>
+        <a href='/employees'><li>ALL QUOTES</li></a>
+        <a href='/employee_email_managers'><li>NOTIFICATION MANAGER</li></a>
+    </ul>
+</div>
+
 <p id="notice"><%= notice %></p>
 
+<div class = "teal"><tr><h1><%= @company.companyname %></h1> Contact Name: <%= @company.name %> #: <%= @company.phone %></div>
+<table>
+        
+                <td>Ad Type</td>
+                <td>Mobile Platform</td>
+                <td>App Type</td>
+                <td>Campaign Beginning</td>
+                <td>Campaign Ending</td>
+                <td>Native Ad?</td>
+                <td>Article?</td>
+                <td>Ovuline Exclusive?</td>
+                <td>Email Campaign?</td>
+                <td>Target is TTC</td>
+                <td>Target is Pregnant</td>
+                <td>Target is significant other</td>
+                <td>Target is in first trimester</td>
+                <td>Target is in second trimester</td>
+                <td>Target is in third trimester</td>
+        </tr>
+        <% @quotes.each do |quote| %>
+                <% if quote.company_id == @company.id %>
+                <tr>
+
+                        <td><%= quote.ad_type %></td>
+                        <td><%= quote.mobile_platform %></td>
+                        <td><%= quote.app_type %></td>
+                        <td><%= quote.begin_date %></td>
+                        <td><%= quote.begin_date %></td>
+
+                        <td><%= quote.native_ad %></td>
+                        <td><%= quote.social_ad %></td>
+                        <td><%= quote.ovuline_exclusive %></td>
+                        <td><%= quote.email_campaign %></td>
+
+                        <td><%= quote.target_ttc %></td>
+                        <td><%= quote.target_preg %></td>
+                        <td><%= quote.target_sig_other %></td>
+                        <td><%= quote.target_1st_trim %></td>
+                        <td><%= quote.target_2nd_trim %></td>
+                        <td><%= quote.target_3rd_trim %></td>
+
+
+                        <td><%= link_to 'Remove', quote, method: :delete %></td>
+                </tr>
+                <% end %>
+        <% end %>
+</table>
 <%= link_to 'Edit', edit_company_path(@company) %> |
-<%= link_to 'Back', companies_path %>
+<%= link_to 'Back', employee_path %>

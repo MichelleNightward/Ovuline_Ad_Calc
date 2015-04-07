@@ -1,0 +1,67 @@
+
+
+.thankyou h1{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 4em;
+    font-weight: normal;
+    line-height: 1.3em;
+    margin: auto;
+    /*background: #FECD53;*/
+    /*position: relative;*/
+    max-width: 45em;
+    text-align: left;
+    color:white;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.thankyou_phone{
+    padding: 3%;
+    float: right;
+}
+
+
+.emphasized{
+    color: black;
+    font-size: 2em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.text p {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.71429em;
+    color:white;
+    line-height: 1.3em;
+    /*margin: auto;*/
+    /*max-width: 45em;*/
+    /*padding: 12em 8em 10em 8em;*/
+    text-align: center;
+    /*background: #50BE9C*/
+}
+
+/*.thankyou p { 
+    display: block
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}*/
+
+.pad{
+    margin-left: 1%;
+    float: left;
+}
+
+.thankyou_float{
+    float: left;
+}
+
+.middle-icon {
+    padding: 30px 20px 0px;
+    margin: 0px 20px;
+    max-width: 200px;
+}

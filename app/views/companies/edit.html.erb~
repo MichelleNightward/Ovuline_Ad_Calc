@@ -1,0 +1,13 @@
+<div class="everything">
+  <div class="header">
+    <h1>Editing Company</h1>
+  </div>
+    <div class="section_teal">
+       <div class="section_teal_padding">
+        <ul class="large-4 columns">
+          <%= render 'form' %>
+        </ul>
+       </div>
+    </div>
+</div>
+<%= link_to 'Back', employees_path %>
