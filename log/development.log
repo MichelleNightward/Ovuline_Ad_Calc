@@ -47982,6 +47982,58 @@ Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.
 Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-06 11:33:54 -0400
 
 
+<<<<<<< HEAD
+Started GET "/" for 127.0.0.1 at 2015-04-06 14:00:44 -0400
+Processing by CompaniesController#index as HTML
+  Rendered companies/_form.html.erb (91.1ms)
+  Rendered companies/index.html.erb within layouts/application (145.3ms)
+Completed 200 OK in 1389ms (Views: 1151.7ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-06 14:00:46 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-06 14:00:46 -0400
+
+
+Started GET "/assets/nav_bar-3aa9bea96d07020c1e6459cb03416233.css?body=1" for 127.0.0.1 at 2015-04-06 14:00:46 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-06 14:00:46 -0400
+
+
+Started GET "/assets/sections-fbd416fa9d7c98a66881e2d9a6231e7a.css?body=1" for 127.0.0.1 at 2015-04-06 14:00:46 -0400
+
+
+Started GET "/assets/thankyou-fda6d6c5115a4c940d2efe8391be716d.css?body=1" for 127.0.0.1 at 2015-04-06 14:00:47 -0400
+
+
+Started GET "/assets/application-273ea80b6661562bd505fb1e66e9ecb7.css?body=1" for 127.0.0.1 at 2015-04-06 14:00:47 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-06 14:00:47 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-06 14:00:47 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-06 14:00:47 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-06 14:00:47 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-06 14:00:47 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-06 14:00:47 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-06 14:00:47 -0400
+
+
+Started GET "/app.css" for 127.0.0.1 at 2015-04-06 14:00:47 -0400
+=======
 Started GET "/quotes/new" for 127.0.0.1 at 2015-04-06 13:44:40 -0400
 Processing by QuotesController#new as HTML
   Rendered quotes/_form.html.erb (17.0ms)
@@ -48477,6 +48529,7 @@ Completed 200 OK in 145ms (Views: 111.7ms | ActiveRecord: 0.9ms)
 
 
 Started GET "/app.css" for 127.0.0.1 at 2015-04-06 16:17:47 -0400
+>>>>>>> f8a30f72271cd79eaa27372da3e50ca679f01454
 
 ActionController::RoutingError (No route matches [GET] "/app.css"):
   actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -48500,6 +48553,33 @@ ActionController::RoutingError (No route matches [GET] "/app.css"):
   rack (1.6.0) lib/rack/lock.rb:17:in `call'
   rack (1.6.0) lib/rack/content_length.rb:15:in `call'
   rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+<<<<<<< HEAD
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (174.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (40.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (125.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (4.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (254.1ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-04-06 14:00:59 -0400
+Processing by QuotesController#new as HTML
+  Rendered quotes/_form.html.erb (30.2ms)
+  Rendered quotes/new.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 397ms (Views: 250.3ms | ActiveRecord: 4.6ms)
+=======
   /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
   /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
   /home/michelle/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
@@ -50496,3 +50576,826 @@ Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.
 
 
 Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-06 18:19:31 -0400
+>>>>>>> f8a30f72271cd79eaa27372da3e50ca679f01454
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-06 21:27:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CompaniesController#index as HTML
+  Rendered companies/_form.html.erb (42.0ms)
+  Rendered companies/index.html.erb within layouts/application (70.8ms)
+Completed 200 OK in 787ms (Views: 697.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-06 21:27:42 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-06 21:27:42 -0400
+
+
+Started GET "/assets/application-1550ca15863b9371cbf3ec723c3a71c2.css?body=1" for 127.0.0.1 at 2015-04-06 21:27:42 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-06 21:27:42 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-06 21:27:42 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-06 21:27:42 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-06 21:27:42 -0400
+
+
+Started GET "/app.css" for 127.0.0.1 at 2015-04-06 21:27:42 -0400
+
+ActionController::RoutingError (No route matches [GET] "/app.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (177.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (7.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (4.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (80.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (12.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (155.2ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-04-06 21:27:53 -0400
+Processing by QuotesController#new as HTML
+  Rendered quotes/_form.html.erb (24.1ms)
+  Rendered quotes/new.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 352ms (Views: 288.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/quotes" for 127.0.0.1 at 2015-04-06 21:28:13 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rL9mu93wl3vMaok8isfrg761v22QupPia6BpbPL9BOlzANiEfWyv+foMKi2fCLYvAD6mfPqaFRL3Gqkk3Y7/vw==", "quote"=>{"app_type"=>"Ovia Fertility", "mobile_platform"=>"Android", "ad_type"=>"Sales (Ads)", "native_ad"=>"0", "social_ad"=>"0", "budget"=>"", "begin_date"=>"", "end_date"=>"", "target_ttc"=>"0", "target_preg"=>"0", "target_sig_other"=>"0", "target_1st_trim"=>"0", "target_2nd_trim"=>"0", "target_3rd_trim"=>"0"}, "commit"=>"Submit Info"}
+Unpermitted parameter: target_3rd_trim
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (14.3ms)[0m  [1mINSERT INTO "quotes" ("ad_type", "app_type", "mobile_platform", "budget", "native_ad", "social_ad", "target_ttc", "target_preg", "target_sig_other", "target_1st_trim", "target_2nd_trim", "begin_date", "end_date", "company_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["ad_type", "Sales (Ads)"], ["app_type", "Ovia Fertility"], ["mobile_platform", "Android"], ["budget", ""], ["native_ad", "f"], ["social_ad", "f"], ["target_ttc", "f"], ["target_preg", "f"], ["target_sig_other", "f"], ["target_1st_trim", "f"], ["target_2nd_trim", "f"], ["begin_date", ""], ["end_date", ""], ["company_id", 3], ["created_at", "2015-04-07 01:28:13.407052"], ["updated_at", "2015-04-07 01:28:13.407052"]]
+  [1m[35m (39.6ms)[0m  commit transaction
+  [1m[36mEmployeeEmail Load (0.2ms)[0m  [1mSELECT "employee_emails".* FROM "employee_emails"[0m
+Redirected to http://localhost:3000/thankyou
+Completed 302 Found in 105ms (ActiveRecord: 54.3ms)
+
+
+Started GET "/thankyou" for 127.0.0.1 at 2015-04-06 21:28:13 -0400
+Processing by QuotesController#thankyou as HTML
+  Rendered quotes/thankyou.html within layouts/application (0.6ms)
+Completed 200 OK in 312ms (Views: 311.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-07 07:31:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CompaniesController#index as HTML
+  Rendered companies/_form.html.erb (72.0ms)
+  Rendered companies/index.html.erb within layouts/application (105.4ms)
+Completed 200 OK in 1120ms (Views: 1016.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 07:31:34 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 07:31:34 -0400
+
+
+Started GET "/assets/nav_bar-df2502d82dc2f739209283b7a9f873ff.css?body=1" for 127.0.0.1 at 2015-04-07 07:31:34 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 07:31:34 -0400
+
+
+Started GET "/assets/sections-c17086e7ffa1c12a67a0cceccd65721e.css?body=1" for 127.0.0.1 at 2015-04-07 07:31:34 -0400
+
+
+Started GET "/assets/application-1550ca15863b9371cbf3ec723c3a71c2.css?body=1" for 127.0.0.1 at 2015-04-07 07:31:34 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 07:31:34 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 07:31:34 -0400
+
+
+Started GET "/app.css" for 127.0.0.1 at 2015-04-07 07:31:34 -0400
+
+ActionController::RoutingError (No route matches [GET] "/app.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (112.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (57.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (133.1ms)
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:31:35 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 07:31:35 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 07:31:35 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 07:31:35 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 07:31:35 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:31:35 -0400
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-04-07 07:31:40 -0400
+Processing by QuotesController#new as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 83ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-07 07:31:40 -0400
+Processing by CompaniesController#index as HTML
+  Rendered companies/_form.html.erb (2.1ms)
+  Rendered companies/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 194ms (Views: 192.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app.css" for 127.0.0.1 at 2015-04-07 07:31:40 -0400
+
+ActionController::RoutingError (No route matches [GET] "/app.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (101.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (47.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (114.0ms)
+
+
+Started POST "/companies" for 127.0.0.1 at 2015-04-07 07:36:34 -0400
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nZKNCa+fS49GS7UhiVd6imKTVSCC9L7QoH0rUksuhWzOt1+FFyda46KhZzQqWGZNtxzCFrXkmXqSCKs4cqRPYg==", "company"=>{"name"=>"Gordon Test", "companyname"=>"Test Inc.", "email"=>"gordon@Monkeys.net", "phone"=>"555.555.5505"}, "commit"=>"Submit Info"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "companies" ("email", "companyname", "name", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "gordon@Monkeys.net"], ["companyname", "Test Inc."], ["name", "Gordon Test"], ["phone", "555.555.5505"], ["created_at", "2015-04-07 11:36:34.521736"], ["updated_at", "2015-04-07 11:36:34.521736"]]
+  [1m[35m (18.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/quotes/new
+Completed 302 Found in 78ms (ActiveRecord: 18.9ms)
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-04-07 07:36:34 -0400
+Processing by QuotesController#new as HTML
+  Rendered quotes/_form.html.erb (27.9ms)
+  Rendered quotes/new.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 373ms (Views: 371.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 07:36:35 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 07:36:35 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 07:36:35 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 07:36:35 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:36:35 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 07:36:35 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:36:35 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 07:36:35 -0400
+
+
+Started POST "/quotes" for 127.0.0.1 at 2015-04-07 07:37:32 -0400
+Processing by QuotesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AfMU7FcKj6CLyY0Bc0h561SFWsNLWxZgaZnRefWyWXRS1sZg77KezG8jXxTQR2UsgQrN9XxLMcpb7FETzDiTeg==", "quote"=>{"app_type"=>"Both", "mobile_platform"=>"Both", "ad_type"=>"Both", "native_ad"=>"1", "social_ad"=>"1", "budget"=>"5000", "begin_date"=>"Jan 1", "end_date"=>"Feb 1", "target_ttc"=>"1", "target_preg"=>"1", "target_sig_other"=>"1", "target_1st_trim"=>"0", "target_2nd_trim"=>"1", "target_3rd_trim"=>"1"}, "ovuline_exclusive"=>"1", "email_campaign"=>"1", "commit"=>"Submit Info"}
+Unpermitted parameter: target_3rd_trim
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "quotes" ("ad_type", "app_type", "mobile_platform", "budget", "native_ad", "social_ad", "target_ttc", "target_preg", "target_sig_other", "target_1st_trim", "target_2nd_trim", "begin_date", "end_date", "company_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["ad_type", "Both"], ["app_type", "Both"], ["mobile_platform", "Both"], ["budget", "5000"], ["native_ad", "t"], ["social_ad", "t"], ["target_ttc", "t"], ["target_preg", "t"], ["target_sig_other", "t"], ["target_1st_trim", "f"], ["target_2nd_trim", "t"], ["begin_date", "Jan 1"], ["end_date", "Feb 1"], ["company_id", 2], ["created_at", "2015-04-07 11:37:32.156592"], ["updated_at", "2015-04-07 11:37:32.156592"]]
+  [1m[36m (15.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mEmployeeEmail Load (0.2ms)[0m  SELECT "employee_emails".* FROM "employee_emails"
+Redirected to http://localhost:3000/thankyou
+Completed 302 Found in 71ms (ActiveRecord: 23.4ms)
+
+
+Started GET "/thankyou" for 127.0.0.1 at 2015-04-07 07:37:32 -0400
+Processing by QuotesController#thankyou as HTML
+  Rendered quotes/thankyou.html within layouts/application (0.6ms)
+Completed 200 OK in 282ms (Views: 281.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 07:37:32 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 07:37:32 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:37:32 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 07:37:32 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:37:32 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 07:37:32 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 07:37:32 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 07:37:32 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 07:38:00 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 07:38:00 -0400
+
+
+Started GET "/thankyou" for 127.0.0.1 at 2015-04-07 07:40:49 -0400
+Processing by QuotesController#thankyou as HTML
+  Rendered quotes/thankyou.html within layouts/application (0.1ms)
+Completed 200 OK in 665ms (Views: 664.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 07:40:50 -0400
+
+
+Started GET "/assets/nav_bar-df2502d82dc2f739209283b7a9f873ff.css?body=1" for 127.0.0.1 at 2015-04-07 07:40:50 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 07:40:50 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 07:40:50 -0400
+
+
+Started GET "/assets/sections-f339302b51300bb96a4ebcd9f4a5f6e4.css?body=1" for 127.0.0.1 at 2015-04-07 07:40:50 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 07:40:50 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 07:40:50 -0400
+
+
+Started GET "/assets/application-f54d827bca48c03a7ec5036013540002.css?body=1" for 127.0.0.1 at 2015-04-07 07:40:50 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 07:40:50 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 07:40:50 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 07:40:50 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:40:50 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:40:50 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 07:40:50 -0400
+
+
+Started GET "/thankyou" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+Processing by QuotesController#thankyou as HTML
+  Rendered quotes/thankyou.html within layouts/application (0.1ms)
+Completed 200 OK in 444ms (Views: 443.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+
+
+Started GET "/assets/sections-d96c69a100ace71eb0adf32636e43ba7.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+
+
+Started GET "/assets/nav_bar-df2502d82dc2f739209283b7a9f873ff.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+
+
+Started GET "/assets/application-370b074a38f05ace59dfb66157c91712.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:17 -0400
+
+
+Started GET "/thankyou" for 127.0.0.1 at 2015-04-07 07:41:41 -0400
+Processing by QuotesController#thankyou as HTML
+  Rendered quotes/thankyou.html within layouts/application (0.1ms)
+Completed 200 OK in 253ms (Views: 252.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:42 -0400
+
+
+Started GET "/assets/nav_bar-df2502d82dc2f739209283b7a9f873ff.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:42 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:42 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:42 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:42 -0400
+
+
+Started GET "/assets/sections-d96c69a100ace71eb0adf32636e43ba7.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:42 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:42 -0400
+
+
+Started GET "/assets/application-370b074a38f05ace59dfb66157c91712.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:42 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:42 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:42 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:42 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:42 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:42 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:42 -0400
+
+
+Started GET "/thankyou" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+Processing by QuotesController#thankyou as HTML
+  Rendered quotes/thankyou.html within layouts/application (0.1ms)
+Completed 200 OK in 252ms (Views: 251.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+
+
+Started GET "/assets/nav_bar-df2502d82dc2f739209283b7a9f873ff.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+
+
+Started GET "/assets/sections-d96c69a100ace71eb0adf32636e43ba7.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+
+
+Started GET "/assets/application-370b074a38f05ace59dfb66157c91712.css?body=1" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 07:41:45 -0400
+
+
+Started GET "/thankyou" for 127.0.0.1 at 2015-04-07 07:42:04 -0400
+Processing by QuotesController#thankyou as HTML
+  Rendered quotes/thankyou.html within layouts/application (0.1ms)
+Completed 200 OK in 362ms (Views: 361.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:04 -0400
+
+
+Started GET "/assets/nav_bar-df2502d82dc2f739209283b7a9f873ff.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:04 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:04 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:04 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:04 -0400
+
+
+Started GET "/assets/sections-a6c2204330e1848c4324621c1bc67a80.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:04 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:04 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:04 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:04 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:04 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:05 -0400
+
+
+Started GET "/assets/application-d9c8dff32e7449444dee1c961807183d.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:05 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:05 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:05 -0400
+
+
+Started GET "/thankyou" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+Processing by QuotesController#thankyou as HTML
+  Rendered quotes/thankyou.html within layouts/application (0.2ms)
+Completed 200 OK in 345ms (Views: 344.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+
+
+Started GET "/assets/nav_bar-df2502d82dc2f739209283b7a9f873ff.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+
+
+Started GET "/assets/sections-983701b9cd5a19ca2cad68a1d60fdcf8.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+
+
+Started GET "/assets/application-d3442a1981b45cde062a46e0c9bbf491.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:22 -0400
+
+
+Started GET "/thankyou" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+Processing by QuotesController#thankyou as HTML
+  Rendered quotes/thankyou.html within layouts/application (0.1ms)
+Completed 200 OK in 407ms (Views: 406.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+
+
+Started GET "/assets/nav_bar-df2502d82dc2f739209283b7a9f873ff.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+
+
+Started GET "/assets/sections-e02b1afab21162387de8bd82d2667ccc.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+
+
+Started GET "/assets/application-a8c08004d5ab7e0c62556f93ee998625.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:37 -0400
+
+
+Started GET "/thankyou" for 127.0.0.1 at 2015-04-07 07:42:40 -0400
+Processing by QuotesController#thankyou as HTML
+  Rendered quotes/thankyou.html within layouts/application (0.1ms)
+Completed 200 OK in 264ms (Views: 263.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:41 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:41 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:41 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:41 -0400
+
+
+Started GET "/assets/nav_bar-df2502d82dc2f739209283b7a9f873ff.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:41 -0400
+
+
+Started GET "/assets/sections-e02b1afab21162387de8bd82d2667ccc.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:41 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:41 -0400
+
+
+Started GET "/assets/application-a8c08004d5ab7e0c62556f93ee998625.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:41 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:41 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:41 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:41 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:41 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:41 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:41 -0400
+
+
+Started GET "/thankyou" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+Processing by QuotesController#thankyou as HTML
+  Rendered quotes/thankyou.html within layouts/application (12.1ms)
+Completed 200 OK in 418ms (Views: 417.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+
+
+Started GET "/assets/nav_bar-df2502d82dc2f739209283b7a9f873ff.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+
+
+Started GET "/assets/sections-c4d8bdb6ff1d9cca39c2f19fa4eff64f.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+
+
+Started GET "/assets/application-e05187e87b67998a005a6fb77a4374d9.css?body=1" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 07:42:55 -0400
+
+
+Started GET "/thankyou" for 127.0.0.1 at 2015-04-07 07:43:13 -0400
+Processing by QuotesController#thankyou as HTML
+  Rendered quotes/thankyou.html within layouts/application (0.1ms)
+Completed 200 OK in 360ms (Views: 358.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 07:43:14 -0400
+
+
+Started GET "/assets/nav_bar-df2502d82dc2f739209283b7a9f873ff.css?body=1" for 127.0.0.1 at 2015-04-07 07:43:14 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 07:43:14 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 07:43:14 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 07:43:14 -0400
+
+
+Started GET "/assets/sections-156a45e4c7859af478e82cd6b07c7aaf.css?body=1" for 127.0.0.1 at 2015-04-07 07:43:14 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 07:43:14 -0400
+
+
+Started GET "/assets/application-0e4a581f49605c9f4d7825f21ab458f4.css?body=1" for 127.0.0.1 at 2015-04-07 07:43:14 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 07:43:14 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 07:43:14 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 07:43:14 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:43:14 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 07:43:14 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 07:43:14 -0400

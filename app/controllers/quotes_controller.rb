@@ -11,6 +11,10 @@ class QuotesController < ApplicationController
   end
 
   def new
+    if session[:current_company_id] == nil
+      redirect_to root_path
+      flash[:notice] = 'You must fill out information about your company before continuing'
+    end
     @quotes = Quote.all
     @quote = Quote.new
   end
