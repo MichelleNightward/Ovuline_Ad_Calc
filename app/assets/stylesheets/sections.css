@@ -1,7 +1,11 @@
 .section_general{
     padding: 8%;
-    margin-right: -20px;
-    margin-left: -20px; 
+}
+
+.section_general_show_custom{
+    padding: 0.25%;
+    padding-top: 1%;
+    height: 60vh;
 }
 
 .section_general_thankyou_custom{

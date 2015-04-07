@@ -1,5 +1,4 @@
 <div class = 'companies_view_body'>
-
     <div class = 'fake_extended_nav'>
         <div class = 'navigation_bar_dashboard', class = 'sticky'> 
             <ul>
@@ -19,52 +18,56 @@
             </div>
         </div>
 
-    <table>
-            <tr>
-                    <th><strong>Ad Type</strong></th>
-                    <th><strong>Mobile Platform</strong></th>
-                    <th>App Type</th>
-                    <th>Campaign Beginning</th>
-                    <th>Campaign Ending</th>
-                    <th>Native Ad?</th>
-                    <th>Article?</th>
-                    <th>Ovuline Exclusive?</th>
-                    <th>Email Campaign?</th>
-                    <th>Target is TTC</th>
-                    <th>Target is Pregnant</th>
-                    <th>Target is significant other</th>
-                    <th>Target is in first trimester</th>
-                    <th>Target is in second trimester</th>
-                    <th>Target is in third trimester</th>
-            </tr>
-            <% @quotes.each do |quote| %>
-                    <% if quote.company_id == @company.id %>
-                    <tr>
+        <div class = 'section_pale_orange'>
+            <div class = 'section_general_show_custom'>
+                    <table>
+                        <tr>
+                                <th><strong>Ad Type</strong></th>
+                                <th><strong>Mobile Platform</strong></th>
+                                <th>App Type</th>
+                                <th>Campaign Beginning</th>
+                                <th>Campaign Ending</th>
+                                <th>Native Ad?</th>
+                                <th>Article?</th>
+                                <th>Ovuline Exclusive?</th>
+                                <th>Email Campaign?</th>
+                                <th>Target is TTC</th>
+                                <th>Target is Pregnant</th>
+                                <th>Target is significant other</th>
+                                <th>Target is in first trimester</th>
+                                <th>Target is in second trimester</th>
+                                <th>Target is in third trimester</th>
+                        </tr>
+                        <% @quotes.each do |quote| %>
+                                <% if quote.company_id == @company.id %>
+                                <tr>
 
-                            <td><%= quote.ad_type %></td>
-                            <td><%= quote.mobile_platform %></td>
-                            <td><%= quote.app_type %></td>
-                            <td><%= quote.begin_date %></td>
-                            <td><%= quote.begin_date %></td>
+                                        <td><%= quote.ad_type %></td>
+                                        <td><%= quote.mobile_platform %></td>
+                                        <td><%= quote.app_type %></td>
+                                        <td><%= quote.begin_date %></td>
+                                        <td><%= quote.begin_date %></td>
 
-                            <td><%= quote.native_ad %></td>
-                            <td><%= quote.social_ad %></td>
-                            <td><%= quote.ovuline_exclusive %></td>
-                            <td><%= quote.email_campaign %></td>
+                                        <td><%= quote.native_ad %></td>
+                                        <td><%= quote.social_ad %></td>
+                                        <td><%= quote.ovuline_exclusive %></td>
+                                        <td><%= quote.email_campaign %></td>
 
-                            <td><%= quote.target_ttc %></td>
-                            <td><%= quote.target_preg %></td>
-                            <td><%= quote.target_sig_other %></td>
-                            <td><%= quote.target_1st_trim %></td>
-                            <td><%= quote.target_2nd_trim %></td>
-                            <td><%= quote.target_3rd_trim %></td>
+                                        <td><%= quote.target_ttc %></td>
+                                        <td><%= quote.target_preg %></td>
+                                        <td><%= quote.target_sig_other %></td>
+                                        <td><%= quote.target_1st_trim %></td>
+                                        <td><%= quote.target_2nd_trim %></td>
+                                        <td><%= quote.target_3rd_trim %></td>
 
 
-                            <td><%= link_to 'Remove', quote, method: :delete %></td>
-                    </tr>
-                    <% end %>
-            <% end %>
-    </table>
-    <%= link_to 'Edit', edit_company_path(@company) %> |
-    <%= link_to 'Back', employee_path %>
+                                        <td><%= link_to 'Remove', quote, method: :delete %></td>
+                                </tr>
+                                <% end %>
+                        <% end %>
+                </table>
+                <%= link_to 'Edit', edit_company_path(@company) %> |
+                <%= link_to 'Back', employee_path %>
+            </<!-- div -->>
+        </div>
 </div>
