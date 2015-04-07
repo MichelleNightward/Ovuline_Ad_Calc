@@ -52154,3 +52154,235 @@ Processing by CompaniesController#show as HTML
   [1m[36mQuote Load (0.3ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
   Rendered companies/show.html.erb within layouts/application (10.3ms)
 Completed 200 OK in 170ms (Views: 158.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 08:04:03 -0400
+
+
+Started GET "/assets/nav_bar-df2502d82dc2f739209283b7a9f873ff.css?body=1" for 127.0.0.1 at 2015-04-07 08:04:03 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 08:04:03 -0400
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 08:04:03 -0400
+
+
+Started GET "/assets/sections-156a45e4c7859af478e82cd6b07c7aaf.css?body=1" for 127.0.0.1 at 2015-04-07 08:04:03 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 08:04:03 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 08:04:03 -0400
+
+
+Started GET "/assets/application-0e4a581f49605c9f4d7825f21ab458f4.css?body=1" for 127.0.0.1 at 2015-04-07 08:04:03 -0400
+
+
+Started GET "/companies/2" for 127.0.0.1 at 2015-04-07 08:14:00 -0400
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCompany Load (3.6ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mQuote Load (5.3ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered companies/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 351ms (Views: 340.9ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 08:14:00 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 08:14:00 -0400
+
+
+Started GET "/assets/nav_bar-cd71762bdc930c50ae8c895ce32d4c26.css?body=1" for 127.0.0.1 at 2015-04-07 08:14:00 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 08:14:00 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 08:14:00 -0400
+
+
+Started GET "/assets/sections-156a45e4c7859af478e82cd6b07c7aaf.css?body=1" for 127.0.0.1 at 2015-04-07 08:14:00 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 08:14:00 -0400
+
+
+Started GET "/assets/application-1485b39e8cc5aa9f1af4c181db383ff2.css?body=1" for 127.0.0.1 at 2015-04-07 08:14:00 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 08:14:01 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 08:14:01 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 08:14:01 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 08:14:01 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 08:14:01 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 08:14:01 -0400
+
+
+Started GET "/companies/2" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mQuote Load (0.4ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered companies/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 361ms (Views: 356.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+
+
+Started GET "/assets/nav_bar-82f83b360748c7841fa6629f3493eaae.css?body=1" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+
+
+Started GET "/assets/sections-156a45e4c7859af478e82cd6b07c7aaf.css?body=1" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+
+
+Started GET "/assets/application-148e7427d7e38755bdc425d9a74df9da.css?body=1" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 08:16:51 -0400
+
+
+Started GET "/companies/2" for 127.0.0.1 at 2015-04-07 08:19:20 -0400
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mQuote Load (0.4ms)[0m  SELECT "quotes".* FROM "quotes"
+  Rendered companies/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 398ms (Views: 393.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 08:19:21 -0400
+
+
+Started GET "/assets/nav_bar-c4de362b83f5994a7fd240f56782b485.css?body=1" for 127.0.0.1 at 2015-04-07 08:19:21 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 08:19:21 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 08:19:21 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 08:19:21 -0400
+
+
+Started GET "/assets/sections-156a45e4c7859af478e82cd6b07c7aaf.css?body=1" for 127.0.0.1 at 2015-04-07 08:19:21 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 08:19:21 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 08:19:21 -0400
+
+
+Started GET "/assets/application-cc9e3f07d66374eaba4d356494d07f68.css?body=1" for 127.0.0.1 at 2015-04-07 08:19:21 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 08:19:21 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 08:19:21 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 08:19:21 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 08:19:21 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 08:19:21 -0400
+
+
+Started GET "/companies/2" for 127.0.0.1 at 2015-04-07 08:20:48 -0400
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mQuote Load (0.3ms)[0m  [1mSELECT "quotes".* FROM "quotes"[0m
+  Rendered companies/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 305ms (Views: 300.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 08:20:49 -0400
+
+
+Started GET "/assets/nav_bar-c4de362b83f5994a7fd240f56782b485.css?body=1" for 127.0.0.1 at 2015-04-07 08:20:49 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 08:20:49 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 08:20:49 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 08:20:49 -0400
+
+
+Started GET "/assets/sections-156a45e4c7859af478e82cd6b07c7aaf.css?body=1" for 127.0.0.1 at 2015-04-07 08:20:49 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 08:20:49 -0400
+
+
+Started GET "/assets/application-cc9e3f07d66374eaba4d356494d07f68.css?body=1" for 127.0.0.1 at 2015-04-07 08:20:49 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 08:20:49 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 08:20:49 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 08:20:49 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 08:20:49 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 08:20:49 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 08:20:49 -0400
