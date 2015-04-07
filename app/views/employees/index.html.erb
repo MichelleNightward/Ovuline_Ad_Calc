@@ -10,26 +10,28 @@
 <div class = 'dashboard_table'>
 <h1>Company Quotes</h1>
 
-<table>
-        <tr>
-                <td>Name</td>
-                <td>Company</td>
-                <td>Email</td>
-                <td>Phone</td>
-        </tr>
-        <% @companies.each do |company| %>
+    <div class = 'companies_view_body'>
+        <table>
                 <tr>
-                        <td><%= company.name %></td>
-                        <td><%= company.companyname %></td>
-                        <td><%= company.email %></td>
-                        <td><%= company.phone %></td>
-                        <td><%= link_to "Edit", edit_company_path(company) %></td>
-                        <td><%= link_to "Show", company %></td>
-                        <td><%= link_to "Delete", company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                        <th>Name</th>
+                        <th>Company</th>
+                        <th>Email</th>
+                        <th>Phone</th>
                 </tr>
+                <% @companies.each do |company| %>
+                        <tr>
+                                <td><%= company.name %></td>
+                                <td><%= company.companyname %></td>
+                                <td><%= company.email %></td>
+                                <td><%= company.phone %></td>
+                                <td><%= link_to "Edit", edit_company_path(company) %></td>
+                                <td><%= link_to "Show", company %></td>
+                                <td><%= link_to "Delete", company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                        </tr>
 
-        <% end %>
+                <% end %>
 
-</table>
+        </table>
+    </div>
 </div>
 
