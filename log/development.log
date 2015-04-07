@@ -57227,3 +57227,46 @@ Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.
 
 
 Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 13:35:59 -0400
+
+
+Started GET "/quotes/new" for 127.0.0.1 at 2015-04-07 13:37:48 -0400
+Processing by QuotesController#new as HTML
+  Rendered quotes/_form.html.erb (16.0ms)
+  Rendered quotes/new.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 490ms (Views: 488.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/buttons-5d321142fb788e2fab2a38651923b1b5.css?body=1" for 127.0.0.1 at 2015-04-07 13:37:48 -0400
+
+
+Started GET "/assets/nav_bar-f2ceebf239a7bc44fb009158088e6f1f.css?body=1" for 127.0.0.1 at 2015-04-07 13:37:48 -0400
+
+
+Started GET "/assets/quotes-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-07 13:37:48 -0400
+
+
+Started GET "/assets/companies-050de77e4ac45534489e2305721cb2a2.css?body=1" for 127.0.0.1 at 2015-04-07 13:37:48 -0400
+
+
+Started GET "/assets/scaffolds-476c0e91aaa2442e1139070fde443da9.css?body=1" for 127.0.0.1 at 2015-04-07 13:37:48 -0400
+
+
+Started GET "/assets/thankyou-b30c1f75716c26373ff5b872c142525d.css?body=1" for 127.0.0.1 at 2015-04-07 13:37:48 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-07 13:37:48 -0400
+
+
+Started GET "/assets/companies-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 13:37:48 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-07 13:37:48 -0400
+
+
+Started GET "/assets/quotes-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-07 13:37:48 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-04-07 13:37:48 -0400
+
+
+Started GET "/assets/application-d5dd9df895e734baa4e6c45e5b5415a9.js?body=1" for 127.0.0.1 at 2015-04-07 13:37:48 -0400
