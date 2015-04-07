@@ -1,0 +1,116 @@
+  [1m[36m (7.7ms)[0m  [1mCREATE TABLE "companies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "companyname" varchar, "email" varchar, "phone" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (5.0ms)[0m  CREATE TABLE "employee_emails" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (6.1ms)[0m  [1mCREATE TABLE "quotes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "app_type" varchar, "mobile_platform" varchar, "ad_type" varchar, "company_id" integer, "budget" varchar, "begin_date" varchar, "end_date" varchar, "ovuline_exclusive" boolean, "native_ad" boolean, "email_campaign" boolean, "social_ad" boolean, "target_ttc" boolean, "target_preg" boolean, "target_sig_other" boolean, "target_1st_trim" boolean, "target_2nd_trim" boolean, "target_3rd_trim" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (5.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (5.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (4.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150319202754')
+  [1m[36m (5.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150319145415')[0m
+  [1m[35m (5.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150319145304')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (1.8ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.1ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (5.4ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.6ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+  [1m[36m (2.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.5ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (1.9ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (2.4ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+  [1m[36m (4.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (5.3ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:50', '2015-04-06 23:15:50', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (4.3ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (1.7ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (5.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (7.7ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (2.2ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (4.0ms)[0m  [1mDELETE FROM "companies"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+SQLite3::SQLException: table companies has no column named company: INSERT INTO "companies" ("name", "company", "email", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2015-04-06 23:15:51', '2015-04-06 23:15:51', 980190962)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
