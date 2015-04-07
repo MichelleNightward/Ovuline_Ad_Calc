@@ -55,10 +55,11 @@
   background: -moz-linear-gradient(#faa918, #fff); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#faa918, #fff); /* Standard syntax (must be last) */  
   text-align: center;
+  margin-bottom: -125px;
 }
 
 #howItWorks {
-  display: block;
+  /*display: block;*/
 }
 
 #top img {
