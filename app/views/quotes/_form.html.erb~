@@ -14,67 +14,64 @@
   <% end %>
 
 <div class='section_pale_orange'>
- <div class = 'section_general'> 
+ <div class = 'section_general'>
+   <div class = 'radio'> 
     <center>
       <h2>Choose an app:</h2>
-        <p><%= f.radio_button(:app_type, "fertility") %>
+        <%= f.radio_button(:app_type, "fertility") %>
         <label for=app_type_fertility>
           <img src="/images/fertility-icon.png">
         </label>
-        <p><%= f.radio_button(:app_type, "pregnancy") %>
+        <%= f.radio_button(:app_type, "pregnancy") %>
         <label for=app_type_pregnancy>
           <img src="/images/pregnancy-icon.png">
         </label>
-        <p><%= f.radio_button(:app_type, "both") %>
+        <%= f.radio_button(:app_type, "both") %>
         <label for=app_type_both>
           <img src="/images/fertility-icon.png">
         </label>
 
       <h2>Select your platform</h2>
-        <p><%= f.radio_button(:mobile_platform, "android") %>
+        <%= f.radio_button(:mobile_platform, "android") %>
         <label for=mobile_platform_android>
           <img src="/images/fertility-icon.png">
         </label>
-        <p><%= f.radio_button(:mobile_platform, "ios") %>
+        <%= f.radio_button(:mobile_platform, "ios") %>
         <label for=mobile_platform_ios>
           <img src="/images/pregnancy-icon.png">
         </label>
-        <p><%= f.radio_button(:mobile_platform, "both") %>
+        <%= f.radio_button(:mobile_platform, "both") %>
         <label for=mobile_platform_both>
           <img src="/images/fertility-icon.png">
         </label>
 
       <h2>What kind of advertising are you interested in?</h2>
-        <p><%= f.radio_button(:app_type, "fertility") %>
-        <label for=app_type_>
+        <%= f.radio_button(:ad_type, "sales") %>
+        <label for=ad_type_sales>
           <img src="/images/fertility-icon.png">
         </label>
-        <p><%= f.radio_button(:app_type, "pregnancy") %>
-        <label for=app_type_pregnancy>
+        <%= f.radio_button(:ad_type, "brand_awareness") %>
+        <label for=ad_type_brand_awareness>
           <img src="/images/pregnancy-icon.png">
         </label>
-        <p><%= f.radio_button(:app_type, "both") %>
-        <label>
+        <%= f.radio_button(:ad_type, "both") %>
+        <label for=ad_type_both>
           <img src="/images/fertility-icon.png">
         </label>
-        <p><%= radio_button_tag(:ad_type, "Sales (Ads") %>
-        <%= label_tag(:ad_type, "Sales (Ads") %></p>
-        <p><%= radio_button_tag(:ad_type, "Brand Awareness (Articles)") %>
-        <%= label_tag(:ad_type, "Brand Awareness (Articles)") %></p>
-        <p><%= radio_button_tag(:ad_type, "Both") %>
-        <%= label_tag(:ad_type, "Both") %></p>
 
       <h2>Product Selector:</h2>
-      <table>
-        <tr>
-          <p>Sales (Native Ad) <%= f.check_box(:native_ad) %></p>
-          <p>Brand Awareness (Article Ad) <%= f.check_box(:social_ad) %></p>
-          <p>Ovia Exclusives <%= check_box_tag(:ovuline_exclusive) %></p>
-          <p>Email Campaign <%= check_box_tag(:email_campaign) %></p>
-        </tr>
-      </table>
-
+      <section title=".squaredThree">
+        <table>
+          <tr>
+            <p>Sales (Native Ad) <%= f.check_box(:native_ad) %></p>
+            <p>Brand Awareness (Article Ad) <%= f.check_box(:social_ad) %></p>
+            <p>Ovia Exclusives <%= f.check_box(:ovuline_exclusive) %></p>
+            <p>Email Campaign <%= f.check_box(:email_campaign) %></p>
+          </tr>
+        </table>
+      </section>
     </center>
+   </div>
   </div>
 </div>
 
