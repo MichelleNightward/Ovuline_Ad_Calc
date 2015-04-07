@@ -17,16 +17,28 @@
  <div class = 'section_general'> 
     <center>
       <h2>Choose an app:</h2>
-        <table>
-          <p> <%= f.select :app_type, [['Ovia Fertility', 'Ovia Fertility'],['Ovia Pregnancy', 'Ovia Pregnancy'],['Both', 'Both']] %> </p>
-        </table
+        <p><%= radio_button_tag(:app_type, "Ovia Fertility") %>
+        <%= label_tag(:app_type, "Ovia Fertility") %></p>
+        <p><%= radio_button_tag(:app_type, "Ovia Pregnancy") %>
+        <%= label_tag(:app_type, "Ovia Pregnancy") %></p>
+        <p><%= radio_button_tag(:app_type, "Both") %>
+        <%= label_tag(:app_type, "Both") %></p>
 
       <h2>Select your platform</h2>
-        <table>
-          <p> <%= f.select :mobile_platform, [['Android', 'Android'],['IOS', 'IOS'],['Both', 'Both']] %> </p>
-        </table>
+        <p><%= radio_button_tag(:mobile_platform, "Android") %>
+        <%= label_tag(:mobile_platform, "Android") %></p>
+        <p><%= radio_button_tag(:mobile_platform, "IOS") %>
+        <%= label_tag(:mobile_platform, "IOS") %></p>
+        <p><%= radio_button_tag(:mobile_platform, "Both") %>
+        <%= label_tag(:mobile_platform, "Both") %></p>
 
       <h2>What kind of advertising are you interested in?</h2>
+        <p><%= radio_button_tag(:ad_type, "Sales (Ads") %>
+        <%= label_tag(:ad_type, "Sales (Ads") %></p>
+        <p><%= radio_button_tag(:ad_type, "Brand Awareness (Articles)") %>
+        <%= label_tag(:ad_type, "Brand Awareness (Articles)") %></p>
+        <p><%= radio_button_tag(:ad_type, "Both") %>
+        <%= label_tag(:ad_type, "Both") %></p>
         <table>
           <p> <%= f.select :ad_type, [['Sales (Ads)', 'Sales (Ads)'],['Brand Awareness (Articles)', 'Brand Awareness (Articles)'],['Both', 'Both']] %> </p>
         </table>
