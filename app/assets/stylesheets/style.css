@@ -4,6 +4,7 @@
   line-height: 1.5em;
   color: #fff;
 }
+
 .pageinfo h2 {
   font-size: 32px;
   font-weight: 700;
@@ -13,6 +14,7 @@
   padding-top: 50px;
   padding-left: 200px;
 }
+
 .pageinfo h3 {
   font-size: 24px;
   font-weight: 700;
@@ -54,6 +56,11 @@
   background: linear-gradient(#faa918, #fff); /* Standard syntax (must be last) */  
   text-align: center;
 }
+
+#howItWorks {
+  display: block;
+}
+
 #top img {
   float: right;
   width: 300px;
