@@ -11,6 +11,10 @@ class QuotesController < ApplicationController
   end
 
   def new
+    if session[:current_company_id] == nil
+      redirect_to root_path
+      flash[:notice] = 'You must fill out information about your company before continuing'
+    end
     @quotes = Quote.all
     @quote = Quote.new
   end
@@ -97,6 +101,6 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def quote_params
-      params[:quote].permit(:id, :ad_type, :app_type, :mobile_platform, :budget, :company_id, :native_ad, :social_ad, :email_campaign, :ovuline_exclusive, :target_ttc, :target_preg, :target_sig_other, :target_1st_trim, :target_2nd_trim, :target_third_trim, :begin_date, :end_date)
+      params[:quote].permit(:id, :ad_type, :app_type, :mobile_platform, :budget, :company_id, :native_ad, :social_ad, :email_campaign, :ovuline_exclusive, :target_ttc, :target_preg, :target_sig_other, :target_1st_trim, :target_2nd_trim, :target_3rd_trim, :begin_date, :end_date)
     end
 end
