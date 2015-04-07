@@ -78,3 +78,17 @@
     color: black;
 }
 
+
+.dashboard_table td:nth-child(odd){
+   background: #C8C8C8;
+}
+
+.dashboard_table td:nth-child(even){
+    background: white;
+}
+
+.dashboard_table td, th{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
