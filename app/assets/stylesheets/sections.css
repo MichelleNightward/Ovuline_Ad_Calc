@@ -15,6 +15,12 @@
     background: -moz-linear-gradient(#50BE9C, white); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#50BE9C, white); /* Standard syntax */
     background: #50BE9C;
+    overflow: auto;
+    padding: 1%;
+}
+
+.teal p{
+    color: white;
 }
 
 .section_teal{
@@ -66,7 +72,7 @@
 }
 
 .companies_view_body td:nth-child(even){
-    background: white;
+    background: #E0E0E0;
 }
 
 .companies_view_body td, th{
@@ -84,7 +90,7 @@
 }
 
 .dashboard_table td:nth-child(even){
-    background: white;
+    background: #E0E0E0;
 }
 
 .dashboard_table td, th{
@@ -92,3 +98,6 @@
     padding-right: 10px;
 }
 
+.float_it_left{
+    float: left;
+}

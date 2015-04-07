@@ -11,7 +11,14 @@
 
     <p id="notice"><%= notice %></p>
 
-    <div class = "teal"><tr><h1><%= @company.companyname %></h1> Contact Name: <%= @company.name %> #: <%= @company.phone %></div>
+        <div class = "teal">
+            <div class = 'float_it_left'>
+
+                <tr><h1><%= @company.companyname %></h1> <p><strong>Contact Name: <%= @company.name %></strong></p>
+                <p><strong> #: <%= @company.phone %></strong></p>
+            </div>
+        </div>
+
     <table>
             <tr>
                     <th><strong>Ad Type</strong></th>
