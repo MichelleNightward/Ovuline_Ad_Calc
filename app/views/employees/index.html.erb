@@ -1,35 +1,42 @@
-<div class = 'navigation_bar_dashboard'> 
+<div class = 'navigation_bar_dashboard', class = 'sticky'> 
     <ul>
         <a href='/employees'><li>ALL QUOTES</li></a>
         <a href='/employee_email_managers'><li>NOTIFICATION MANAGER</li></a>
     </ul>
 </div>
+<div class = 'section_pale_orange'>
+    <div class = 'section_general'>
+        <!-- <p id="notice"><%= notice %></p>
+         -->
+        <div class = 'dashboard_table'>
 
-<p id="notice"><%= notice %></p>
+                <h1>Company Quotes</h1>
 
-<div class = 'dashboard_table'>
-<h1>Company Quotes</h1>
 
-<table>
-        <tr>
-                <td>Name</td>
-                <td>Company</td>
-                <td>Email</td>
-                <td>Phone</td>
-        </tr>
-        <% @companies.each do |company| %>
-                <tr>
-                        <td><%= company.name %></td>
-                        <td><%= company.companyname %></td>
-                        <td><%= company.email %></td>
-                        <td><%= company.phone %></td>
-                        <td><%= link_to "Edit", edit_company_path(company) %></td>
-                        <td><%= link_to "Show", company %></td>
-                        <td><%= link_to "Delete", company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-                </tr>
+            <center>
+                <table>
+                        <tr>
+                                <th>Contact Name</th>
+                                <th>Company</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                        </tr>
+                        <% @companies.each do |company| %>
+                                <tr>
+                                        <td><%= company.name %></td>
+                                        <td><%= company.companyname %></td>
+                                        <td><%= company.email %></td>
+                                        <td><%= company.phone %></td>
+                                        <td><%= link_to "Edit", edit_company_path(company) %></td>
+                                        <td><%= link_to "Show", company %></td>
+                                        <td><%= link_to "Delete", company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                                </tr>
 
-        <% end %>
+                        <% end %>
 
-</table>
+                </table>
+            </center>
+        </div>
+    </div>
 </div>
 
