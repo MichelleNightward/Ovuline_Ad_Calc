@@ -62,7 +62,7 @@
 }
 
 .companies_view_body td:nth-child(odd){
-   background: gray;
+   background: #C8C8C8;
 }
 
 .companies_view_body td:nth-child(even){
