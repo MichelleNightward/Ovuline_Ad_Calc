@@ -131,10 +131,14 @@
   margin-top: 30px;
   background-color: #50be9c;
   text-align: center;
+  padding-bottom: 3%;
 }
-#services #bottom .text {
+#services #bottom .text_root {
   padding: 50px 0 0 150px;
   width: 70%;
+  color: white;
+  font-size: 135%;
+
 }
 #services #phone {
   position: absolute;
