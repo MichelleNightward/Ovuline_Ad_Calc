@@ -50,6 +50,7 @@
         <div class='extra_padding_quotes'>
           <div class ='section general'>
             <h2>What kind of advertising are you interested in?</h2>
+            <br></br>
              <div class='label_font'>
               <%= f.radio_button(:ad_type, "sales ") %>
                <label for=ad_type_sales>
@@ -76,20 +77,22 @@
         
           <div class = 'move_it_forward_section'>
             <div class='make_text_white'>
-              <table>
-                <tr>
-                    <td>Sales (Native Ad)</td>
-                    <td> <%= f.check_box(:native_ad) %></td>
-                    <td>Brand Awareness (Article Ad)</td>
-                    <td><%= f.check_box(:social_ad) %></td>
-                </tr>
-                <tr>
-                    <td>Ovia Exclusives</td>
-                    <td> <%= f.check_box(:ovuline_exclusive) %></td>
-                    <td>Email Campaign</td> 
-                    <td><%= f.check_box(:email_campaign) %></td>
-                </tr>
-              </table>
+              <center>
+                <table>
+                  <tr>
+                      <td>Sales (Native Ad)</td>
+                      <td> <%= f.check_box(:native_ad) %></td>
+                      <td>Brand Awareness (Article Ad)</td>
+                      <td><%= f.check_box(:social_ad) %></td>
+                  </tr>
+                  <tr>
+                      <td>Ovia Exclusives</td>
+                      <td> <%= f.check_box(:ovuline_exclusive) %></td>
+                      <td>Email Campaign</td> 
+                      <td><%= f.check_box(:email_campaign) %></td>
+                  </tr>
+                </table>
+              </center>
             </div>
           </div>
         </div>
