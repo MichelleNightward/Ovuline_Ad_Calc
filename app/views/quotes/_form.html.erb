@@ -19,32 +19,45 @@
     <center>
 
       <h2>Choose an app:</h2>
-        <%= f.radio_button(:app_type, "fertility") %>
-        <label for=app_type_fertility>
-          <img src="/images/fertility.png">
-        </label>
-        <%= f.radio_button(:app_type, "pregnancy") %>
-        <label for=app_type_pregnancy>
-          <img src="/images/pregnancy.png">
-        </label>
-        <%= f.radio_button(:app_type, "both") %>
-        <label for=app_type_both>
-          <img src="/images/pfBoth.png">
-        </label>
+        <span>
+          <%= f.radio_button(:app_type, "fertility") %>
+          <label for=app_type_fertility>
+            <img src="/images/fertility.png">
+          </label>
+        </span>
+        <span class = 'middle-icon'>
+          <%= f.radio_button(:app_type, "pregnancy") %>
+          <label for=app_type_pregnancy>
+            <img src="/images/pregnancy.png">
+          </label>
+        </span>
+        <span>
+          <%= f.radio_button(:app_type, "both") %>
+          <label for=app_type_both>
+            <img src="/images/pfBoth.png">
+          </label>
+        </span>
 
       <h2>Select your platform</h2>
-        <%= f.radio_button(:mobile_platform, "android") %>
-        <label for=mobile_platform_android>
-          <img src="/images/android.png">
-        </label>
-        <%= f.radio_button(:mobile_platform, "ios") %>
-        <label for=mobile_platform_ios>
-          <img src="/images/apple.png">
-        </label>
-        <%= f.radio_button(:mobile_platform, "both") %>
-        <label for=mobile_platform_both>
-          <img src="/images/iosboth.png">
-        </label>
+
+        <span>
+          <%= f.radio_button(:mobile_platform, "android") %>
+          <label for=mobile_platform_android>
+            <img src="/images/android.png">
+          </label>
+        </span>
+        <span class = 'middle-icon'>
+          <%= f.radio_button(:mobile_platform, "ios") %>
+          <label for=mobile_platform_ios>
+            <img src="/images/apple.png">
+          </label>
+        </span>
+        <span>
+          <%= f.radio_button(:mobile_platform, "both") %>
+          <label for=mobile_platform_both>
+            <img src="/images/iosboth.png">
+          </label>
+        </span>
         </center>
 
         <div class='extra_padding_quotes'>
