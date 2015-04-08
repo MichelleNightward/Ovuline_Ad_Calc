@@ -44,8 +44,6 @@
 }
 
 .section_pink{
-    margin-right: -20px;
-    margin-left: -20px;
     background: #FF47A3;
 }
 
@@ -65,6 +63,18 @@
     background: #FAA918;
 /*    background: #FF8330;*/
 }
+.section_radio_button{
+    background: #8CC63F;
+    padding-bottom: 5%;
+    width: 50vw;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+
+}
+
+
 
 
 .companies_view_body{
