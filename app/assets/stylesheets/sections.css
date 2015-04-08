@@ -47,6 +47,18 @@
     background: #FF47A3;
 }
 
+.section_pink_error{
+    background: #FF47A3;
+    width: 90%;
+    padding: 1%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin: 0 auto;
+
+}
+
 .section_pink_padding{
     padding-left: 37%;
 

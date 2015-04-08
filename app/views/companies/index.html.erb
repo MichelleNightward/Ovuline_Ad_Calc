@@ -25,9 +25,11 @@
                   </ul>
                 </div>
 
-                <div class='section_pink'>
+                <% if notice %>
+                <div class='section_pink_error'>
                   <p id="notice"><%= notice %></p>
                 </div>
+                <% end %>
 
                 <!-- Background Image, 1st section -->
                   <div class = 'white_padding'>
