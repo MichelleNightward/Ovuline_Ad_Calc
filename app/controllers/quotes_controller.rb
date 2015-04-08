@@ -27,6 +27,8 @@ class QuotesController < ApplicationController
   def create
     @quote = Quote.new(quote_params)
     @quote.company_id = session[:current_company_id]
+    @company = Company.find(session[:current_company_id])
+    #session[:company_name] = @company.companyname
     if @quote.save
       flash[:notice] = 'Your quote information has been added'
       send_notification
@@ -40,7 +42,6 @@ class QuotesController < ApplicationController
     @quote = Quote.find(params[:id])
     if @quote.update_attributes(quote_params)
       flash[:notice] = 'Your quote was updated'
-      send_notification
       @company = @quote.company_id
       redirect_to company_path
     else
@@ -68,11 +69,11 @@ class QuotesController < ApplicationController
       #rather unwise to have my api key just sitting here in the code, need to check if a new api-key can be generated
       RestClient.post "https://api:key-5f4ada711a8a86a1292bcfe23aa9d0aa"\
       "@api.mailgun.net/v2/sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org/messages",
-      :from => "Excited User <mailgun@sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org>",
+      :from => "Ovuline Advertising Notification System <mailgun@sandbox3fcc0ad1e9ee457da78753f228405f7e.mailgun.org>",
       :to => send_who_us,
-      :subject => "Ovuline Notification Test",
+      :subject => "Ovuline Advertising Site - A New Lead!",
       #ack! I need to find a way to get @company info into this next line
-      :text => "This is the Ovuline Notification System test message! A company (need to make this more specific) has submitted information to the Quotes Table! Is that former sentence incomplete or otherwise incorrect? Oh no! A bug!"
+      :text => "This is the Ovuline Advertising Notification System test message! #{@company.companyname} company has submitted information for your inspection. View it at https://advertising-platform.herokuapp.com/employees"
       end
   end
     

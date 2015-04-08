@@ -8,9 +8,18 @@
         </div>
     </div>
 
-    <p id="notice"><%= notice %></p>
+          <!--  <% if notice %>
+                <div class='section_pink_error'>
+                  <p id="notice"><%= notice %></p>
+                </div>
+            <% end %> -->
 
         <div class = "teal">
+           <% if notice %>
+                <div class='section_pink_error'>
+                  <p id="notice"><%= notice %></p>
+                </div>
+            <% end %>
             <div class = 'float_it_left'>
 
                 <tr><h1><%= @company.companyname %></h1> <p><strong>Contact Name: <%= @company.name %></strong></p>

@@ -67,11 +67,11 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background: -webkit-linear-gradient(#FAA918, white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#FAA918, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#FAA918, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#FAA918, white); /* Standard syntax */
-    background: #FAA918;
+    background: -webkit-linear-gradient(#858BBF, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#858BBF, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#858BBF, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#858BBF, white); /* Standard syntax */
+    background: #858BBF;
 /*    background: #FF8330;*/
 }
 .section_pale_orange_thankyou{
@@ -167,8 +167,8 @@
     width: 85%;
     margin: 0 auto;
     height: 80vh;
-    border-bottom-right-radius: 25%;
-    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
     /*width: 100%;*/
 }
 @media screen and (max-width: 600px) {

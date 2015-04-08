@@ -154,9 +154,27 @@
   }
 
   .sticky {
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 1;
+/*    position: -webkit-sticky;*/
+/*    top: 0;*/
+/*    z-index: 1;*/
+    position: fixed;
+    /*width: 100%;*/
+    right: 0px;
+    top: 20px;
+    z-index: 100;
+    border-top: 0; 
+}
+/*@media screen and (max-width: 600px){
+    .sticky {
+      bottom: 0;
+      z-index: 1;
+      position: fixed;
+      border-top: 90%;
+      right: 35%; 
+      /*width: 100%;*/
+    }
+}*/
+
   }
 
   .fake_extended_nav{
