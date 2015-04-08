@@ -1,130 +1,186 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <div class= "everything">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ovuline Advertising</title>
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
   <!-- <script src="bower_components/modernizr/modernizr.js"></script> --> 
   </head>
   <body>
-    <header>
-       <img src="images/ovulineadvert.jpg" alt="Ovuline Advertising Logo" />
- 
-      <div class = 'navigation_bar'>
-        <nav></nav>
-    </header>
-    <div style="clear:both"></div>
-    <main>
+    <main class = "pageinfo">
 
-<p id="notice"><%= notice %></p>
+          <!-- 1st Section -->
+          <!-- <div class = 'fit_section_to_page'> -->
+              <!-- <div id="topNav"> -->
+                <div class = "navigation_bar_root">
+                  <ul>
+                    <a href="#howItWorks"><li>How It Works</li></a>
+                    <a href="#services"><li>Services</li></a>
+                    <a href="http://www.ovuline.com/"><img src="images/ovulineadvert.jpg"></a></li>
+                    <a href="#audience"><li>Our Audience</li></a>
+                    <a href="#design"><li>Design</li></a>
+                  </ul>
+                </div>
 
-      <div class="section_teal">
-        <div class='vcenter'>
-          <div class="section_teal_padding">
+                <!-- Background Image, 1st section -->
+                  <div class = 'white_padding'>
+                    <div class = 'special_size_img'>
+                      <div class = 'move_it_forward_section'>
+                        <!-- <h1>Get In Touch</h1> -->
+                        <%= render 'form' %>
+                      </div>
+                    </div>
+                  </div>
 
-              <%= render 'form' %>
+            
 
+          <!-- </div> -->
+
+
+                          <!--     HOW IT WORKS    -->    
+          <div class="wrapper">
+            <div id="howItWorks">
+              <div id="top">
+                  <img src="images/phone1.png" alt="Phone 1">
+              </div>
+              <div id="bottom">
+                <div id="phone">
+                  <img src="images/phone2.png" alt="Phone 2">
+                </div>
+                <h2>How It Works</h2>
+                <ul class="flex-container">
+                  <li class="flex-item">
+                    <img src="images/workcircle1.png" alt="Work Circle 1" />
+                    <p>Create custom content and ad assets</p>
+                  </li>
+                  <li class="flex-item">
+                    <img src="images/workcircle2.png" alt="Work Circle 2" />
+                    <p>Amplify exposure to assets accross multiple platforms (iOS and Android)</p>
+                  </li>
+                  <li class="flex-item">
+                    <img src="images/workcircle3.png" alt="Work Circle 3" />
+                    <p>Users engage with your ads</p>
+                  </li>
+                  <li class="flex-item">
+                    <img src="images/workcircle4.png" alt="Work Circle 4" />
+                    <p>Receive monthly reports on performance</p>
+                  </li>
+                </ul>    
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      
-      <div class = 'navigation_bar'>
-        <ul>
-        <a href="http://www.ovuline.com/"><li>Home</li></a>
-        <a href="#howItWorks"><li>How It Works</li></a>
-        <a href="#services"><li>Services</li></a>
-        <a href="#ourAudience"><li>Our Audience</li></a>
-        <a href="#howWeDesignForYou"><li>Design</li></a>
-        <a href="#successStories"><li>Success Stories</li></a>
-        <a href="quotes/new"><li>GET STARTED!</li></a>
-        </ul>
-      </div>
+
+                              <!--     SERVICES    -->    
+          <div class="wrapper">
+            <div id="services">
+              <div id="top">
+                  <img src="images/phone3.png" alt="Phone 3">
+              </div>
+              <div id="bottom">
+                <div id="phone">
+                  <img src="images/phone4.png" alt="Phone 4">
+                </div>
+                <h2>Services</h2>
+                <div class="text_root">
+                    <h3>Social</h3>
+                    <p>Ovia by Ovuline social media allows exposure to over 200,000 followers. Available on Twitter and Facebook.</p>
+                    <h3>Ovia Exclusive</h3>
+                     <p>Ovia has partnered with some of the best new brands and health partners to give users exclusive access to new products and promotions</p>
+                    <h3>Native Advertisements</h3>
+                     <p>No pop-ups, no banners, only original sponsored content that our users want to see. Ads are seamlessly integrated into the app’s newsfeed.</p>
+                    <h3>Email Campaign</h3>
+                     <p>Ovia Pregnancy and Ovia Fertility update emails are sent daily. Updates contain articles, quizzes and reminders to update information for my accurate results. </p>
+                </div>
+              </div>
+              
+            </div> 
+          </div>
+       
+
+                        <!--     AUDIENCE    -->   
+          <div class="wrapper"> 
+            <div id="audience">
+              <div id="top">
+                  <img src="images/womanphone.png" alt="Woman With Phone">
+              </div>
+              <div id="bottom">
+              <div id="phone">
+                <img src="images/phone5.png" alt="Phone 5">
+              </div>
+                <h2>Our Audience</h2>
+                <div class="image">
+                  <img src="images/infograph1.png" alt="Audience Information">
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+                              <!--     DESIGN    -->    
+          <div class="wrapper">
+            <div id="design">
+              <div id="top">
+                  <img src="images/journal.png" alt="Journal">
+              </div>
+              <div id="bottom">
+              <div id="phone">
+                <img src="images/phone6.png" alt="Phone 6">
+              </div>
+                <h2>How We Design For You</h2>
+                <ul class="flex-container">
+                  <li class="flex-item">
+                    <img src="images/miniads.png" alt="Ad Design" />
+                    <p>Unlimited in-feed ad creative combination</p>
+                  </li>
+                  <li class="flex-item">
+                    <img src="images/redpeople.png" alt="Connecting" />
+                    <p>Optimized based on real-time engagement data</p>
+                  </li>
+                  <li class="flex-item">
+                    <img src="images/magnifyglass.png" alt="Results" />
+                    <p>Algorithims test ads to find the creative that works the best</p>
+                  </li>
+                </ul>    
+                <ul class="flex-container">
+                  <li class="flex-item">
+                    <img src="images/1.png" alt="1" />
+                    <p>Ovuline proposes ideas</p>
+                  </li>
+                  <li class="flex-item">
+                    <img src="images/2.png" alt="2" />
+                    <p>Initial Client Approval</p>
+                  </li>
+                  <li class="flex-item">
+                    <img src="images/3.png" alt="3" />
+                    <p>Ovuline creates drafts</p>
+                  </li>
+                </ul>
+                <ul class="flex-container">
+                  <li class="flex-item">
+                    <img src="images/4.png" alt="4" />
+                    <p>Client provides consolidated feedback</p>
+                  </li>
+                  <li class="flex-item">
+                    <img src="images/5.png" alt="5" />
+                    <p>Ovuline makes revisions and collects art from client</p>
+                  </li>
+                  <li class="flex-item">
+                    <img src="images/6.png" alt="6" />
+                    <p>Final client approval</p>
+                  </li>
+                </ul>    
+              </div>
+            </div>
+          </div>
 
 
-
-      <center>
-      <div id="howItWorks">
-        <h1>How It Works</h1>
-        <ul>
-          <li>
-            <img src="images/workcircle1.jpg" alt="Work Circle 1" />
-            <p>Create custom content and ad assets</p>
-          </li>
-          <li>
-            <img src="images/workcircle2.jpg" alt="Work Circle 2" />
-            <p>Amplify exposure to assets accross multiple platforms (iOS and Android)</p>
-          </li>
-          <li>
-            <img src="images/workcircle3.jpg" alt="Work Circle 3" />
-            <p>Users engage with your ads</p>
-          </li>
-          <li>
-            <img src="images/workcircle4.jpg" alt="Work Circle 4" />
-            <p>Receive monthly reports on performance</p>
-          </li>
-        </ul>
+        <footer>
+           <img src="images/footerimg.jpg" alt="Ovuline Footer" />
+        </footer>
       </div>
-      </center>
-      </div>
-
-      <div id="services">
-        <h1>Services</h1>
-        <ul>
-          <li id="social">
-            <img src="images/imageholder.jpg" alt="Image Place Holder">
-            <h2>Social</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu molestie tellus. Vivamus eget fermentum mi. Nullam pharetra vitae ex id lacinia. Ut leo nisl, gravida at vulputate quis, tempus vitae lectus. Quisque elementum vulputate ex eget volutpat. Pellentesque finibus mi nec metus hendrerit, a maximus ipsum iaculis. Nam ipsum dui, malesuada vel massa ut, condimentum varius ante. Quisque non nisi felis. Vivamus interdum, velit ut euismod dignissim, eros ligula imperdiet lorem, id euismod erat ligula sit amet dolor.</p>
-          </li>
-          <li id="oviaExclusives">
-            <img src="images/imageholder.jpg" alt="Image Place Holder">
-            <h2>Ovia Exclusives</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu molestie tellus. Vivamus eget fermentum mi. Nullam pharetra vitae ex id lacinia. Ut leo nisl, gravida at vulputate quis, tempus vitae lectus. Quisque elementum vulputate ex eget volutpat. Pellentesque finibus mi nec metus hendrerit, a maximus ipsum iaculis. Nam ipsum dui, malesuada vel massa ut, condimentum varius ante. Quisque non nisi felis. Vivamus interdum, velit ut euismod dignissim, eros ligula imperdiet lorem, id euismod erat ligula sit amet dolor.</p>
-          </li>
-          <li id="email">
-            <img src="images/imageholder.jpg" alt="Image Place Holder">
-            <h2>Email</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu molestie tellus. Vivamus eget fermentum mi. Nullam pharetra vitae ex id lacinia. Ut leo nisl, gravida at vulputate quis, tempus vitae lectus. Quisque elementum vulputate ex eget volutpat. Pellentesque finibus mi nec metus hendrerit, a maximus ipsum iaculis. Nam ipsum dui, malesuada vel massa ut, condimentum varius ante. Quisque non nisi felis. Vivamus interdum, velit ut euismod dignissim, eros ligula imperdiet lorem, id euismod erat ligula sit amet dolor.</p>
-          </li>
-          <li id="ads">
-            <img src="images/imageholder.jpg" alt="Image Place Holder">
-            <h2>Adds</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu molestie tellus. Vivamus eget fermentum mi. Nullam pharetra vitae ex id lacinia. Ut leo nisl, gravida at vulputate quis, tempus vitae lectus. Quisque elementum vulputate ex eget volutpat. Pellentesque finibus mi nec metus hendrerit, a maximus ipsum iaculis. Nam ipsum dui, malesuada vel massa ut, condimentum varius ante. Quisque non nisi felis. Vivamus interdum, velit ut euismod dignissim, eros ligula imperdiet lorem, id euismod erat ligula sit amet dolor.</p>
-          </li>
-          <li id="articles">
-            <img src="images/imageholder.jpg" alt="Image Place Holder">
-            <h2>Articles</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu molestie tellus. Vivamus eget fermentum mi. Nullam pharetra vitae ex id lacinia. Ut leo nisl, gravida at vulputate quis, tempus vitae lectus. Quisque elementum vulputate ex eget volutpat. Pellentesque finibus mi nec metus hendrerit, a maximus ipsum iaculis. Nam ipsum dui, malesuada vel massa ut, condimentum varius ante. Quisque non nisi felis. Vivamus interdum, velit ut euismod dignissim, eros ligula imperdiet lorem, id euismod erat ligula sit amet dolor.</p>
-          </li>
-        </ul>
-      </div>
-
-      <div id="ourAudience">
-        <h1>Our Audience</h1>
-        <img src="images/infographic.jpg" alt="Infographic Content">
-      </div>
-
-      <div id="howWeDesignForYou">
-        <h1>How We Design For You</h1>
-        <img src="images/optimization.jpg" alt="Optimization Content">
-        <img src="images/addprocess.jpg" alt="Ads Content">
-      </div>
-
-      <center>
-      <div id="successStories">
-        <h1>Success Stories</h1>
-        <img src="images/weleda.jpg" alt="Weleda Success Story">
-        <img src="images/stork.jpg" alt="Stork Success Story">
-        <img src="images/premama.jpg" alt="Premama Success Story">
-      </div>
-      </center>
-
-      <footer>
-         <img src="images/footerimg.jpg" alt="Ovuline Footer" />
-      </footer>
     </main>
   </body>
 </html>
-
-

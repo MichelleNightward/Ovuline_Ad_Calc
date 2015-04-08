@@ -17,6 +17,7 @@
  <div class = 'section_general'>
    <div class = 'radio'> 
     <center>
+
       <h2>Choose an app:</h2>
         <%= f.radio_button(:app_type, "fertility") %>
         <label for=app_type_fertility>
@@ -61,36 +62,55 @@
         </label>
       </div>
 
-      <h2>Product Selector:</h2>
-      <table>
-        <tr>
-          <p>Sales (Native Ad) <%= f.check_box(:native_ad) %></p>
-          <p>Brand Awareness (Article Ad) <%= f.check_box(:social_ad) %></p>
-          <p>Ovia Exclusives <%= f.check_box(:ovuline_exclusive) %></p>
-          <p>Email Campaign <%= f.check_box(:email_campaign) %></p>
-        </tr>
-      </table>
+
+          <h2>Product Selector:</h2>
+          <div class = 'move_it_forward_section'>
+            <div class='make_text_white'>
+              <table>
+                <tr>
+                    <td>Sales (Native Ad)</td>
+                    <td> <%= f.check_box(:native_ad) %></td>
+                    <td>Brand Awareness (Article Ad)</td>
+                    <td><%= f.check_box(:social_ad) %></td>
+                </tr>
+                <tr>
+                    <td>Ovia Exclusives</td>
+                    <td> <%= f.check_box(:ovuline_exclusive) %></td>
+                    <td>Email Campaign</td> 
+                    <td><%= f.check_box(:email_campaign) %></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+
+
     </center>
    </div>
   </div>
 </div>
 
-<div class = 'section_teal'>
-  <div class = 'section_general'>
-  <div class = 'vcenter'>
+
+<div class = 'section_pale_orange'>
+<!-- <div class = 'section_teal'> -->
+  <!-- <div class = 'section_general'> -->
+  <!-- <div class = 'vcenter'> -->
   <center>
     <h2>Budget</h2>
   </center>
     <div class = 'section_teal_padding'>
+
       <p>Monthly Advertizing Budget <%= f.select :app_type, [['2,000-5,000', '2,000-5,000'], ['5,000-10,000', '5,000-10,000'],['10,000-15,000', '10,000-15,000'], ['15,000+', '15,000+']] %></p>
       <p>Begining of Campaign <%= f.text_field :begin_date %> </p> <p>End of Campaign <%= f.text_field :end_date %></p>
+
       </div>
-    </div>
-  </div>
+    <!-- </div> -->
+  <!-- </div> -->
 </div>
 
-
-    <div class = 'section_pink'>
+    
+    <div class = 'section_pale_orange'>
+    <!-- <div class = 'section_pink'> -->
         <div class = 'section_general'>
         <center>
         <h2>Your target audience is...:</h2>

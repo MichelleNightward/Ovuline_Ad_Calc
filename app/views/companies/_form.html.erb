@@ -10,10 +10,33 @@
       </ul>
     </div>
   <% end %>
-  <p>Name: <%= f.text_field :name, :required => true %>
-  <p>Company: <%= f.text_field :companyname, :required => true %>
-  <p>Email Address: <%= f.email_field :email, :required => true %>
-  <p>Phone: <%= f.text_field :phone, :required => true %>
 
-  <center><p><%= f.submit 'Submit Info', :class => 'button' %></p></center>
+  <center>
+    <div class='make_text_white'>
+      <table>
+        <tr>
+          <td>Name: </td>
+          <td><%= f.text_field :name, :required => true %></td>
+        </tr>
+
+      <tr>
+        <td>Company: </td>
+        <td><%= f.text_field :companyname, :required => true %></td>
+      </tr>
+      <tr>
+        <td>Email Address: </td>
+        <td><%= f.email_field :email, :required => true %></td>
+      </tr>
+      <tr>
+        <td>Phone: </td>
+        <td><%= f.text_field :phone, :required => true %></td>
+      </tr>
+      </table>
+    </div>
+  </center>
+
+  <div class = 'center_the_button'>
+  <center><p><%= f.submit 'Advertise With Us!', :class => 'button' %></p></center>
+  </div>
+
 <% end %>

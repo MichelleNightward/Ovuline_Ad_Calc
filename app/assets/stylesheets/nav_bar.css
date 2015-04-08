@@ -1,9 +1,5 @@
 
-.navigation_bar{     
-
-    margin-bottom: 0px;
-    margin-right: -20px;
-    margin-left: -20px;     
+.navigation_bar_root{     
     background: #B5B5B5 
 }
 
@@ -54,6 +50,10 @@
   cursor: default;
 }
 
+
+.navigation_bar{     
+    background: #B5B5B5 
+}
 .navigation_bar ul {
   list-style: none;
   background-color: #444;
@@ -66,7 +66,7 @@
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
-  width: 180px;
+  width: 220px;
   border-bottom: 1px solid #888;
 
 }
@@ -103,6 +103,51 @@
     display: inline-block;
     margin-right: -4px;
   }
+
+
+/*Navigation Bar for Root*/
+.navigation_bar_root{
+  background: white; 
+}
+
+.navigation_bar_root ul {
+  list-style: none;
+  background-color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation_bar_root li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  width: 180px;
+  border-bottom: 1px solid white;
+}
+ 
+.navigation_bar_root a {
+  text-decoration: none;
+  color: gray;
+  display: inline-block;
+  transition: .3s background-color;
+}
+ 
+.navigation_bar_root a:hover {
+  background-color: #005f5f;
+}
+ 
+.navigation_bar_root a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+
+
+
+
 
   .dashboard_table{
     padding: 3%;
