@@ -143,7 +143,7 @@
     /*width: 100%;*/
 }
 
-.make_it_white p{
+.make_text_white p{
     color: white;
 }
 
@@ -152,3 +152,15 @@
     padding-left: 90px;
 }
 
+.input_box_align_1{
+    margin-left:116px;
+}
+.input_box_align_2{
+    margin-left:90px;
+}
+.input_box_align_3{
+    margin-left:50px;
+}
+.input_box_align_4{
+    margin-left:118px;
+}

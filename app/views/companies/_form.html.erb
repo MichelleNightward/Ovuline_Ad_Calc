@@ -11,12 +11,15 @@
     </div>
   <% end %>
 
-  <div class='make_it_white'>
-  <p>Name: <%= f.text_field :name, :required => true %>
-  <p>Company: <%= f.text_field :companyname, :required => true %>
-  <p>Email Address: <%= f.email_field :email, :required => true %>
-  <p>Phone: <%= f.text_field :phone, :required => true %>
-  </p>
+  <div class='make_text_white'>
+    <p>Name: <span class = 'input_box_align_1'><%= f.text_field :name, :required => true %></span></p>
+    <br>
+    <p>Company: <span class = 'input_box_align_2'><%= f.text_field :companyname, :required => true %></span></p>
+    <br>
+    <p>Email Address: <span class = 'input_box_align_3'><%= f.email_field :email, :required => true %></span></p>
+    <br>
+    <p>Phone: <span class = 'input_box_align_4'><%= f.text_field :phone, :required => true %></span></p>
+  </div>
 
   <div class = 'center_the_button'>
   <center><p><%= f.submit 'Advertise With Us!', :class => 'button' %></p></center>
