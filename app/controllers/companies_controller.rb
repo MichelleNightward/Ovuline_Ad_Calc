@@ -7,12 +7,17 @@ class CompaniesController < ApplicationController
   end
 
   def show
-    @company = Company.find(params[:id])
     @quotes = Quote.all
+    if session[:employee_company_id] == nil
+        @company = Company.find(params[:id])
+        session[:employee_company_id] = @company.id
+    else
+        @company = Company.find(session[:employee_company_id])
+    end
+
   end
 
   def new
-
     @companies = Company.all
   end
 
@@ -57,8 +62,15 @@ class CompaniesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_company
-      @company = Company.find(params[:id])
+      if session[:employee_company_id] == nil
+        @company = Company.find(params[:id])
+        session[:employee_company_id] = @company.id
+      else
+        @company = Company.find(session[:employee_company_id])
+      end
+      #@company = Company.find(params[:id])
     end
+
 
     # Remember to update if/when company table has more columns added
     # Never trust parameters from the scary internet, only allow the white list through.
