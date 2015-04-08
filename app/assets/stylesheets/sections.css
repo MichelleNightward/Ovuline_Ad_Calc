@@ -137,6 +137,15 @@
     border-bottom-left-radius: 25%;
     /*width: 100%;*/
 }
+@media screen and (max-width: 600px) {
+  .special_size_img{
+    background-image:url('/images/topbackground.png');
+    background-size: cover;
+    width: 85%;
+    margin: 0 auto;
+    height: 80vh;
+    }
+  }
 
 .make_text_white td{
     color: white;
