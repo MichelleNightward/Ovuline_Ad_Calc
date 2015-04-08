@@ -141,8 +141,11 @@
   width: 70%;
   color: white;
   font-size: 135%;
-
 }
+#services #bottom .text_root p{
+  text-align: left;
+}
+
 #services #phone {
   position: absolute;
   width: 150px;
