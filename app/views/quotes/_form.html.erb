@@ -24,7 +24,7 @@
         </label>
         <%= f.radio_button(:app_type, "pregnancy") %>
         <label for=app_type_pregnancy>
-          <img src="/images/pregancy.png">
+          <img src="/images/pregnancy.png">
         </label>
         <%= f.radio_button(:app_type, "both") %>
         <label for=app_type_both>
@@ -82,7 +82,7 @@
     <h2>Budget</h2>
   </center>
     <div class = 'section_teal_padding'>
-      <p>Monthly Advertizing Budget <%= f.number_field :budget %></p>
+      <p>Monthly Advertizing Budget <%= f.select :app_type, [['2,000-5,000', '2,000-5,000'], ['5,000-10,000', '5,000-10,000'],['10,000-15,000', '10,000-15,000'], ['15,000+', '15,000+']] %></p>
       <p>Begining of Campaign <%= f.text_field :begin_date %> </p> <p>End of Campaign <%= f.text_field :end_date %></p>
       </div>
     </div>
