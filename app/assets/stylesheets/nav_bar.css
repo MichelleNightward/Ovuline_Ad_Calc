@@ -50,6 +50,10 @@
   cursor: default;
 }
 
+
+.navigation_bar{     
+    background: #B5B5B5 
+}
 .navigation_bar ul {
   list-style: none;
   background-color: #444;
@@ -62,7 +66,7 @@
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
-  width: 180px;
+  width: 220px;
   border-bottom: 1px solid #888;
 
 }
