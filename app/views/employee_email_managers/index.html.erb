@@ -31,7 +31,6 @@
                 <tr>
                   <td><%= email.name %></td>
                   <td><%= email.email %></td>
-                  <td><%= link_to 'Show', employee_email_manager_path(email) %></td>
                   <td><%= link_to 'Delete', employee_email_manager_path(email), method: :delete %></td>
                 </tr>
               <% end %>
@@ -44,4 +43,4 @@
           <%= render 'form' %>
       </center>
     </div>
-  </div
+  </div>

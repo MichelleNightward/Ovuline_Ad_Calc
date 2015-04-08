@@ -1,0 +1,46 @@
+<div class = 'navigation_bar_dashboard', class = 'sticky'> 
+    <ul>
+        <a href='/employees'><li>ALL QUOTES</li></a>
+        <a href='/employee_email_managers'><li>NOTIFICATION MANAGER</li></a>
+    </ul>
+</div>
+
+<div class = 'section_pale_orange'>
+    <div class = 'section_general'>
+
+      <div class = 'dashboard_table'>
+        <h1>Manage who gets email notifications</h1>
+      </div>
+
+      <center>
+        <div class = 'dashboard_table'>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="3"></th>
+              </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                </tr>
+              <% @emails.each do |email| %>
+
+                <tr>
+                  <td><%= email.name %></td>
+                  <td><%= email.email %></td>
+                  <td><%= link_to 'Delete', employee_email_manager_path(email), method: :delete %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </center>
+      <br>
+      <center>
+          <%= render 'form' %>
+      </center>
+    </div>
+  </div
