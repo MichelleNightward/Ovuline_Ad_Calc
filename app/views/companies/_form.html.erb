@@ -11,27 +11,29 @@
     </div>
   <% end %>
 
-  <div class='make_text_white'>
-    <table>
-      <tr>
-        <td>Name: </td>
-        <td><%= f.text_field :name, :required => true %></td>
-      </tr>
+  <center>
+    <div class='make_text_white'>
+      <table>
+        <tr>
+          <td>Name: </td>
+          <td><%= f.text_field :name, :required => true %></td>
+        </tr>
 
-    <tr>
-      <td>Company: </td>
-      <td><%= f.text_field :companyname, :required => true %></td>
-    </tr>
-    <tr>
-      <td>Email Address: </td>
-      <td><%= f.email_field :email, :required => true %></td>
-    </tr>
-    <tr>
-      <td>Phone: </td>
-      <td><%= f.text_field :phone, :required => true %></td>
-    </tr>
-    </table>
-  </div>
+      <tr>
+        <td>Company: </td>
+        <td><%= f.text_field :companyname, :required => true %></td>
+      </tr>
+      <tr>
+        <td>Email Address: </td>
+        <td><%= f.email_field :email, :required => true %></td>
+      </tr>
+      <tr>
+        <td>Phone: </td>
+        <td><%= f.text_field :phone, :required => true %></td>
+      </tr>
+      </table>
+    </div>
+  </center>
 
   <div class = 'center_the_button'>
   <center><p><%= f.submit 'Advertise With Us!', :class => 'button' %></p></center>

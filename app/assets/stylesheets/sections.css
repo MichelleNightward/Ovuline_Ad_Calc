@@ -106,10 +106,14 @@
 .move_it_forward_section {
     /*z-index: 1;*/
     /*float: left;*/
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    /*margin: 0 auto;*/
     text-align: center;
-    padding-left: 28%;
+    /*padding-left: 28%;*/
     padding-top: 10%;
+
 }
 
 .fit_section_to_page {
@@ -157,8 +161,8 @@
 
 
 .center_the_button{
-    padding-top: 30px;
-    padding-left: 90px;
+    /*padding-top: 30px;*/
+    /*padding-left: 90px;*/
 }
 
 .input_box_align_1{
