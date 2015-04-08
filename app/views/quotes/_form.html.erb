@@ -83,8 +83,25 @@
     <h2>Budget</h2>
   </center>
     <div class = 'section_teal_padding'>
-      <p>Monthly Advertizing Budget <%= f.number_field :budget %></p>
-      <p>Begining of Campaign <%= f.text_field :begin_date %> </p> <p>End of Campaign <%= f.text_field :end_date %></p>
+        <div class = 'move_it_forward_section'>
+          <div class='make_text_white'>
+            <table>
+              <tr>
+                <td>Monthly Advertizing Budget:</td>
+                <td><%= f.number_field :budget %></td>
+              </tr>
+              <tr>
+                <td>Begining of Campaign</td>
+                <td> <%= f.text_field :begin_date %> </td>      
+              </tr>
+              <tr>
+                <td>End of Campaign</td>
+                <td> <%= f.text_field :end_date %></td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </div>

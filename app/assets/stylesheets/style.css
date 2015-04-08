@@ -4,7 +4,6 @@
   line-height: 1.5em;
   color: #fff;
 }
-
 .pageinfo h2 {
   font-size: 32px;
   font-weight: 700;
@@ -14,7 +13,6 @@
   padding-top: 50px;
   padding-left: 200px;
 }
-
 .pageinfo h3 {
   font-size: 24px;
   font-weight: 700;
@@ -27,6 +25,39 @@
 .pageinfo p {
   text-align: center;
 }
+
+
+
+.pagequotes body {
+  font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #fff;
+}
+.pagequotes h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5em;
+  color: #fff;
+  padding-top: 50px;
+  /*padding-left: 200px;*/
+}
+.pagequotes h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.5em;
+  color: #fff;
+  padding-top: 50px;
+  margin-left: 50px;
+}
+.pagequotes p {
+  text-align: center;
+}
+
+
+
 .wrapper {
   position: relative;
 }
