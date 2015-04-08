@@ -64,6 +64,7 @@
 
 
           <h2>Product Selector:</h2>
+        
           <div class = 'move_it_forward_section'>
             <div class='make_text_white'>
               <table>
@@ -84,7 +85,6 @@
           </div>
 
 
-
     </center>
    </div>
   </div>
@@ -100,8 +100,21 @@
   </center>
     <div class = 'section_teal_padding'>
 
-      <p>Monthly Advertizing Budget <%= f.select :app_type, [['2,000-5,000', '2,000-5,000'], ['5,000-10,000', '5,000-10,000'],['10,000-15,000', '10,000-15,000'], ['15,000+', '15,000+']] %></p>
-      <p>Begining of Campaign <%= f.text_field :begin_date %> </p> <p>End of Campaign <%= f.text_field :end_date %></p>
+      <div class = 'move_it_forward_section'>
+        <div class='make_text_white'>
+          <table>
+            <tr>
+              <td>Monthly Advertizing Budget</td><td><%= f.select :app_type, [['2,000-5,000', '2,000-5,000'], ['5,000-10,000', '5,000-10,000'],['10,000-15,000', '10,000-15,000'], ['15,000+', '15,000+']] %></td>
+            </tr>
+            <tr>
+                <td>Begining of Campaign</td><td> <%= f.text_field :begin_date %> </td> 
+            </tr>
+            <tr>
+                <td>End of Campaign</td><td><%= f.text_field :end_date %></td>
+            </tr>
+          </table>
+        </div>
+      </div>
 
       </div>
     <!-- </div> -->
@@ -115,20 +128,25 @@
         <center>
         <h2>Your target audience is...:</h2>
     
-        <table>
-          <tr>
-            <td> Trying to Concieve: <%= f.check_box :target_ttc %></td>
-            <td> Pregnant: <%= f.check_box :target_preg %></td>
-          </tr>
-          <tr>
-            <td> The Significant Other <%= f.check_box :target_sig_other %> </td>
-            <td> In their first trimester <%= f.check_box :target_1st_trim %></td>
-          </tr>
-          <tr>
-            <td> In their second trimester <%= f.check_box :target_2nd_trim %></td>
-            <td> In their third trimester<%= f.check_box :target_3rd_trim %> </td>
-          </tr>
-        </table>
+        <div class = 'move_it_forward_section'>
+            <div class='make_text_white'>
+              <table>
+                <tr>
+                  <td> Trying to Concieve: <%= f.check_box :target_ttc %></td>
+                  <td> Pregnant: <%= f.check_box :target_preg %></td>
+                </tr>
+                <tr>
+                  <td> The Significant Other <%= f.check_box :target_sig_other %> </td>
+                  <td> In their first trimester <%= f.check_box :target_1st_trim %></td>
+                </tr>
+                <tr>
+                  <td> In their second trimester <%= f.check_box :target_2nd_trim %></td>
+                  <td> In their third trimester<%= f.check_box :target_3rd_trim %> </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
         <h2></h2>
         <%= f.submit 'Submit Info', :class => 'button' %>
         </center>
