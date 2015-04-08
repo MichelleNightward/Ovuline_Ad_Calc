@@ -107,6 +107,11 @@
 #howItWorks #phone img {
   max-width: 200px;
 }
+@media screen and (max-width: 600px) {
+  #howItWorks #phone {
+    display:none;
+    }
+  }
                   
                       /* SERVICES */
 #services #top {
@@ -147,6 +152,14 @@
   left: 150px;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  #services #phone {
+    display:none;
+    }
+  }
+  
+
+
 
                      /* AUDIENCE */
 #audience #top {
@@ -185,6 +198,13 @@
   left: 150px;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  #audience #phone {
+    display:none;
+    }
+
+  }
+
 
                       /* DESIGN */
 #design #top {
@@ -239,3 +259,10 @@
   left: 6%;
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+  #design #phone {
+    display:none;
+    }
+
+  }

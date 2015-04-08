@@ -70,33 +70,28 @@
 .companies_view_body{
     width: 150%;
 }
-
 .companies_view_body td:nth-child(odd){
    background: #C8C8C8;
 }
-
 .companies_view_body td:nth-child(even){
     background: #E0E0E0;
 }
-
 .companies_view_body td, th{
     padding-left: 10px;
     padding-right: 10px;
 }
 
+
+
 .dashboard_table h1{
     color: black;
 }
-
-
 .dashboard_table td:nth-child(odd){
    background: #C8C8C8;
 }
-
 .dashboard_table td:nth-child(even){
     background: #E0E0E0;
 }
-
 .dashboard_table td, th{
     padding-left: 10px;
     padding-right: 10px;
