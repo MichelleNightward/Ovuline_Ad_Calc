@@ -43,4 +43,4 @@
           <%= render 'form' %>
       </center>
     </div>
-  </div>
+  </div
