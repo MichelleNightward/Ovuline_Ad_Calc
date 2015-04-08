@@ -1,5 +1,5 @@
 .section_general{
-    padding: 8%;
+    padding: 3%;
 }
 
 .section_general_show_custom{
@@ -45,6 +45,18 @@
 
 .section_pink{
     background: #FF47A3;
+}
+
+.section_pink_error{
+    background: #FF47A3;
+    width: 90%;
+    padding: 1%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin: 0 auto;
+
 }
 
 .section_pink_padding{
@@ -126,11 +138,11 @@
     /*float: left;*/
     margin-left: auto;
     margin-right: auto;
-    /*width: 70%;*/
+    width: 70%;
     /*margin: 0 auto;*/
-    text-align: center;
+    /*text-align: center;*/
     /*padding-left: 28%;*/
-    padding-top: 10%;
+    padding-top: 3%;
 
 }
 
@@ -198,4 +210,12 @@
 
 .left_align_services{
     text-align: left;
+}
+
+.extra_padding_quotes{
+    padding-top: 3%;
+}
+
+.bump_up{
+    margin-top: -5%;
 }

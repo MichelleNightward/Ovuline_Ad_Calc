@@ -45,3 +45,19 @@
   text-decoration: none;
    }
 
+.btn_advertise {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #f7f7f7;
+  font-size: 20px;
+  background: #DC3F80;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn_advertise:hover {
+  background: #ba346c;
+  text-decoration: none;
+}
