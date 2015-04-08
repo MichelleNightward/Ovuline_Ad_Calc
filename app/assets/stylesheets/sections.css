@@ -143,9 +143,14 @@
     /*width: 100%;*/
 }
 
-.make_text_white p{
+.make_text_white td{
     color: white;
+    font-family: serif;
+    text-align: left;
+    padding-bottom: 25px;
+    padding-left: 50px;
 }
+
 
 .center_the_button{
     padding-top: 30px;

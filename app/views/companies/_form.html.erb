@@ -12,13 +12,25 @@
   <% end %>
 
   <div class='make_text_white'>
-    <p>Name: <span class = 'input_box_align_1'><%= f.text_field :name, :required => true %></span></p>
-    <br>
-    <p>Company: <span class = 'input_box_align_2'><%= f.text_field :companyname, :required => true %></span></p>
-    <br>
-    <p>Email Address: <span class = 'input_box_align_3'><%= f.email_field :email, :required => true %></span></p>
-    <br>
-    <p>Phone: <span class = 'input_box_align_4'><%= f.text_field :phone, :required => true %></span></p>
+    <table>
+      <tr>
+        <td>Name: </td>
+        <td><%= f.text_field :name, :required => true %></td>
+      </tr>
+
+    <tr>
+      <td>Company: </td>
+      <td><%= f.text_field :companyname, :required => true %></td>
+    </tr>
+    <tr>
+      <td>Email Address: </td>
+      <td><%= f.email_field :email, :required => true %></td>
+    </tr>
+    <tr>
+      <td>Phone: </td>
+      <td><%= f.text_field :phone, :required => true %></td>
+    </tr>
+    </table>
   </div>
 
   <div class = 'center_the_button'>
