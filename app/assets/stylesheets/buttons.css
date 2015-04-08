@@ -10,6 +10,11 @@
   text-decoration: none;
 }
 
+.radio {
+  float: light;
+  text-align: center;
+}
+
 .btn_info:hover {
   background: #2ca8f5;
   text-decoration: none;
@@ -39,3 +44,4 @@
   background: #2ca8f5;
   text-decoration: none;
    }
+
