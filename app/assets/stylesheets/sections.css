@@ -130,7 +130,7 @@
     /*margin: 0 auto;*/
     /*text-align: center;*/
     /*padding-left: 28%;*/
-    padding-top: 10%;
+    padding-top: 3%;
 
 }
 
@@ -198,4 +198,8 @@
 
 .left_align_services{
     text-align: left;
+}
+
+.extra_padding_quotes{
+    padding-top: 3%;
 }

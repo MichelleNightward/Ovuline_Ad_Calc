@@ -45,24 +45,33 @@
         <label for=mobile_platform_both>
           <img src="/images/iosboth.png">
         </label>
+        </center>
 
-      <h2>What kind of advertising are you interested in?</h2>
-       <div class='label_font'>
-        <%= f.radio_button(:ad_type, "sales ") %>
-         <label for=ad_type_sales>
-            Sales (Ads)
-         </label>
-         <%= f.radio_button(:ad_type, "brand_awareness") %>
-         <label for=ad_type_brand_awareness>
-            Brand Awareness (Articles)
-         </label>
-         <%= f.radio_button(:ad_type, "both") %>
-         <label for=ad_type_both>
-            Both
-        </label>
+        <div class='extra_padding_quotes'>
+          <div class ='section general'>
+            <h2>What kind of advertising are you interested in?</h2>
+             <div class='label_font'>
+              <%= f.radio_button(:ad_type, "sales ") %>
+               <label for=ad_type_sales>
+                  Sales (Ads)
+               </label>
+               <%= f.radio_button(:ad_type, "brand_awareness") %>
+               <label for=ad_type_brand_awareness>
+                  Brand Awareness (Articles)
+               </label>
+               <%= f.radio_button(:ad_type, "both") %>
+               <label for=ad_type_both>
+                  Both
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
 
-
+      <div class='section_pale_orange'>
+        <div class = 'section general'>
           <h2>Product Selector:</h2>
         
           <div class = 'move_it_forward_section'>
@@ -83,11 +92,13 @@
               </table>
             </div>
           </div>
+        </div>
+      </div>
 
 
-    </center>
-   </div>
-  </div>
+  <!--   </center>
+   </div> -->
+  <!-- </div> -->
 </div>
 
 
