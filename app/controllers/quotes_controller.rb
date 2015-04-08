@@ -21,6 +21,7 @@ class QuotesController < ApplicationController
 
   def edit
     @quote = Quote.find(params[:id])
+    @company = @quote.company_id
   end
 
   def create
@@ -40,7 +41,8 @@ class QuotesController < ApplicationController
     if @quote.update_attributes(quote_params)
       flash[:notice] = 'Your quote was updated'
       send_notification
-      redirect_to employee_path
+      @company = @quote.company_id
+      redirect_to company_path
     else
       render action: 'new'
     end
@@ -48,8 +50,9 @@ class QuotesController < ApplicationController
 
   def destroy
     @quote.destroy
+    @company = Company.find(session[:employee_company_id])
     respond_to do |format|
-      format.html { redirect_to employee_path, notice: 'Line-item was successfully removed.' }
+      format.html { redirect_to company_path, notice: 'Line-item was successfully removed.' }
     end
   end
 
