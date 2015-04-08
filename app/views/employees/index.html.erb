@@ -4,6 +4,13 @@
         <a href='/employee_email_managers'><li>NOTIFICATION MANAGER</li></a>
     </ul>
 </div>
+
+           <% if notice %>
+                <div class='section_pink_error'>
+                  <p id="notice"><%= notice %></p>
+                </div>
+            <% end %>
+
 <div class = 'section_pale_orange_thankyou'>
     <div class = 'section_general'>
         <!-- <p id="notice"><%= notice %></p>
